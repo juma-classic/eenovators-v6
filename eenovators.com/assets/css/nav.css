@@ -1,0 +1,51 @@
+:root{
+  --nav-bg: rgba(255,255,255,0.9);
+  --nav-text: #1f2937;
+  --nav-accent: #ff9d00;
+  --nav-radius: 28px;
+  --nav-gap: 20px;
+  --nav-transition: 240ms cubic-bezier(.2,.8,.2,1);
+}
+
+.modern-nav{position:relative;background:var(--nav-bg);backdrop-filter:blur(8px);border-radius:var(--nav-radius);padding:10px 18px;box-shadow:0 6px 18px rgba(0,0,0,.06);width:100%;max-width:1300px;margin:18px auto;display:block}
+.modern-nav .nav-inner{display:flex;align-items:center;gap:12px;justify-content:space-between}
+.modern-nav .brand img{height:28px;display:block}
+
+.nav-toggle{display:none;background:transparent;border:0;font-size:20px;cursor:pointer;color:var(--nav-text)}
+
+.nav-wrap{position:relative;flex:1;display:flex;justify-content:center;align-items:center}
+.nav-menu{display:flex;gap:var(--nav-gap);align-items:center;list-style:none;margin:0;padding:0}
+.nav-menu a{color:var(--nav-text);text-decoration:none;padding:10px 12px;border-radius:12px;font-weight:600;white-space:nowrap;display:inline-block;transition:color var(--nav-transition)}
+.nav-menu a:focus{outline:2px solid rgba(0,0,0,.06);outline-offset:3px}
+
+/* pill indicator behind the item */
+.nav-active-indicator{position:absolute;top:8px;bottom:8px;border-radius:999px;background:linear-gradient(90deg,var(--nav-accent),#ffb86b);z-index:0;transition:transform var(--nav-transition),width var(--nav-transition),opacity var(--nav-transition);opacity:0}
+
+/* ensure links are above indicator */
+.nav-menu li,.nav-menu a{position:relative;z-index:1}
+
+/* dropdown */
+.has-sub{position:relative}
+.dropdown-menu{position:absolute;left:50%;transform:translateX(-50%) translateY(6px) scale(.98);min-width:220px;background:#fff;border-radius:8px;padding:10px;box-shadow:0 8px 30px rgba(0,0,0,.06);opacity:0;visibility:hidden;pointer-events:none;transition:opacity var(--nav-transition),transform var(--nav-transition),visibility var(--nav-transition)}
+.dropdown-menu a{display:block;padding:8px 12px;color:#001b56;font-weight:500;border-radius:6px}
+.dropdown-menu a:hover{background:rgba(0,0,0,.03)}
+
+.has-sub:hover > .dropdown-menu,
+.has-sub:focus-within > .dropdown-menu,
+.has-sub.open > .dropdown-menu{
+  opacity:1; visibility:visible; pointer-events:auto; transform:translateX(-50%) translateY(0) scale(1);
+}
+
+/* mobile */
+@media (max-width:920px){
+  .nav-toggle{display:block}
+  .nav-wrap{position:static}
+  .nav-menu{position:fixed;left:0;right:0;top:68px;background:var(--nav-bg);flex-direction:column;padding:12px 18px;gap:6px;display:none;z-index:9999}
+  .nav-menu.show{display:flex}
+  .nav-active-indicator{display:none}
+  .dropdown-menu{position:static;transform:none;box-shadow:none;padding-left:14px;display:none}
+  .has-sub.open > .dropdown-menu{display:block}
+}
+@media (prefers-reduced-motion:reduce){
+  .nav-active-indicator, .dropdown-menu, .nav-menu a{transition:none}
+}
