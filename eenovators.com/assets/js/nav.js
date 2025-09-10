@@ -7,22 +7,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
   const items = Array.from(nav.querySelectorAll('.nav-menu > .nav-item > a'));
   const toggle = document.getElementById('navToggle');
 
-  // Move indicator under target link (on hover/focus)
-  const moveIndicator = (el) => {
-    if(!indicator || !el) return;
-    const rect = el.getBoundingClientRect();
-    const contRect = nav.querySelector('.nav-wrap').getBoundingClientRect();
-    const width = Math.max(40, rect.width + 8);
-    const offset = rect.left - contRect.left + (rect.width - width)/2;
-    indicator.style.width = width + 'px';
-    indicator.style.transform = `translateX(${offset}px)`;
-    indicator.style.opacity = 1;
-  };
-
-  const resetIndicator = () =>{
-    if(!indicator) return;
-    indicator.style.opacity = 0;
-  };
+  // Disable visual indicator movement to remove hover animation
+  const moveIndicator = ()=>{/* no-op */};
+  const resetIndicator = ()=>{/* no-op */};
 
   // attach hover/focus handlers
   items.forEach(a=>{
@@ -36,6 +23,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
   window.addEventListener('resize', ()=> {
     // hide indicator when resized
     resetIndicator();
+  // recalc overflow handling
+  handleOverflow();
   });
 
   // mobile menu toggle
@@ -90,8 +79,107 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }
   });
 
-  // Respect reduced motion: disable indicator animation
-  if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-    indicator.style.transition = 'none';
-  }
+  /* --- Overflow handling: move items into a More dropdown when they don't fit --- */
+  const setupMore = ()=>{
+    const navMenu = nav.querySelector('.nav-menu');
+    if(!navMenu) return;
+    // create More container if missing
+    let moreLi = navMenu.querySelector('.nav-item.nav-more');
+    if(!moreLi){
+      moreLi = document.createElement('li');
+      moreLi.className = 'nav-item nav-more';
+      moreLi.setAttribute('role','none');
+  moreLi.innerHTML = '<button class="more-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Get Quotation">get quotation</button><ul class="more-menu" role="menu"></ul>';
+      navMenu.appendChild(moreLi);
+    }
+    return moreLi;
+  };
+
+  const handleOverflow = ()=>{
+    const navInner = nav.querySelector('.nav-inner');
+    const navWrap = nav.querySelector('.nav-wrap');
+    const navMenu = nav.querySelector('.nav-menu');
+    if(!navMenu || !navInner) return;
+
+    const moreLi = setupMore();
+    const moreMenu = moreLi.querySelector('.more-menu');
+    const moreToggle = moreLi.querySelector('.more-toggle');
+
+    // move any previous overflowed items back into the main menu (place before moreLi)
+    Array.from(moreMenu.children).forEach(ch=> navMenu.insertBefore(ch, moreLi));
+
+    // hide more while measuring
+    moreLi.style.display = 'none';
+
+    // measure available width inside nav-wrap (client widths are stable)
+    const available = navWrap.clientWidth - (nav.querySelector('.brand')?.offsetWidth || 0) - 20;
+
+    // If navMenu.scrollWidth fits, nothing to do
+    if(navMenu.scrollWidth <= available){
+      moreLi.style.display = 'none';
+      nav.classList.remove('compact','aggressive');
+      return;
+    }
+
+    // Move last items into More until it fits
+    moreLi.style.display = '';
+    // collect items (exclude moreLi itself)
+    let items = Array.from(navMenu.querySelectorAll('.nav-item')).filter(li=> !li.classList.contains('nav-more'));
+    while(navMenu.scrollWidth > available && items.length){
+      const li = items.pop();
+      // move element into moreMenu as a simple li (preserve link)
+      const a = li.querySelector('a');
+      const newLi = document.createElement('li');
+      if(a){
+        const newA = a.cloneNode(true);
+        newA.setAttribute('role','menuitem');
+        newLi.appendChild(newA);
+      } else {
+        newLi.textContent = li.textContent.trim();
+      }
+      moreMenu.insertBefore(newLi, moreMenu.firstChild);
+      li.parentNode.removeChild(li);
+      items = Array.from(navMenu.querySelectorAll('.nav-item')).filter(li=> !li.classList.contains('nav-more'));
+    }
+
+    // Recompute usage ratio and apply compact/aggressive
+    const used = navMenu.scrollWidth;
+    const compactThreshold = available * 0.92;
+    const aggressiveThreshold = available * 0.82;
+    nav.classList.remove('compact','aggressive');
+    if(used > aggressiveThreshold) nav.classList.add('compact','aggressive');
+    else if(used > compactThreshold) nav.classList.add('compact');
+
+    // add toggle listener once
+    if(!moreLi._moreInit){
+      moreToggle.addEventListener('click', (e)=>{
+        const expanded = moreLi.getAttribute('aria-expanded') === 'true';
+        moreLi.setAttribute('aria-expanded', String(!expanded));
+        moreToggle.setAttribute('aria-expanded', String(!expanded));
+        e.stopPropagation();
+      });
+      // close more on outside click (only once)
+      document.addEventListener('click', (e)=>{
+        if(!moreLi.contains(e.target)){
+          moreLi.setAttribute('aria-expanded','false');
+          if(moreToggle) moreToggle.setAttribute('aria-expanded','false');
+        }
+      });
+      moreLi._moreInit = true;
+    }
+  };
+  // run overflow handling after load and when layout stabilizes
+  window.addEventListener('load', ()=> setTimeout(handleOverflow,200));
+  // also run on a short debounce for resize
+  let overflowTimer;
+  window.addEventListener('resize', ()=>{ clearTimeout(overflowTimer); overflowTimer = setTimeout(handleOverflow,120); });
+
+  // Some lazy assets or font swaps can change metrics later; observe the nav for subtree changes and re-run
+  const mo = new MutationObserver(()=>{ clearTimeout(overflowTimer); overflowTimer = setTimeout(handleOverflow,160); });
+  mo.observe(nav, {subtree:true, childList:true, attributes:true});
+
+  // expose for manual calls
+  nav.handleOverflow = handleOverflow;
+
+  // Respect reduced motion: no-op since animations are disabled
 });

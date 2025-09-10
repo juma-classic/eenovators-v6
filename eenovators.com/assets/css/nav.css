@@ -1,33 +1,77 @@
 :root{
-  --nav-bg: rgba(255,255,255,0.9);
-  --nav-text: #1f2937;
-  --nav-accent: #ff9d00;
-  --nav-radius: 28px;
-  --nav-gap: 20px;
+  /* translucent capsule (70% transparent = 0.7 alpha) */
+  --nav-bg: rgba(255,255,255,0.7);
+  --nav-text: #0b2130; /* dark text for contrast on light translucent bg */
+  --nav-accent: #0e8a3f; /* subtle accent for indicator */
+  --nav-radius: 999px; /* capsule */
+  --nav-gap: 24px;
   --nav-transition: 240ms cubic-bezier(.2,.8,.2,1);
 }
 
-.modern-nav{position:relative;background:var(--nav-bg);backdrop-filter:blur(8px);border-radius:var(--nav-radius);padding:10px 18px;box-shadow:0 6px 18px rgba(0,0,0,.06);width:100%;max-width:1300px;margin:18px auto;display:block}
+.modern-nav{
+  position:relative;
+  /* simple translucent capsule with backdrop blur */
+  background-color: var(--nav-bg);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  border-radius: var(--nav-radius);
+  padding:6px 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  width:100%;
+  max-width:1300px;
+  margin:18px auto;
+  display:block;
+}
 .modern-nav .nav-inner{display:flex;align-items:center;gap:12px;justify-content:space-between}
-.modern-nav .brand img{height:28px;display:block}
+.modern-nav .brand img{height:22px;display:block;width:auto}
+
+/* shrink the large header logo specifically */
+#main-header .logo_container a img#logo{height:44px !important;max-height:56px;width:auto !important}
 
 .nav-toggle{display:none;background:transparent;border:0;font-size:20px;cursor:pointer;color:var(--nav-text)}
 
 .nav-wrap{position:relative;flex:1;display:flex;justify-content:center;align-items:center}
+
 .nav-menu{display:flex;gap:var(--nav-gap);align-items:center;list-style:none;margin:0;padding:0}
-.nav-menu a{color:var(--nav-text);text-decoration:none;padding:10px 12px;border-radius:12px;font-weight:600;white-space:nowrap;display:inline-block;transition:color var(--nav-transition)}
+.nav-menu li{position:relative}
+.nav-menu a{color:var(--nav-text);text-decoration:none;padding:14px 18px;border-radius:0;font-weight:600;white-space:nowrap;display:inline-block;background:transparent;position:relative;z-index:2}
+.nav-menu a:hover,.nav-menu a:focus{color:var(--nav-text);background:transparent}
+
+/* orange capsule underline on hover/focus */
+.nav-menu a::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  width: 0px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff9d00, #ffb86b);
+  opacity: 0;
+  transition: width var(--nav-transition), opacity var(--nav-transition), transform var(--nav-transition);
+  z-index: 1; /* sit under the link text */
+}
+
+.nav-menu a:hover::after, .nav-menu a:focus::after{
+  width: calc(100% + 22px);
+  opacity: 1;
+  transform: translateX(-50%) translateY(6px);
+}
+
+/* keep link text visually inside the capsule: no separate backgrounds, use indicator for focus */
+.nav-wrap{padding:6px 6px}
 .nav-menu a:focus{outline:2px solid rgba(0,0,0,.06);outline-offset:3px}
 
 /* pill indicator behind the item */
-.nav-active-indicator{position:absolute;top:8px;bottom:8px;border-radius:999px;background:linear-gradient(90deg,var(--nav-accent),#ffb86b);z-index:0;transition:transform var(--nav-transition),width var(--nav-transition),opacity var(--nav-transition);opacity:0}
+.nav-active-indicator{position:absolute;top:6px;bottom:6px;border-radius:999px;background:linear-gradient(90deg,var(--nav-accent),rgba(14,138,63,0.18));z-index:0;transition:transform var(--nav-transition),width var(--nav-transition),opacity var(--nav-transition);opacity:0.12}
 
 /* ensure links are above indicator */
 .nav-menu li,.nav-menu a{position:relative;z-index:1}
 
 /* dropdown */
 .has-sub{position:relative}
-.dropdown-menu{position:absolute;left:50%;transform:translateX(-50%) translateY(6px) scale(.98);min-width:220px;background:#fff;border-radius:8px;padding:10px;box-shadow:0 8px 30px rgba(0,0,0,.06);opacity:0;visibility:hidden;pointer-events:none;transition:opacity var(--nav-transition),transform var(--nav-transition),visibility var(--nav-transition)}
-.dropdown-menu a{display:block;padding:8px 12px;color:#001b56;font-weight:500;border-radius:6px}
+.dropdown-menu{position:absolute;left:50%;transform:translateX(-50%) translateY(6px) scale(.98);min-width:220px;background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.96));border-radius:10px;padding:8px 6px;box-shadow:0 8px 30px rgba(0,0,0,.12);opacity:0;visibility:hidden;pointer-events:none;transition:opacity var(--nav-transition),transform var(--nav-transition),visibility var(--nav-transition)}
+.dropdown-menu a{display:block;padding:8px 12px;color:#001b56;font-weight:600;border-radius:6px}
 .dropdown-menu a:hover{background:rgba(0,0,0,.03)}
 
 .has-sub:hover > .dropdown-menu,
@@ -48,4 +92,405 @@
 }
 @media (prefers-reduced-motion:reduce){
   .nav-active-indicator, .dropdown-menu, .nav-menu a{transition:none}
+}
+
+/* --- Capsule float / header transparency tweaks --- */
+/* Make the site header transparent so the capsule can float on top of content */
+#main-header, #main-header.et-fixed-header {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Center the nav and allow the inner capsule to size to its content */
+.modern-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 99999; /* keep above page content */
+}
+
+/* The floating capsule itself */
+.modern-nav .nav-inner {
+  display: inline-flex;
+  align-items: center;
+  background: var(--nav-bg);
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  box-shadow: 0 14px 30px rgba(10,20,30,0.12);
+  border-radius: var(--nav-radius);
+  padding: 10px 22px;
+  margin: 12px 0; /* lifts the capsule away from the top edge */
+  z-index: 100000; /* above header elements */
+  pointer-events: auto; /* ensure navigation is interactive */
+}
+
+/* Responsive: on small screens use full width with gutters */
+@media (max-width: 980px){
+  .modern-nav .nav-inner{
+    width: calc(100% - 32px) !important;
+    max-width: calc(100% - 32px) !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+    padding: 8px 12px !important;
+  }
+}
+
+/* Keep the nav items inline and compact inside the capsule */
+.modern-nav .nav-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.modern-nav .nav-menu {
+  display: flex;
+  gap: var(--nav-gap);
+  align-items: center;
+}
+
+/* Small spacing for the brand so it visually sits just left of the capsule content */
+.modern-nav {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.modern-nav .nav-inner {
+  /* restrict the nav to sit between 10% and 90% of the viewport (10% gutters) */
+  width: 80vw !important;
+  max-width: 80vw !important;
+  margin-left: 10vw !important;
+  margin-right: 10vw !important;
+  padding: 8px 22px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: var(--nav-bg) !important;
+  border-radius: var(--nav-radius) !important;
+}
+.modern-nav {
+  background: transparent !important; /* remove wide white background */
+  box-shadow: none !important;       /* remove outer shadow */
+  padding: 0 !important;             /* avoid extra padded band */
+  max-width: none !important;
+}
+
+/* Ensure the inner capsule is the only visual background */
+.modern-nav .nav-inner {
+  display: inline-flex !important;
+  background: var(--nav-bg) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(120%) !important;
+  backdrop-filter: blur(8px) saturate(120%) !important;
+  box-shadow: 0 18px 40px rgba(10,20,30,0.12) !important;
+  border-radius: var(--nav-radius) !important;
+  padding: 10px 22px !important;
+  margin: 12px auto !important;
+}
+
+/* keep the container inside the nav from forcing full-width backgrounds */
+.modern-nav .container {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* reduce the header's visual band so capsule appears to float on page content */
+#main-header, #et-top-navigation {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* if the theme added a white background to .et_menu_container, clear it */
+.et_menu_container, .container.et_menu_container {
+  background: transparent !important;
+}
+
+/* --- Hide duplicate large header logo (keep the nav brand logo) --- */
+#main-header .logo_container img#logo,
+#main-header .logo_container {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* --- Remove small submenu capsule toggles --- */
+/* Visually remove the little capsule/button used to open submenus */
+.modern-nav .submenu-toggle {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  pointer-events: none !important; /* prevent accidental clicks */
+}
+
+/* If any tiny pseudo-elements are used for submenu markers, hide them too */
+.modern-nav .nav-item.has-sub > a::after,
+.modern-nav .nav-item.has-sub > a::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* --- Fit all nav items inside the capsule --- */
+/* Limit capsule width to viewport and allow content to size inside it */
+.modern-nav .nav-inner {
+  max-width: calc(100% - 40px) !important; /* leave small side gutters */
+  width: auto !important;
+  padding: 8px 16px !important; /* slightly smaller padding so more room for items */
+  gap: 8px !important;
+}
+
+/* Reduce brand logo size so it doesn't push items out */
+.modern-nav .brand img {
+  height: 59px !important; /* another ~15% larger */
+  width: auto !important;
+  display: block;
+}
+
+/* Keep menu items on a single line, allow them to shrink but don't wrap */
+.modern-nav .nav-menu {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 10px !important;
+  align-items: center !important;
+  overflow: hidden; /* hide any overflow visually */
+}
+
+.modern-nav .nav-menu .nav-item {
+  flex: 0 1 auto !important; /* allow items to shrink but not grow beyond content */
+}
+
+.modern-nav .nav-menu a {
+  display: inline-block !important;
+  padding: 14px 18px !important; /* ~15% larger padding */
+  font-size: 24px !important;    /* ~15% larger text */
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+  color: var(--nav-text) !important;
+}
+
+/* --- Disable hover/hover-animation effects globally --- */
+/* Hide the orange hover capsule pseudo-element */
+.nav-menu a::after { display: none !important; opacity: 0 !important; }
+
+/* Remove transitions so hover/focus do not animate */
+.nav-menu a, .nav-active-indicator, .dropdown-menu, .nav-menu a::after {
+  transition: none !important;
+  -webkit-transition: none !important;
+}
+
+/* Prevent hover/background color changes */
+.nav-menu a:hover, .nav-menu a:focus { background: transparent !important; color: var(--nav-text) !important; }
+
+/* Stop the active indicator from animating or being visible */
+.nav-active-indicator { transition: none !important; opacity: 0 !important; }
+
+/* Dropdowns should open without transform/opacity animation */
+.dropdown-menu { transition: none !important; transform: none !important; opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
+
+/* Reduce visual gap for the active indicator so it doesn't push layout */
+.modern-nav .nav-active-indicator {
+  height: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Mobile: allow wrap and show toggle */
+@media (max-width: 920px) {
+  .modern-nav .nav-menu {
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    max-width: 100%;
+  }
+  .modern-nav .nav-toggle {
+    display: inline-block !important;
+  }
+  /* make nav-inner use full width on small screens so items don't overflow viewport */
+  .modern-nav .nav-inner {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    padding: 8px 12px !important;
+  }
+}
+/* --- Expand capsule to full viewport and render menu right-to-left --- */
+/* Stretch the outer nav so the capsule appears edge-to-edge on large screens */
+.modern-nav {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: 0 !important; /* anchor to left edge */
+  margin-right: 0 !important;
+  padding: 0 !important;
+}
+
+.modern-nav .nav-inner {
+  /* make the inner capsule fill the viewport width while keeping visual padding */
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  padding: 8px 22px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: var(--nav-bg) !important;
+  border-radius: var(--nav-radius) !important;
+}
+
+/* Keep brand on the left side */
+.modern-nav .brand {
+  order: 0 !important;
+  margin-right: 6px !important; /* reduced spacing to bring menu closer */
+  margin-left: 0 !important;
+  flex: 0 0 auto !important;
+}
+
+.modern-nav .nav-wrap {
+  order: 1 !important;
+  flex: 1 1 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important; /* left-align menu so it sits next to brand */
+}
+
+/* Render the menu items right-to-left so the first logical item sits at the far right */
+.modern-nav .nav-inner {
+  /* anchor the inner capsule to the left edge and keep compact padding */
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: 0 !important; /* no centering calc, stick to left */
+  margin-right: 0 !important;
+  padding: 6px 12px !important; /* slightly tighter horizontal padding */
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important; /* left align inner content */
+  /* remove inner capsule visuals */
+  background: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+  .modern-nav, .modern-nav .nav-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 6px 12px !important;
+  }
+  .modern-nav .nav-wrap {
+    justify-content: flex-start !important;
+  }
+  .modern-nav .nav-menu {
+    direction: ltr !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+
+
+/* End expanded-capsule RTL rules */
+/* End fit tweaks */
+/* --- Compact mode: tighter padding and smaller text when space is constrained --- */
+.modern-nav.compact .nav-menu a {
+  padding: 8px 10px !important;    /* compact but still readable */
+  font-size: 15px !important;     /* don't go below 15px in compact mode */
+}
+.modern-nav.compact .brand img {
+  height: 36px !important;        /* slightly smaller brand in compact */
+}
+.modern-nav.compact .nav-menu {
+  gap: 8px !important;            /* moderate gap in compact */
+}
+
+/* Aggressive compact (applied only when space is very tight) */
+.modern-nav.compact.aggressive .nav-menu a {
+  padding: 6px 8px !important;
+  font-size: 14px !important; /* minimum readable size */
+}
+.modern-nav.compact.aggressive .brand img {
+  height: 30px !important;
+}
+
+/* --- "More" overflow dropdown styles --- */
+.nav-item.nav-more{position:relative;}
+.nav-item.nav-more > .more-toggle{
+  /* glossy orange capsule button */
+  background: linear-gradient(180deg, #ff9d00, #ff7a00) !important;
+  color: #fff !important;
+  border: 0 !important;
+  cursor: pointer !important;
+  font-weight: 700 !important;
+  padding: 10px 16px !important;
+  border-radius: 999px !important;
+  box-shadow: 0 6px 18px rgba(255,120,0,0.12) !important;
+  transition: all var(--nav-transition) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+.nav-item.nav-more > .more-toggle:after{content:' ▾';font-weight:600;margin-left:6px}
+.nav-item.nav-more .more-menu{
+  position:absolute;right:0;top:calc(100% + 8px);min-width:180px;background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.95));box-shadow:0 10px 30px rgba(0,0,0,0.12);border-radius:10px;padding:8px 0;display:none;z-index:200000;list-style:none}
+.nav-item.nav-more[aria-expanded="true"] .more-menu{display:block}
+.nav-item.nav-more .more-menu li{padding:0;margin:0}
+.nav-item.nav-more .more-menu a{display:block;padding:8px 12px;color:var(--nav-text);text-decoration:none;font-weight:600}
+.nav-item.nav-more .more-menu a:hover{background:rgba(0,0,0,0.03)}
+
+/* When using RTL layout visually, ensure the more menu aligns correctly on very wide viewports */
+.modern-nav .nav-menu{position:relative}
+
+/* Background-pill hover: adds a rounded colored pill behind each link without shifting layout.
+   Uses ::before so the link's box stays the same; higher specificity and !important are used
+   to override project-wide 'disable hover' rules. Honor reduced-motion. */
+.modern-nav .nav-menu a {
+  position: relative !important;
+  z-index: 4 !important; /* keep link text above the pill */
+  /* re-enable transitions for these properties specifically */
+  transition: all var(--nav-transition) !important;
+}
+.modern-nav .nav-menu a::before {
+  content: "" !important;
+  position: absolute !important;
+  /* align the pill to the link's content box so it sits behind text without covering it */
+  left: 0 !important;
+  right: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) scale(0.96) !important;
+  height: calc(1.35em + 14px) !important; /* comfortable pill height */
+  /* transparent pill with 1px orange outline and subtle glow */
+  background: transparent !important;
+  border: 1px solid rgba(255,157,0,0.95) !important;
+  box-shadow: 0 8px 20px rgba(255,157,0,0.08) !important;
+  z-index: 0 !important; /* ensure the pill stays below the link text */
+  border-radius: 999px !important;
+  opacity: 0 !important;
+  transition: all var(--nav-transition) !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+.modern-nav .nav-menu a:hover::before,
+.modern-nav .nav-menu a:focus-visible::before {
+  opacity: 1 !important;
+  transform: translateY(-50%) scale(1) !important;
+}
+.modern-nav .nav-menu a:hover,
+.modern-nav .nav-menu a:focus-visible {
+  color: #000 !important; /* keep text black on hover/focus */
+  text-shadow: none !important;
+  transform: translateY(-2px) !important;
+  outline: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modern-nav .nav-menu a,
+  .modern-nav .nav-menu a::before {
+    transition: none !important;
+    transform: none !important;
+  }
+  .modern-nav .nav-menu a::before { opacity: 1 !important; }
 }
