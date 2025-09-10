@@ -1,0 +1,690 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 10 Sep 2025 18:35:43 at https://ee.yellowcat.solutions +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qYC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" -Y https://ee.yellowcat.solutions -O1 "C:\My Web Sites\eenovators-v6" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:36:57	Warning: 	Retry after error -4 (No data (connection closed)) at link https://ee.yellowcat.solutions/xmlrpc.php (from https://ee.yellowcat.solutions/)
+18:36:58	Warning: 	Found for maps.google.com/
+18:36:58	Warning: 	File has moved from maps.google.com/ to http://maps.google.com/maps
+18:37:00	Error: 	"Not Found" (404) at link fonts.googleapis.com/ (from https://ee.yellowcat.solutions/)
+18:37:21	Warning: 	Retry after error -4 (No data (connection closed)) at link https://ee.yellowcat.solutions/xmlrpc.php?rsd (from https://ee.yellowcat.solutions/)
+18:45:57	Warning: 	file not stored in cache due to bogus state (broken size, expected 7656705 got 3391234): ee.yellowcat.solutions/wp-content/uploads/2025/04/Eagles-Energy-Management-Portal-Brochure.pdf
+18:46:05	Warning: 	file not stored in cache due to bogus state (broken size, expected 5940132 got 4890784): ee.yellowcat.solutions/wp-content/uploads/2025/06/WELCOME-VIDEO-__-ABOUT-OUR-CHANNEL.mp4
+18:46:50	Warning: 	Retry after error -4 (No data (connection closed)) at link https://ee.yellowcat.solutions/xmlrpc.php (from https://ee.yellowcat.solutions/)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/fonts/fontawesome-webfont.eot?v=4.6.3 (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/fonts/fontawesome-webfont.eot? (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/fonts/fontawesome-webfont.woff2?v=4.6.3 (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/fonts/fontawesome-webfont.woff?v=4.6.3 (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/fonts/fontawesome-webfont.ttf?v=4.6.3 (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/fonts/fontawesome-webfont.svg?v=4.6.3 (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/fullscreen@2x.png (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/leaflet.routing.icons.png (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/routing-icon.png (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/images/layers.png (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/images/layers-2x.png (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Error: 	"Not Found" (404) at link https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/images/marker-icon.png (from https://ee.yellowcat.solutions/wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend.css?ver=4.8.3)
+18:46:50	Warning: 	Retry after error -4 (No data (connection closed)) at link https://ee.yellowcat.solutions/xmlrpc.php?rsd (from https://ee.yellowcat.solutions/)
+18:46:50	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=37
+18:46:50	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=37 to https://ee.yellowcat.solutions/about-us/
+18:46:51	Warning: 	Retry after error -4 (Incorrect length (4890784 Bytes, 5940132 expected)) at link ee.yellowcat.solutions/wp-content/uploads/2025/06/WELCOME-VIDEO-__-ABOUT-OUR-CHANNEL.mp4 (from https://ee.yellowcat.solutions/about-us/)
+18:46:59	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=57
+18:46:59	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=57 to https://ee.yellowcat.solutions/solutions/
+18:46:59	Warning: 	Retry after error -4 (Incorrect length (3391234 Bytes, 7656705 expected)) at link ee.yellowcat.solutions/wp-content/uploads/2025/04/Eagles-Energy-Management-Portal-Brochure.pdf (from https://ee.yellowcat.solutions/solutions/)
+18:46:59	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=66
+18:46:59	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=66 to https://ee.yellowcat.solutions/services/
+18:46:59	Warning: 	Retry after error -4 (No data (connection closed)) at link https://ee.yellowcat.solutions/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fee.yellowcat.solutions%2Fservices%2F&format=xml (from https://ee.yellowcat.solutions/services/)
+18:47:00	Warning: 	Retry after error -4 (No data (connection closed)) at link https://ee.yellowcat.solutions/wp-content/et-cache/66/et-core-unified-tb-168-deferred-66.min.css?ver=1755442285 (from https://ee.yellowcat.solutions/services/)
+18:47:53	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=210
+18:47:53	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=210 to https://ee.yellowcat.solutions/training/
+18:48:06	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=222
+18:48:06	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=222 to https://ee.yellowcat.solutions/yeep-2/
+18:48:06	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=278
+18:48:06	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=278 to https://ee.yellowcat.solutions/world-energy-day/
+18:48:06	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=286
+18:48:06	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=286 to https://ee.yellowcat.solutions/case-studies/
+18:51:14	Warning: 	Retry after error -4 (No data (connection closed)) at link https://energyzedworld.com/xmlrpc.php (from https://energyzedworld.com/)
+18:51:16	Warning: 	Moved Permanently for energyzedworld.com/robots.txt
+18:51:16	Warning: 	Redirected link is identical because of 'URL Hack' option: energyzedworld.com/robots.txt and https://energyzedworld.com/robots.txt
+18:51:16	Warning: 	Warning moved treated for energyzedworld.com/robots.txt (real one is https://energyzedworld.com/robots.txt)
+18:51:16	Warning: 	Retry after error -4 (No data (connection closed)) at link https://energyzedworld.com/xmlrpc.php?rsd (from https://energyzedworld.com/)
+18:51:48	Error: 	"Error when decompressing" (-1) at link https://energyzedworld.com/energy-industry-news/how-energy-audits-help-reduce-co₂-emissions/ (from https://energyzedworld.com/)
+18:52:28	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=80
+18:52:28	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=80 to https://ee.yellowcat.solutions/contact/
+18:52:29	Error: 	"No data (connection closed)" (-4) after 2 retries at link https://ee.yellowcat.solutions/xmlrpc.php (from https://ee.yellowcat.solutions/)
+18:52:29	Error: 	"No data (connection closed)" (-4) after 2 retries at link https://ee.yellowcat.solutions/xmlrpc.php?rsd (from https://ee.yellowcat.solutions/)
+18:52:29	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=337
+18:52:29	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=337 to https://ee.yellowcat.solutions/residential-solar-pv-system-in-westlands/
+18:52:29	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=333
+18:52:29	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=333 to https://ee.yellowcat.solutions/office-solar-pv-system/
+18:52:29	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=329
+18:52:29	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=329 to https://ee.yellowcat.solutions/residential-solar-pv-system-in-kakamega/
+18:52:29	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=322
+18:52:29	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=322 to https://ee.yellowcat.solutions/residential-solar-pv-system-in-khwisero/
+18:52:29	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=313
+18:52:29	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=313 to https://ee.yellowcat.solutions/residential-solar-pv-system/
+18:52:29	Warning: 	Moved Permanently for https://ee.yellowcat.solutions/?p=303
+18:52:29	Warning: 	File has moved from https://ee.yellowcat.solutions/?p=303 to https://ee.yellowcat.solutions/hatchery-solar-pv-system/
+18:52:29	Warning: 	Retry after error -4 (No data (connection closed)) at link https://energyzedworld.com/xmlrpc.php (from https://energyzedworld.com/)
+18:52:29	Warning: 	Retry after error -4 (No data (connection closed)) at link https://energyzedworld.com/xmlrpc.php?rsd (from https://energyzedworld.com/)
+18:53:54	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3842
+18:53:54	Warning: 	File has moved from https://energyzedworld.com/?p=3842 to https://energyzedworld.com/energy-industry-news/energy-management-system-iso-50001-the-ultimate-guide-to-enhancing-operational-efficiency-and-sustainability/
+18:53:54	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3831
+18:53:54	Warning: 	File has moved from https://energyzedworld.com/?p=3831 to https://energyzedworld.com/energy-industry-news/from-monitoring-to-mastery-how-real-time-energy-data-is-cutting-costs-boosting-efficiency-in-kenyan-facilities/
+18:53:54	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3815
+18:53:54	Warning: 	File has moved from https://energyzedworld.com/?p=3815 to https://energyzedworld.com/advisory/how-to-choose-the-right-energy-monitoring-solution-for-your-home-or-business/
+18:53:56	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3820
+18:53:56	Warning: 	File has moved from https://energyzedworld.com/?p=3820 to https://energyzedworld.com/energy-financial-calculator/unlocking-energy-efficiency-in-organizations-the-smart-path-to-sustainability-and-savings/
+18:53:56	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3792
+18:53:56	Warning: 	File has moved from https://energyzedworld.com/?p=3792 to https://energyzedworld.com/energy-financial-calculator/how-the-eagles-management-portal-is-changing-the-game-for-facilities/
+18:53:56	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3785
+18:53:56	Warning: 	File has moved from https://energyzedworld.com/?p=3785 to https://energyzedworld.com/energy-financial-calculator/the-rise-of-smart-energy-how-real-time-monitoring-is-transforming-energy-efficiency-in-east-africa/
+18:53:56	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3777
+18:53:56	Warning: 	File has moved from https://energyzedworld.com/?p=3777 to https://energyzedworld.com/events/empowering-technical-professionals-to-drive-energy-efficiency/
+18:53:56	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3759
+18:53:56	Warning: 	File has moved from https://energyzedworld.com/?p=3759 to https://energyzedworld.com/uncategorized/how-heat-pumps-work-a-simple-guide-for-homeowners/
+18:53:58	Error: 	"Error when decompressing" (-1) at link https://energyzedworld.com/uncategorized/powering-kenyas-ev-revolution-with-renewable-energy-⚡/ (from https://energyzedworld.com/uncategorized/)
+18:53:58	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3755
+18:53:58	Warning: 	File has moved from https://energyzedworld.com/?p=3755 to https://energyzedworld.com/energy-financial-calculator/importance-of-energy-management-3/
+18:53:58	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3750
+18:53:58	Warning: 	File has moved from https://energyzedworld.com/?p=3750 to https://energyzedworld.com/energy-financial-calculator/how-real-time-monitoring-enhances-energy-audit-effectiveness/
+18:53:58	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3744
+18:53:58	Warning: 	File has moved from https://energyzedworld.com/?p=3744 to https://energyzedworld.com/energy-financial-calculator/why-continuous-learning-is-key-in-the-energy-sector/
+18:54:17	Error: 	"No data (connection closed)" (-4) after 2 retries at link https://energyzedworld.com/xmlrpc.php (from https://energyzedworld.com/)
+18:54:17	Error: 	"No data (connection closed)" (-4) after 2 retries at link https://energyzedworld.com/xmlrpc.php?rsd (from https://energyzedworld.com/)
+18:54:33	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3722
+18:54:33	Warning: 	File has moved from https://energyzedworld.com/?p=3722 to https://energyzedworld.com/energy-financial-calculator/maximizing-energy-efficiency-an-overview-of-energy-management-systems-and-how-it-benefits-your-business/
+18:54:33	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3335
+18:54:33	Warning: 	File has moved from https://energyzedworld.com/?p=3335 to https://energyzedworld.com/energy-financial-calculator/lessons-learned-implementing-esco-model-in-a-developing-market/
+18:54:52	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3399
+18:54:52	Warning: 	File has moved from https://energyzedworld.com/?p=3399 to https://energyzedworld.com/tools/what-distinguishes-an-e-gauge-meter-from-a-kplc-smart-meter/
+18:54:52	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1730
+18:54:52	Warning: 	File has moved from https://energyzedworld.com/?p=1730 to https://energyzedworld.com/tools/types-of-electricity-meters-and-how-to-read-them/
+18:54:52	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2488
+18:54:52	Warning: 	File has moved from https://energyzedworld.com/?p=2488 to https://energyzedworld.com/tools/non-contact-distance-measurement/
+18:54:52	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2356
+18:54:52	Warning: 	File has moved from https://energyzedworld.com/?p=2356 to https://energyzedworld.com/tools/acurev-power-and-energy-meter-2000-series-review/
+18:54:52	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2330
+18:54:52	Warning: 	File has moved from https://energyzedworld.com/?p=2330 to https://energyzedworld.com/tools/high-visibility-safety-apparel/
+18:54:53	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2294
+18:54:53	Warning: 	File has moved from https://energyzedworld.com/?p=2294 to https://energyzedworld.com/tools/egauge-core-key-features/
+18:55:13	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3262
+18:55:13	Warning: 	File has moved from https://energyzedworld.com/?p=3262 to https://energyzedworld.com/events/how-can-we-involve-the-youth-in-the-energy-efficiency-agenda/
+18:55:20	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3617
+18:55:20	Warning: 	File has moved from https://energyzedworld.com/?p=3617 to https://energyzedworld.com/energy-industry-news/the-rise-of-whole-grain-snacks/
+18:55:32	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3612
+18:55:32	Warning: 	File has moved from https://energyzedworld.com/?p=3612 to https://energyzedworld.com/energy-industry-news/whole-grain-possibilities-in-extrusion/
+18:55:32	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3607
+18:55:32	Warning: 	File has moved from https://energyzedworld.com/?p=3607 to https://energyzedworld.com/energy-industry-news/the-complexities-of-whole-grain-snack-extrusion/
+18:55:32	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3595
+18:55:32	Warning: 	File has moved from https://energyzedworld.com/?p=3595 to https://energyzedworld.com/energy-industry-news/the-role-of-extrusion-technology-in-nutritional-snack-production/
+18:55:32	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3590
+18:55:32	Warning: 	File has moved from https://energyzedworld.com/?p=3590 to https://energyzedworld.com/energy-industry-news/the-future-of-extruded-snacks/
+18:55:32	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2551
+18:55:32	Warning: 	File has moved from https://energyzedworld.com/?p=2551 to https://energyzedworld.com/energy-industry-news/coping-with-effects-of-covid-19-in-kenyas-energy-space/
+18:55:32	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2111
+18:55:32	Warning: 	File has moved from https://energyzedworld.com/?p=2111 to https://energyzedworld.com/reports/training-survey/
+18:55:32	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2099
+18:55:32	Warning: 	File has moved from https://energyzedworld.com/?p=2099 to https://energyzedworld.com/reports/world-energy-day-2018-conference-report/
+18:55:32	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2055
+18:55:32	Warning: 	File has moved from https://energyzedworld.com/?p=2055 to https://energyzedworld.com/reports/the-turkana-county-energy-business-investments-and-dynamics/
+18:55:32	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2039
+18:55:32	Warning: 	File has moved from https://energyzedworld.com/?p=2039 to https://energyzedworld.com/reports/2039/
+18:55:46	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3716
+18:55:46	Warning: 	File has moved from https://energyzedworld.com/?p=3716 to https://energyzedworld.com/advisory/mastering-soft-skills-for-success-in-the-energy-industry/
+18:55:49	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3700
+18:55:49	Warning: 	File has moved from https://energyzedworld.com/?p=3700 to https://energyzedworld.com/advisory/empowering-africas-youth-through-employment-in-renewable-energy/
+18:55:49	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3674
+18:55:49	Warning: 	File has moved from https://energyzedworld.com/?p=3674 to https://energyzedworld.com/advisory/women-empowerment-in-renewable-energy-industry/
+18:55:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3662
+18:55:50	Warning: 	File has moved from https://energyzedworld.com/?p=3662 to https://energyzedworld.com/advisory/empowering-youth-in-developing-countries-for-a-greener-tomorrow-energy-management-and-renewable-solutions/
+18:55:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3623
+18:55:50	Warning: 	File has moved from https://energyzedworld.com/?p=3623 to https://energyzedworld.com/advisory/building-the-bridge-to-your-future-the-vital-role-of-internships/
+18:55:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3579
+18:55:50	Warning: 	File has moved from https://energyzedworld.com/?p=3579 to https://energyzedworld.com/advisory/my-experience-with-the-youth-in-energy-empowerment-program-yeep/
+18:55:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=418
+18:55:50	Warning: 	File has moved from https://energyzedworld.com/?p=418 to https://energyzedworld.com/text-styles/
+18:55:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3739
+18:55:50	Warning: 	File has moved from https://energyzedworld.com/?p=3739 to https://energyzedworld.com/uncategorized/importance-of-energy-management-2/
+18:55:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3728
+18:55:50	Warning: 	File has moved from https://energyzedworld.com/?p=3728 to https://energyzedworld.com/energy-financial-calculator/maximizing-efficiency-in-solar-pv-systems-2/
+18:55:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3709
+18:55:50	Warning: 	File has moved from https://energyzedworld.com/?p=3709 to https://energyzedworld.com/energy-financial-calculator/the-art-of-effective-energy-audits/
+18:55:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3696
+18:55:50	Warning: 	File has moved from https://energyzedworld.com/?p=3696 to https://energyzedworld.com/energy-financial-calculator/powering-progress-renewable-energy-access-trends-in/
+18:55:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3691
+18:55:50	Warning: 	File has moved from https://energyzedworld.com/?p=3691 to https://energyzedworld.com/energy-financial-calculator/unveiling-the-potential-hydrogens-role-in-revolutionizing-food-production/
+18:55:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3686
+18:55:50	Warning: 	File has moved from https://energyzedworld.com/?p=3686 to https://energyzedworld.com/energy-financial-calculator/energyzing-kenya-a-look-at-energy-focus-in-2024/
+18:55:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3680
+18:55:50	Warning: 	File has moved from https://energyzedworld.com/?p=3680 to https://energyzedworld.com/advisory/demystifying-vat-what-you-need-to-know-about-value-added-tax/
+18:56:04	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3329
+18:56:04	Warning: 	File has moved from https://energyzedworld.com/?p=3329 to https://energyzedworld.com/advisory/strategic-partnerships-for-the-goals/
+18:56:07	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3293
+18:56:07	Warning: 	File has moved from https://energyzedworld.com/?p=3293 to https://energyzedworld.com/energy-financial-calculator/eagles-measurement-and-verification/
+18:56:07	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3277
+18:56:07	Warning: 	File has moved from https://energyzedworld.com/?p=3277 to https://energyzedworld.com/energy-industry-news/youth-in-kenya-champion-energy-and-water-efficiency-in-the-agri-food-industry/
+18:56:07	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3062
+18:56:07	Warning: 	File has moved from https://energyzedworld.com/?p=3062 to https://energyzedworld.com/energy-industry-news/the-legislative-requirements-and-regulations-for-escos-in-kenya/
+18:56:07	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3051
+18:56:07	Warning: 	File has moved from https://energyzedworld.com/?p=3051 to https://energyzedworld.com/energy-industry-news/the-role-of-the-eagles-energy-management-platform-in-esco/
+18:56:07	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3009
+18:56:07	Warning: 	File has moved from https://energyzedworld.com/?p=3009 to https://energyzedworld.com/energy-industry-news/all-you-need-to-know-about-escos-in-kenya/
+18:56:29	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2266
+18:56:29	Warning: 	File has moved from https://energyzedworld.com/?p=2266 to https://energyzedworld.com/tools/factors-to-consider-when-buying-electrical-gloves/
+18:56:29	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2192
+18:56:29	Warning: 	File has moved from https://energyzedworld.com/?p=2192 to https://energyzedworld.com/tools/a-sneak-peek-into-the-use-of-energy-audit-equipment/
+18:56:29	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2197
+18:56:29	Warning: 	File has moved from https://energyzedworld.com/?p=2197 to https://energyzedworld.com/tools/power-and-energy-logger-review-pel-103/
+18:56:29	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2133
+18:56:29	Warning: 	File has moved from https://energyzedworld.com/?p=2133 to https://energyzedworld.com/tools/best-head-protective-gears/
+18:56:29	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1857
+18:56:29	Warning: 	File has moved from https://energyzedworld.com/?p=1857 to https://energyzedworld.com/tools/fluke-infrared-thermometers-review/
+18:56:29	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1834
+18:56:29	Warning: 	File has moved from https://energyzedworld.com/?p=1834 to https://energyzedworld.com/tools/fluke-376-fc-clamp-meter-review/
+18:57:01	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2836
+18:57:01	Warning: 	File has moved from https://energyzedworld.com/?p=2836 to https://energyzedworld.com/advisory/how-to-improve-the-overall-performance-of-fan-systems/
+18:57:02	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2829
+18:57:02	Warning: 	File has moved from https://energyzedworld.com/?p=2829 to https://energyzedworld.com/how-to/how-to-save-the-environment-while-shopping-online/
+18:57:03	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2567
+18:57:03	Warning: 	File has moved from https://energyzedworld.com/?p=2567 to https://energyzedworld.com/how-to/how-to-save-money-energy-in-your-retail-store/
+18:57:03	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2229
+18:57:03	Warning: 	File has moved from https://energyzedworld.com/?p=2229 to https://energyzedworld.com/how-to/how-to-achieve-energy-efficiency-in-hospitals/
+18:57:03	Warning: 	Moved Permanently for https://energyzedworld.com/uncategorized/clean-energy-lesson-from-my-uncle-my-biogas-experience/
+18:57:03	Warning: 	File has moved from https://energyzedworld.com/uncategorized/clean-energy-lesson-from-my-uncle-my-biogas-experience/ to https://energyzedworld.com/energy-industry-news/clean-energy-lesson-from-my-uncle-my-biogas-experience/
+18:57:03	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2142
+18:57:03	Warning: 	File has moved from https://energyzedworld.com/?p=2142 to https://energyzedworld.com/advisory/how-to-conserve-energy-in-schools/
+18:57:03	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2118
+18:57:03	Warning: 	File has moved from https://energyzedworld.com/?p=2118 to https://energyzedworld.com/how-to/how-to-be-energy-efficient-during-a-vacation/
+18:57:14	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3585
+18:57:14	Warning: 	File has moved from https://energyzedworld.com/?p=3585 to https://energyzedworld.com/energy-industry-news/the-emergence-of-nutritional-extruded-snacks/
+18:57:14	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3542
+18:57:14	Warning: 	File has moved from https://energyzedworld.com/?p=3542 to https://energyzedworld.com/energy-industry-news/energy-efficient-technologies-for-promotion-of-food-security-in-kenya/
+18:57:31	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3377
+18:57:31	Warning: 	File has moved from https://energyzedworld.com/?p=3377 to https://energyzedworld.com/energy-financial-calculator/energy-saving-in-gypsum-decoration/
+18:57:31	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3257
+18:57:31	Warning: 	File has moved from https://energyzedworld.com/?p=3257 to https://energyzedworld.com/energy-industry-news/the-inaugural-energy-professionals-awards-2021/
+18:57:31	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2972
+18:57:31	Warning: 	File has moved from https://energyzedworld.com/?p=2972 to https://energyzedworld.com/events/how-the-month-of-love-2021-was-celebrated-eenovators-style/
+18:57:31	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2905
+18:57:31	Warning: 	File has moved from https://energyzedworld.com/?p=2905 to https://energyzedworld.com/events/energy-conference-speakers-does-the-gender-balance-matter/
+18:57:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3427
+18:57:50	Warning: 	File has moved from https://energyzedworld.com/?p=3427 to https://energyzedworld.com/advisory/an-energized-youth-for-an-energyzed-world/
+18:57:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3414
+18:57:50	Warning: 	File has moved from https://energyzedworld.com/?p=3414 to https://energyzedworld.com/youth-empowerment/growing-my-passion-that-is-energy/
+18:57:51	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3248
+18:57:51	Warning: 	File has moved from https://energyzedworld.com/?p=3248 to https://energyzedworld.com/youth-empowerment/my-yeep-internship-experience-at-kenchic-thika/
+18:57:52	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3668
+18:57:52	Warning: 	File has moved from https://energyzedworld.com/?p=3668 to https://energyzedworld.com/energy-financial-calculator/energy-audits-and-sustainable-solutions-for-residential-properties-and-home-owners/
+18:57:52	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3657
+18:57:52	Warning: 	File has moved from https://energyzedworld.com/?p=3657 to https://energyzedworld.com/energy-financial-calculator/different-technologies-of-solar-panels-explained/
+18:57:52	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3651
+18:57:52	Warning: 	File has moved from https://energyzedworld.com/?p=3651 to https://energyzedworld.com/energy-financial-calculator/maximizing-efficiency-in-solar-pv-systems/
+18:57:52	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3646
+18:57:52	Warning: 	File has moved from https://energyzedworld.com/?p=3646 to https://energyzedworld.com/advisory/importance-of-energy-management/
+18:57:53	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3641
+18:57:53	Warning: 	File has moved from https://energyzedworld.com/?p=3641 to https://energyzedworld.com/advisory/is-the-cost-of-energy-a-pain-for-accountants/
+18:57:53	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3632
+18:57:53	Warning: 	File has moved from https://energyzedworld.com/?p=3632 to https://energyzedworld.com/energy-financial-calculator/what-are-the-components-of-a-solar-pv-system/
+18:58:19	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1756
+18:58:19	Warning: 	File has moved from https://energyzedworld.com/?p=1756 to https://energyzedworld.com/tools/fluke-1736-power-logger-review/
+18:58:19	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1687
+18:58:19	Warning: 	File has moved from https://energyzedworld.com/?p=1687 to https://energyzedworld.com/tools/factors-to-consider-when-buying-water-meters/
+18:58:20	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1657
+18:58:20	Warning: 	File has moved from https://energyzedworld.com/?p=1657 to https://energyzedworld.com/tools/5-must-have-energy-auditing-equipment/
+18:58:20	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1647
+18:58:20	Warning: 	File has moved from https://energyzedworld.com/?p=1647 to https://energyzedworld.com/tools/how-to-achieve-efficient-air-conditioning/
+18:58:20	Warning: 	Moved Permanently for https://energyzedworld.com/?p=118
+18:58:20	Warning: 	File has moved from https://energyzedworld.com/?p=118 to https://energyzedworld.com/tools/energy-auditing-tools/
+18:58:20	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2014/06/Flow_Dynasonics-Doppler-Ultrasonic-Flow-Meters.jpg (from https://energyzedworld.com/tools/energy-auditing-tools/)
+18:58:20	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2014/06/Testos.jpeg (from https://energyzedworld.com/tools/energy-auditing-tools/)
+18:58:20	Warning: 	Moved Permanently for https://energyzedworld.com/?p=203
+18:58:20	Warning: 	File has moved from https://energyzedworld.com/?p=203 to https://energyzedworld.com/tools/voltage-optimization-fact-or-fiction/
+18:58:20	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1582
+18:58:20	Warning: 	File has moved from https://energyzedworld.com/?p=1582 to https://energyzedworld.com/advisory/35-mind-blowing-diy-for-plastic-bags-and-bottles-recycling/
+18:58:21	Warning: 	Moved Permanently for https://energyzedworld.com/?p=532
+18:58:21	Warning: 	File has moved from https://energyzedworld.com/?p=532 to https://energyzedworld.com/advisory/how-to-use-biogas-to-power-your-vehicle/
+18:58:23	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1104
+18:58:23	Warning: 	File has moved from https://energyzedworld.com/?p=1104 to https://energyzedworld.com/tools/compressed-air-supply-installation-the-unseen-cost-of-installation-mistakes/
+18:58:23	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1188
+18:58:23	Warning: 	File has moved from https://energyzedworld.com/?p=1188 to https://energyzedworld.com/advisory/achieving-savings-through-cloud-based-measurement-verification/
+18:58:23	Error: 	"Not Found" (404) at link https://energyzedworld.com/advisory/achieving-savings-through-cloud-based-measurement-verification/info@eenovators.com (from https://energyzedworld.com/advisory/achieving-savings-through-cloud-based-measurement-verification/)
+18:58:23	Warning: 	Moved Permanently for https://energyzedworld.com/?p=140
+18:58:23	Warning: 	File has moved from https://energyzedworld.com/?p=140 to https://energyzedworld.com/advisory/become-licensed-energy-auditor-kenya/
+18:58:34	Warning: 	Moved Permanently for https://energyzedworld.com/?p=535
+18:58:34	Warning: 	File has moved from https://energyzedworld.com/?p=535 to https://energyzedworld.com/advisory/6-steps-to-complying-with-the-erc-energy-regulations/
+18:58:51	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3325
+18:58:51	Warning: 	File has moved from https://energyzedworld.com/?p=3325 to https://energyzedworld.com/energy-industry-news/the-world-energy-day-2022-theme-insights/
+18:58:52	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3069
+18:58:52	Warning: 	File has moved from https://energyzedworld.com/?p=3069 to https://energyzedworld.com/energy-industry-news/what-energyzed-discussions-are-happening-in-the-space-of-the-world-energy-day-celebrations-2021/
+18:59:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2698
+18:59:05	Warning: 	File has moved from https://energyzedworld.com/?p=2698 to https://energyzedworld.com/events/energy-professional-round-tables-a-growing-movement-for-energy-change/
+18:59:07	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2314
+18:59:07	Warning: 	File has moved from https://energyzedworld.com/?p=2314 to https://energyzedworld.com/events/unveiling-the-world-energy-day-2020-theme/
+18:59:07	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1574
+18:59:07	Warning: 	File has moved from https://energyzedworld.com/?p=1574 to https://energyzedworld.com/events/whats-in-store-for-world-energy-day-2019/
+18:59:07	Warning: 	Moved Permanently for https://energyzedworld.com/index.php/2018/05/27/kenyas-biggest-2018-student-energy-innovation-challenge-officially-launched/
+18:59:07	Warning: 	File has moved from https://energyzedworld.com/index.php/2018/05/27/kenyas-biggest-2018-student-energy-innovation-challenge-officially-launched/ to https://energyzedworld.com/events/kenyas-biggest-2018-student-energy-innovation-challenge-officially-launched/
+18:59:07	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1210
+18:59:07	Warning: 	File has moved from https://energyzedworld.com/?p=1210 to https://energyzedworld.com/events/world-energy-day-2019-topics/
+18:59:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3242
+18:59:26	Warning: 	File has moved from https://energyzedworld.com/?p=3242 to https://energyzedworld.com/youth-empowerment/tales-from-tamuwa/
+18:59:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3211
+18:59:26	Warning: 	File has moved from https://energyzedworld.com/?p=3211 to https://energyzedworld.com/youth-empowerment/my-yeep-internship-experience-at-eenovators-limited/
+18:59:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3186
+18:59:26	Warning: 	File has moved from https://energyzedworld.com/?p=3186 to https://energyzedworld.com/advisory/youth-in-energy-empowerment-program-bringing-unprecedented-transformation-in-east-africa/
+18:59:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3183
+18:59:26	Warning: 	File has moved from https://energyzedworld.com/?p=3183 to https://energyzedworld.com/youth-empowerment/my-energyzed-yeep-internship-experience-at-kapa/
+18:59:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3179
+18:59:26	Warning: 	File has moved from https://energyzedworld.com/?p=3179 to https://energyzedworld.com/youth-empowerment/my-yeep-internship-experience-at-kenya-nut/
+18:59:27	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3175
+18:59:27	Warning: 	File has moved from https://energyzedworld.com/?p=3175 to https://energyzedworld.com/youth-empowerment/the-beginning-of-my-career-life-at-kapa/
+18:59:27	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3568
+18:59:27	Warning: 	File has moved from https://energyzedworld.com/?p=3568 to https://energyzedworld.com/advisory/is-energy-management-necessary-for-homes/
+18:59:27	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3368
+18:59:27	Warning: 	File has moved from https://energyzedworld.com/?p=3368 to https://energyzedworld.com/energy-financial-calculator/is-realtime-energy-monitoring-necessary-for-homes/
+18:59:27	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3362
+18:59:27	Warning: 	File has moved from https://energyzedworld.com/?p=3362 to https://energyzedworld.com/advisory/how-can-you-reduce-your-carbon-footprint/
+18:59:27	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3349
+18:59:27	Warning: 	File has moved from https://energyzedworld.com/?p=3349 to https://energyzedworld.com/energy-financial-calculator/identifying-energy-savings-opportunities-in-compressed-air-systems/
+18:59:44	Warning: 	Moved Permanently for https://energyzedworld.com/?p=851
+18:59:44	Warning: 	File has moved from https://energyzedworld.com/?p=851 to https://energyzedworld.com/tools/demystifying-energy-audit-tools/
+18:59:47	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1034
+18:59:47	Warning: 	File has moved from https://energyzedworld.com/?p=1034 to https://energyzedworld.com/tools/how-to-improve-the-performance-and-life-time-of-solar-water-heating-systems/
+18:59:47	Warning: 	Moved Permanently for https://energyzedworld.com/?p=940
+18:59:47	Warning: 	File has moved from https://energyzedworld.com/?p=940 to https://energyzedworld.com/tools/hybrid-solar-and-wind-system-the-answer-to-the-power-availability-question/
+18:59:47	Warning: 	Moved Permanently for https://energyzedworld.com/?p=772
+18:59:47	Warning: 	File has moved from https://energyzedworld.com/?p=772 to https://energyzedworld.com/tools/word-energy-day-student-challenge-winner/
+18:59:47	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1088
+18:59:47	Warning: 	File has moved from https://energyzedworld.com/?p=1088 to https://energyzedworld.com/energy-industry-news/clean-energy-lesson-from-my-uncle-my-biogas-experience/
+19:00:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3020
+19:00:05	Warning: 	File has moved from https://energyzedworld.com/?p=3020 to https://energyzedworld.com/energy-industry-news/africas-youth-the-key-to-accelerating-sustainability/
+19:00:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3012
+19:00:05	Warning: 	File has moved from https://energyzedworld.com/?p=3012 to https://energyzedworld.com/energy-industry-news/get-to-know-how-different-careers-took-part-in-the-just-concluded-call-for-internship-applications/
+19:00:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2983
+19:00:05	Warning: 	File has moved from https://energyzedworld.com/?p=2983 to https://energyzedworld.com/energy-industry-news/the-grand-partnership-between-we4f-and-eenovators-limited-to-empower-the-youth-in-kenya/
+19:00:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2912
+19:00:05	Warning: 	File has moved from https://energyzedworld.com/?p=2912 to https://energyzedworld.com/energy-industry-news/envisioning-the-future-of-energy-in-kenya/
+19:00:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2873
+19:00:05	Warning: 	File has moved from https://energyzedworld.com/?p=2873 to https://energyzedworld.com/energy-industry-news/energyzing-the-internal-customer-three-lessons-from-jerusalema-challenge/
+19:00:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1182
+19:00:05	Warning: 	File has moved from https://energyzedworld.com/?p=1182 to https://energyzedworld.com/energy-industry-news/cx-excellence-for-energy-professionals/
+19:00:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1095
+19:00:05	Warning: 	File has moved from https://energyzedworld.com/?p=1095 to https://energyzedworld.com/events/kenyas-biggest-2018-student-energy-innovation-challenge-officially-launched/
+19:00:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1116
+19:00:05	Warning: 	File has moved from https://energyzedworld.com/?p=1116 to https://energyzedworld.com/events/three-reasons-why-you-must-be-part-of-the-world-energy-day-celebrations-2018/
+19:00:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1044
+19:00:05	Warning: 	File has moved from https://energyzedworld.com/?p=1044 to https://energyzedworld.com/events/solar-hot-water-workshop-2018-resolutions/
+19:00:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1030
+19:00:05	Warning: 	File has moved from https://energyzedworld.com/?p=1030 to https://energyzedworld.com/events/world-energy-day-2017-highlights/
+19:00:06	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1019
+19:00:06	Warning: 	File has moved from https://energyzedworld.com/?p=1019 to https://energyzedworld.com/events/why-your-company-must-participate-in-world-energy-day-2017/
+19:00:23	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3171
+19:00:23	Warning: 	File has moved from https://energyzedworld.com/?p=3171 to https://energyzedworld.com/youth-empowerment/my-internship-experience-at-kenchic-mlolongo/
+19:00:25	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3167
+19:00:25	Warning: 	File has moved from https://energyzedworld.com/?p=3167 to https://energyzedworld.com/youth-empowerment/my-yeep-internship-experience-at-ol-njorowa-mbegu-farm/
+19:00:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3163
+19:00:26	Warning: 	File has moved from https://energyzedworld.com/?p=3163 to https://energyzedworld.com/youth-empowerment/my-yeep-internship-experience-at-cargill-limited/
+19:00:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3158
+19:00:26	Warning: 	File has moved from https://energyzedworld.com/?p=3158 to https://energyzedworld.com/youth-empowerment/into-the-deep-end/
+19:00:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3154
+19:00:26	Warning: 	File has moved from https://energyzedworld.com/?p=3154 to https://energyzedworld.com/advisory/youth-in-energy-empowerment-programme-debunks-common-enginneering-myth/
+19:00:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3149
+19:00:26	Warning: 	File has moved from https://energyzedworld.com/?p=3149 to https://energyzedworld.com/advisory/does-internship-empower-you-for-job-opportunities/
+19:00:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3344
+19:00:26	Warning: 	File has moved from https://energyzedworld.com/?p=3344 to https://energyzedworld.com/energy-financial-calculator/convergence-of-energy-management-and-project-commissioning/
+19:00:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3318
+19:00:26	Warning: 	File has moved from https://energyzedworld.com/?p=3318 to https://energyzedworld.com/advisory/best-practices-on-how-to-maintain-and-operate-a-solar-photovoltaic-system/
+19:00:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3310
+19:00:26	Warning: 	File has moved from https://energyzedworld.com/?p=3310 to https://energyzedworld.com/advisory/the-new-face-of-waste-management/
+19:00:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3305
+19:00:26	Warning: 	File has moved from https://energyzedworld.com/?p=3305 to https://energyzedworld.com/advisory/role-of-financial-managers-in-energy-management/
+19:00:26	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3272
+19:00:26	Warning: 	File has moved from https://energyzedworld.com/?p=3272 to https://energyzedworld.com/advisory/clean-cooking/
+19:00:26	Error: 	"Not Found" (404) at link https://energyzedworld.com/advisory/clean-cooking/blank (from https://energyzedworld.com/advisory/clean-cooking/)
+19:00:27	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3267
+19:00:27	Warning: 	File has moved from https://energyzedworld.com/?p=3267 to https://energyzedworld.com/advisory/esco-in-a-laymans-language/
+19:00:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2778
+19:00:50	Warning: 	File has moved from https://energyzedworld.com/?p=2778 to https://energyzedworld.com/energy-industry-news/kengen-to-setup-electric-car-charging-stations-in-kenya/
+19:00:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2765
+19:00:50	Warning: 	File has moved from https://energyzedworld.com/?p=2765 to https://energyzedworld.com/energy-industry-news/kenyas-first-nuclear-plant-on-course/
+19:00:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2724
+19:00:50	Warning: 	File has moved from https://energyzedworld.com/?p=2724 to https://energyzedworld.com/energy-industry-news/fuel-prices-in-kenya-hiked/
+19:00:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1913
+19:00:50	Warning: 	File has moved from https://energyzedworld.com/?p=1913 to https://energyzedworld.com/energy-industry-news/energy-financial-analysis-engine-for-energy-efficiency-projects/
+19:00:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2634
+19:00:50	Warning: 	File has moved from https://energyzedworld.com/?p=2634 to https://energyzedworld.com/energy-industry-news/the-3-distinct-benefits-of-becoming-a-certified-energy-manager-cem/
+19:00:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2592
+19:00:50	Warning: 	File has moved from https://energyzedworld.com/?p=2592 to https://energyzedworld.com/energy-industry-news/whats-in-a-name-the-youth-empowerment-programme-naming-challenge/
+19:00:59	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3125
+19:00:59	Warning: 	File has moved from https://energyzedworld.com/?p=3125 to https://energyzedworld.com/energy-financial-calculator/time-to-embrace-use-of-biofuels/
+19:00:59	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3116
+19:00:59	Warning: 	File has moved from https://energyzedworld.com/?p=3116 to https://energyzedworld.com/advisory/what-is-the-level-of-women-involvement-in-the-engineering-field/
+19:00:59	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3104
+19:00:59	Warning: 	File has moved from https://energyzedworld.com/?p=3104 to https://energyzedworld.com/advisory/blissful-ignorance/
+19:00:59	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3097
+19:00:59	Warning: 	File has moved from https://energyzedworld.com/?p=3097 to https://energyzedworld.com/advisory/what-role-do-you-play-in-the-clean-energy-campaign/
+19:00:59	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3094
+19:00:59	Warning: 	File has moved from https://energyzedworld.com/?p=3094 to https://energyzedworld.com/advisory/were-all-affected-by-energy/
+19:00:59	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3091
+19:00:59	Warning: 	File has moved from https://energyzedworld.com/?p=3091 to https://energyzedworld.com/advisory/recycling-and-energy/
+19:00:59	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3234
+19:00:59	Warning: 	File has moved from https://energyzedworld.com/?p=3234 to https://energyzedworld.com/energy-financial-calculator/energy-inclusion-are-assistive-technologies-energy-efficient/
+19:01:04	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3078
+19:01:04	Warning: 	File has moved from https://energyzedworld.com/?p=3078 to https://energyzedworld.com/energy-financial-calculator/is-biomass-green/
+19:01:24	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2530
+19:01:24	Warning: 	File has moved from https://energyzedworld.com/?p=2530 to https://energyzedworld.com/energy-industry-news/impact-of-covid-19-on-energy-consumption-in-5-different-industries/
+19:01:24	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2499
+19:01:24	Warning: 	File has moved from https://energyzedworld.com/?p=2499 to https://energyzedworld.com/energy-industry-news/the-50th-anniversary-for-earth-day/
+19:01:24	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2482
+19:01:24	Warning: 	File has moved from https://energyzedworld.com/?p=2482 to https://energyzedworld.com/energy-industry-news/solar-pv-relief-for-sub-saharan-africa/
+19:01:24	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2475
+19:01:24	Warning: 	File has moved from https://energyzedworld.com/?p=2475 to https://energyzedworld.com/energy-industry-news/jared-othieno-appointed-managing-director-of-geothermal-development-company/
+19:01:24	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2466
+19:01:24	Warning: 	File has moved from https://energyzedworld.com/?p=2466 to https://energyzedworld.com/energy-industry-news/financiers-appointed-for-the-kaptis-hydro-power-project-in-kenya/
+19:01:24	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3087
+19:01:24	Warning: 	File has moved from https://energyzedworld.com/?p=3087 to https://energyzedworld.com/advisory/mobilizing-youths-towards-universal-clean-energy-access/
+19:01:24	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3074
+19:01:24	Warning: 	File has moved from https://energyzedworld.com/?p=3074 to https://energyzedworld.com/advisory/africas-youth-breaking-the-glass-ceiling/
+19:01:25	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3044
+19:01:25	Warning: 	File has moved from https://energyzedworld.com/?p=3044 to https://energyzedworld.com/advisory/are-professional-institutions-equiping-the-youth-with-the-right-skills-for-employerbility/
+19:01:25	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3036
+19:01:25	Warning: 	File has moved from https://energyzedworld.com/?p=3036 to https://energyzedworld.com/advisory/how-can-the-youth-be-involved-fully-in-the-sustainability-agenda/
+19:01:34	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2938
+19:01:34	Warning: 	File has moved from https://energyzedworld.com/?p=2938 to https://energyzedworld.com/energy-financial-calculator/how-can-data-accelerate-sustainable-transport/
+19:01:58	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2455
+19:01:58	Warning: 	File has moved from https://energyzedworld.com/?p=2455 to https://energyzedworld.com/energy-industry-news/petrol-kerosene-prices-cut-down-by-ksh-18-per-liter/
+19:01:58	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2442
+19:01:58	Warning: 	File has moved from https://energyzedworld.com/?p=2442 to https://energyzedworld.com/energy-industry-news/elizabeth-rogo-appointed-by-africa-energy-chamber-as-president-for-east-africa/
+19:01:58	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2435
+19:01:58	Warning: 	File has moved from https://energyzedworld.com/?p=2435 to https://energyzedworld.com/energy-industry-news/40-mw-solar-project-in-kenya-has-been-approved/
+19:01:58	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2429
+19:01:58	Warning: 	File has moved from https://energyzedworld.com/?p=2429 to https://energyzedworld.com/energy-industry-news/kenyan-woman-among-the-forbes-africa-top-30-under-30/
+19:01:58	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2420
+19:01:58	Warning: 	File has moved from https://energyzedworld.com/?p=2420 to https://energyzedworld.com/energy-industry-news/renewable-energy-review-in-kenya/
+19:01:59	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2367
+19:01:59	Warning: 	File has moved from https://energyzedworld.com/?p=2367 to https://energyzedworld.com/energy-industry-news/has-the-corona-virus-affected-the-renewable-energy-sector/
+19:02:00	Warning: 	Moved Permanently for https://energyzedworld.com/?p=3027
+19:02:00	Warning: 	File has moved from https://energyzedworld.com/?p=3027 to https://energyzedworld.com/advisory/building-individual-resilience-in-times-of-crisis/
+19:02:00	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2978
+19:02:00	Warning: 	File has moved from https://energyzedworld.com/?p=2978 to https://energyzedworld.com/advisory/interview-communication-a-dilemma-for-engineers/
+19:02:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2174
+19:02:39	Warning: 	File has moved from https://energyzedworld.com/?p=2174 to https://energyzedworld.com/energy-industry-news/use-of-solar-energy-in-learning-institutions/
+19:02:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1943
+19:02:39	Warning: 	File has moved from https://energyzedworld.com/?p=1943 to https://energyzedworld.com/energy-industry-news/the-slow-march-towards-renewable-energy/
+19:02:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1897
+19:02:39	Warning: 	File has moved from https://energyzedworld.com/?p=1897 to https://energyzedworld.com/energy-industry-news/my-international-internship-experience-at-eenovators/
+19:02:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1871
+19:02:39	Warning: 	File has moved from https://energyzedworld.com/?p=1871 to https://energyzedworld.com/energy-industry-news/living-with-the-eenovators/
+19:02:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1213
+19:02:39	Warning: 	File has moved from https://energyzedworld.com/?p=1213 to https://energyzedworld.com/energy-industry-news/will-fuel-prices-ever-rule-the-world/
+19:02:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1
+19:02:39	Warning: 	File has moved from https://energyzedworld.com/?p=1 to https://energyzedworld.com/energy-industry-news/hello-world/
+19:02:40	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2965
+19:02:40	Warning: 	File has moved from https://energyzedworld.com/?p=2965 to https://energyzedworld.com/advisory/going-green-with-solar-energy/
+19:02:40	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2960
+19:02:40	Warning: 	File has moved from https://energyzedworld.com/?p=2960 to https://energyzedworld.com/advisory/energy-savings-resolutions-in-2021/
+19:02:40	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2951
+19:02:40	Warning: 	File has moved from https://energyzedworld.com/?p=2951 to https://energyzedworld.com/advisory/how-to-be-energy-efficient-during-your-morning-routine/
+19:02:40	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2945
+19:02:40	Warning: 	File has moved from https://energyzedworld.com/?p=2945 to https://energyzedworld.com/advisory/how-to-market-energy-efficient-electronics-in-kenya/
+19:02:41	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2895
+19:02:41	Warning: 	File has moved from https://energyzedworld.com/?p=2895 to https://energyzedworld.com/advisory/habits-and-energy-efficiency/
+19:02:41	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2880
+19:02:41	Warning: 	File has moved from https://energyzedworld.com/?p=2880 to https://energyzedworld.com/advisory/how-much-can-you-save-on-your-compressor-energy-by-simply-reducing-the-pressure-band/
+19:02:41	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2865
+19:02:41	Warning: 	File has moved from https://energyzedworld.com/?p=2865 to https://energyzedworld.com/advisory/understanding-iso-50001-energy-management-system/
+19:02:41	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2860
+19:02:41	Warning: 	File has moved from https://energyzedworld.com/?p=2860 to https://energyzedworld.com/advisory/measures-for-green-recovery-in-africa/
+19:03:21	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1084
+19:03:21	Warning: 	File has moved from https://energyzedworld.com/?p=1084 to https://energyzedworld.com/energy-industry-news/wind-energy-in-kenya-not-blowing-us-away/
+19:03:21	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1066
+19:03:21	Warning: 	File has moved from https://energyzedworld.com/?p=1066 to https://energyzedworld.com/energy-industry-news/creating-energy-efficiency-awareness-my-experience/
+19:03:21	Warning: 	Moved Permanently for https://energyzedworld.com/?p=89
+19:03:21	Warning: 	File has moved from https://energyzedworld.com/?p=89 to https://energyzedworld.com/energy-industry-news/kenyas-nuclear-ambition-understanding-the-nuclear-energy/
+19:03:22	Warning: 	Moved Permanently for https://energyzedworld.com/?p=177
+19:03:22	Warning: 	File has moved from https://energyzedworld.com/?p=177 to https://energyzedworld.com/energy-industry-news/kenya-going-nuclear/
+19:03:22	Warning: 	Moved Permanently for https://energyzedworld.com/?p=529
+19:03:22	Warning: 	File has moved from https://energyzedworld.com/?p=529 to https://energyzedworld.com/energy-industry-news/is-hydrogen-energy-the-next-big-thing/
+19:03:22	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2854
+19:03:22	Warning: 	File has moved from https://energyzedworld.com/?p=2854 to https://energyzedworld.com/advisory/how-employees-can-cope-with-stress-during-the-covid-19-pandemic/
+19:03:22	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2845
+19:03:22	Warning: 	File has moved from https://energyzedworld.com/?p=2845 to https://energyzedworld.com/advisory/solar-water-heating-explained/
+19:03:22	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2822
+19:03:22	Warning: 	File has moved from https://energyzedworld.com/?p=2822 to https://energyzedworld.com/advisory/non-energy-benefits-in-approval-of-energy-saving-projects/
+19:03:22	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2773
+19:03:22	Warning: 	File has moved from https://energyzedworld.com/?p=2773 to https://energyzedworld.com/advisory/an-energy-engineers-take-on-the-power-of-vulnerability-by-brene-brown/
+19:03:22	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2758
+19:03:22	Warning: 	File has moved from https://energyzedworld.com/?p=2758 to https://energyzedworld.com/advisory/how-much-does-a-residential-house-solar-pv-installation-cost/
+19:03:22	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2735
+19:03:22	Warning: 	File has moved from https://energyzedworld.com/?p=2735 to https://energyzedworld.com/advisory/is-biomass-energy-really-friendly-to-the-environment/
+19:04:03	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1057
+19:04:03	Warning: 	File has moved from https://energyzedworld.com/?p=1057 to https://energyzedworld.com/energy-industry-news/the-5-key-areas-energy-stakeholders-must-tap-into-in-2019/
+19:04:03	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1053
+19:04:03	Warning: 	File has moved from https://energyzedworld.com/?p=1053 to https://energyzedworld.com/energy-industry-news/solar-pv-regulations-2012-the-disconnect-on-system-design/
+19:04:03	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1120
+19:04:03	Warning: 	File has moved from https://energyzedworld.com/?p=1120 to https://energyzedworld.com/energy-industry-news/from-mentoring-learners-to-energy-engineering/
+19:04:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1192
+19:04:05	Warning: 	File has moved from https://energyzedworld.com/?p=1192 to https://energyzedworld.com/energy-industry-news/molecules-of-life/
+19:04:05	Error: 	"Not Found" (404) at link https://energyzedworld.com/energy-industry-news/molecules-of-life/info@eenovators.com (from https://energyzedworld.com/energy-industry-news/molecules-of-life/)
+19:04:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=539
+19:04:05	Warning: 	File has moved from https://energyzedworld.com/?p=539 to https://energyzedworld.com/energy-industry-news/is-solar-thermal-kenyas-next-ready-frontier-for-energy-efficiency/
+19:04:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1137
+19:04:05	Warning: 	File has moved from https://energyzedworld.com/?p=1137 to https://energyzedworld.com/energy-industry-news/my-all-round-experience-at-eenovators/
+19:04:05	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2690
+19:04:05	Warning: 	File has moved from https://energyzedworld.com/?p=2690 to https://energyzedworld.com/advisory/why-conduct-a-water-audit/
+19:04:08	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2682
+19:04:08	Warning: 	File has moved from https://energyzedworld.com/?p=2682 to https://energyzedworld.com/advisory/5-ways-energy-professionals-can-champion-their-career-growth/
+19:04:09	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2672
+19:04:09	Warning: 	File has moved from https://energyzedworld.com/?p=2672 to https://energyzedworld.com/advisory/working-at-home-vs-working-from-the-office/
+19:04:09	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2664
+19:04:09	Warning: 	File has moved from https://energyzedworld.com/?p=2664 to https://energyzedworld.com/advisory/can-cars-run-on-cow-manure/
+19:04:09	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2654
+19:04:09	Warning: 	File has moved from https://energyzedworld.com/?p=2654 to https://energyzedworld.com/advisory/pump-over-sizing/
+19:04:09	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2642
+19:04:09	Warning: 	File has moved from https://energyzedworld.com/?p=2642 to https://energyzedworld.com/advisory/how-does-cfl-and-led-bulbs-work/
+19:04:09	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2624
+19:04:09	Warning: 	File has moved from https://energyzedworld.com/?p=2624 to https://energyzedworld.com/advisory/why-should-i-be-energy-efficient/
+19:04:09	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2574
+19:04:09	Warning: 	File has moved from https://energyzedworld.com/?p=2574 to https://energyzedworld.com/advisory/risk-management-during-the-covid-19-pandemic/
+19:04:37	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1130
+19:04:37	Warning: 	File has moved from https://energyzedworld.com/?p=1130 to https://energyzedworld.com/energy-industry-news/my-internship-experience-at-eenovators-limited/
+19:04:37	Warning: 	Moved Permanently for https://energyzedworld.com/?p=891
+19:04:37	Warning: 	File has moved from https://energyzedworld.com/?p=891 to https://energyzedworld.com/energy-industry-news/monitoring/
+19:04:37	Warning: 	Moved Permanently for https://energyzedworld.com/?p=313
+19:04:37	Warning: 	File has moved from https://energyzedworld.com/?p=313 to https://energyzedworld.com/energy-industry-news/understanding-power-quality/
+19:04:37	Warning: 	Moved Permanently for https://energyzedworld.com/?p=77
+19:04:37	Warning: 	File has moved from https://energyzedworld.com/?p=77 to https://energyzedworld.com/energy-industry-news/going-green-in-kenya-electricity-from-sunlight/
+19:04:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=528
+19:04:39	Warning: 	File has moved from https://energyzedworld.com/?p=528 to https://energyzedworld.com/energy-industry-news/revolution-of-wind-technology/
+19:04:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1802
+19:04:39	Warning: 	File has moved from https://energyzedworld.com/?p=1802 to https://energyzedworld.com/advisory/30-ways-to-save-water/
+19:04:39	Warning: 	Moved Permanently for https://energyzedworld.com/factors-to-consider-when-buying-water-meters/https://energyzedworld.com/factors-to-consider-when-buying-water-meters/
+19:04:39	Warning: 	File has moved from https://energyzedworld.com/factors-to-consider-when-buying-water-meters/https://energyzedworld.com/factors-to-consider-when-buying-water-meters/ to https://energyzedworld.com/tools/factors-to-consider-when-buying-water-meters/
+19:04:39	Error: 	"Not Found" (404) at link https://energyzedworld.com/35-mind-blowing-diy-for-plastic-bags-and-bottles-recycling/ (from https://energyzedworld.com/advisory/30-ways-to-save-water/)
+19:04:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2523
+19:04:39	Warning: 	File has moved from https://energyzedworld.com/?p=2523 to https://energyzedworld.com/advisory/energy-efficiency-frequently-asked-questions/
+19:04:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2510
+19:04:39	Warning: 	File has moved from https://energyzedworld.com/?p=2510 to https://energyzedworld.com/advisory/understanding-the-billing-structure/
+19:04:53	Warning: 	Moved Permanently for https://energyzedworld.com/?p=196
+19:04:53	Warning: 	File has moved from https://energyzedworld.com/?p=196 to https://energyzedworld.com/energy-industry-news/a-night-with-the-energy-royals/
+19:04:53	Warning: 	Moved Permanently for https://energyzedworld.com/?p=962
+19:04:53	Warning: 	File has moved from https://energyzedworld.com/?p=962 to https://energyzedworld.com/energy-industry-news/two-eenovators-clients-awarded-with-the-coveted-erc-energy-management-compliance-certificates/
+19:04:53	Warning: 	Moved Permanently for https://energyzedworld.com/?p=63
+19:04:53	Warning: 	File has moved from https://energyzedworld.com/?p=63 to https://energyzedworld.com/energy-industry-news/the-future-of-oil-industry-in-kenya/
+19:04:53	Warning: 	Moved Permanently for https://energyzedworld.com/?p=995
+19:04:53	Warning: 	File has moved from https://energyzedworld.com/?p=995 to https://energyzedworld.com/energy-industry-news/conquering-the-polythene-bag-menace/
+19:04:53	Warning: 	Moved Permanently for https://energyzedworld.com/?p=845
+19:04:53	Warning: 	File has moved from https://energyzedworld.com/?p=845 to https://energyzedworld.com/energy-industry-news/the-2017-solar-hot-water-regulation-in-kenya/
+19:04:53	Warning: 	Moved Permanently for https://energyzedworld.com/?p=541
+19:04:53	Warning: 	File has moved from https://energyzedworld.com/?p=541 to https://energyzedworld.com/energy-industry-news/africa-embraces-renewable-energy/
+19:04:54	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2391
+19:04:54	Warning: 	File has moved from https://energyzedworld.com/?p=2391 to https://energyzedworld.com/advisory/13-easy-tips-to-save-energy-while-working-at-home/
+19:04:54	Warning: 	Moved Permanently for https://energyzedworld.com/?p=2248
+19:04:54	Warning: 	File has moved from https://energyzedworld.com/?p=2248 to https://energyzedworld.com/advisory/all-you-need-to-know-about-protective-footwear/
+19:04:56	Warning: 	Moved Permanently for https://energyzedworld.com/?p=750
+19:04:56	Warning: 	File has moved from https://energyzedworld.com/?p=750 to https://energyzedworld.com/energy-industry-news/eenovators-wins-energy-award-2016-washington-dc/
+19:05:12	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1713
+19:05:12	Warning: 	File has moved from https://energyzedworld.com/?p=1713 to https://energyzedworld.com/advisory/33-facts-you-probably-need-to-know-about-energy-efficiency/
+19:05:15	Error: 	"Not Found" (404) at link https://energyzedworld.com/how-to-achieve-efficient-air-conditioning/ (from https://energyzedworld.com/advisory/33-facts-you-probably-need-to-know-about-energy-efficiency/)
+19:05:16	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1669
+19:05:16	Warning: 	File has moved from https://energyzedworld.com/?p=1669 to https://energyzedworld.com/advisory/human-error/
+19:05:17	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1639
+19:05:17	Warning: 	File has moved from https://energyzedworld.com/?p=1639 to https://energyzedworld.com/advisory/what-would-happen-if-the-ozone-layer-disappeared/
+19:05:52	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1562
+19:05:52	Warning: 	File has moved from https://energyzedworld.com/?p=1562 to https://energyzedworld.com/advisory/just-how-much-are-we-willing-to-spend-on-energy-management/
+19:05:55	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1558
+19:05:55	Warning: 	File has moved from https://energyzedworld.com/?p=1558 to https://energyzedworld.com/advisory/dissatisfiers-in-energy-management/
+19:05:57	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1553
+19:05:57	Warning: 	File has moved from https://energyzedworld.com/?p=1553 to https://energyzedworld.com/advisory/a-focus-on-energy-awareness-creation/
+19:05:58	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1549
+19:05:58	Warning: 	File has moved from https://energyzedworld.com/?p=1549 to https://energyzedworld.com/advisory/training-professional-development/
+19:06:18	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1544
+19:06:18	Warning: 	File has moved from https://energyzedworld.com/?p=1544 to https://energyzedworld.com/advisory/important-facts-about-energy-and-tourism/
+19:06:18	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1537
+19:06:18	Warning: 	File has moved from https://energyzedworld.com/?p=1537 to https://energyzedworld.com/advisory/energy-professionals-survey-report/
+19:06:19	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1531
+19:06:19	Warning: 	File has moved from https://energyzedworld.com/?p=1531 to https://energyzedworld.com/advisory/key-lessons-that-energy-managers-learn-from-eagles/
+19:06:19	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1526
+19:06:19	Warning: 	File has moved from https://energyzedworld.com/?p=1526 to https://energyzedworld.com/advisory/working-in-the-energy-consultancy-sector/
+19:06:19	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1519
+19:06:19	Warning: 	File has moved from https://energyzedworld.com/?p=1519 to https://energyzedworld.com/advisory/energy-and-climate-change-the-connection/
+19:06:19	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1368
+19:06:19	Warning: 	File has moved from https://energyzedworld.com/?p=1368 to https://energyzedworld.com/advisory/water-management/
+19:06:19	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1223
+19:06:19	Warning: 	File has moved from https://energyzedworld.com/?p=1223 to https://energyzedworld.com/advisory/carbon-pricing-what-it-is-and-its-implication-on-energy-sourcing/
+19:06:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=137
+19:06:50	Warning: 	File has moved from https://energyzedworld.com/?p=137 to https://energyzedworld.com/advisory/3-reasons-energy-proposals-never-approved/
+19:06:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=537
+19:06:50	Warning: 	File has moved from https://energyzedworld.com/?p=537 to https://energyzedworld.com/advisory/solar-energy-and-homes/
+19:06:50	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/08/solar-two.jpg (from https://energyzedworld.com/advisory/solar-energy-and-homes/)
+19:06:50	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/08/solar-three.jpg (from https://energyzedworld.com/advisory/solar-energy-and-homes/)
+19:06:50	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/08/solar-five.jpg (from https://energyzedworld.com/advisory/solar-energy-and-homes/)
+19:06:50	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/08/solar-homes.jpg (from https://energyzedworld.com/advisory/solar-energy-and-homes/)
+19:06:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=252
+19:06:50	Warning: 	File has moved from https://energyzedworld.com/?p=252 to https://energyzedworld.com/advisory/the-difference-between-power-and-energy/
+19:06:50	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/10/POWER-4.jpg (from https://energyzedworld.com/advisory/the-difference-between-power-and-energy/)
+19:06:50	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/10/POWER-2.jpg (from https://energyzedworld.com/advisory/the-difference-between-power-and-energy/)
+19:06:50	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/10/POWER.jpg (from https://energyzedworld.com/advisory/the-difference-between-power-and-energy/)
+19:06:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1073
+19:06:50	Warning: 	File has moved from https://energyzedworld.com/?p=1073 to https://energyzedworld.com/advisory/energy-and-food-security/
+19:06:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=352
+19:06:50	Warning: 	File has moved from https://energyzedworld.com/?p=352 to https://energyzedworld.com/advisory/can-water-use-also-be-more-efficient/
+19:06:50	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1070
+19:06:50	Warning: 	File has moved from https://energyzedworld.com/?p=1070 to https://energyzedworld.com/advisory/the-dangers-of-commoditizing-compressors/
+19:07:25	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1206
+19:07:25	Warning: 	File has moved from https://energyzedworld.com/?p=1206 to https://energyzedworld.com/advisory/what-the-energy-act-2019-means-for-the-energy-efficiency-space-in-kenya/
+19:07:28	Warning: 	Moved Permanently for https://energyzedworld.com/?p=251
+19:07:28	Warning: 	File has moved from https://energyzedworld.com/?p=251 to https://energyzedworld.com/advisory/the-difference-between-energy-and-power/
+19:07:30	Warning: 	Moved Permanently for https://energyzedworld.com/?p=956
+19:07:30	Warning: 	File has moved from https://energyzedworld.com/?p=956 to https://energyzedworld.com/advisory/simple-factors-affecting-solar-performance-worth-knowing/
+19:07:32	Warning: 	Moved Permanently for https://energyzedworld.com/?p=533
+19:07:32	Warning: 	File has moved from https://energyzedworld.com/?p=533 to https://energyzedworld.com/advisory/intelligent-energy-management-for-homes/
+19:07:33	Warning: 	Moved Permanently for https://energyzedworld.com/?p=108
+19:07:33	Warning: 	File has moved from https://energyzedworld.com/?p=108 to https://energyzedworld.com/advisory/how-much-should-an-energy-audit-cost/
+19:07:34	Warning: 	Moved Permanently for https://energyzedworld.com/?p=536
+19:07:34	Warning: 	File has moved from https://energyzedworld.com/?p=536 to https://energyzedworld.com/advisory/understanding-bioenergy-potential/
+19:07:34	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/06/Biomass-from-Julifora.png (from https://energyzedworld.com/advisory/understanding-bioenergy-potential/)
+19:07:34	Warning: 	Moved Permanently for https://energyzedworld.com/?p=530
+19:07:34	Warning: 	File has moved from https://energyzedworld.com/?p=530 to https://energyzedworld.com/advisory/3-good-websites-for-energy-engineers/
+19:07:37	Error: 	"Not Found" (404) at link https://energyzedworld.com/are-you-licensed-3-opportunities-you-are-probably-missing-out-on/ (from https://energyzedworld.com/advisory/3-good-websites-for-energy-engineers/)
+19:07:37	Warning: 	Moved Permanently for https://energyzedworld.com/?p=132
+19:07:37	Warning: 	File has moved from https://energyzedworld.com/?p=132 to https://energyzedworld.com/advisory/5-reasons-iso-50001-energy-management-system/
+19:08:12	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1202
+19:08:12	Warning: 	File has moved from https://energyzedworld.com/?p=1202 to https://energyzedworld.com/advisory/advise-to-my-40-year-old-self-after-1-year-in-energy-management/
+19:08:13	Warning: 	Moved Permanently for https://energyzedworld.com/?p=346
+19:08:13	Warning: 	File has moved from https://energyzedworld.com/?p=346 to https://energyzedworld.com/advisory/how-to-go-green-with-lighting/
+19:08:13	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2016/04/effff-lght-2.jpg (from https://energyzedworld.com/advisory/how-to-go-green-with-lighting/)
+19:08:13	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2016/04/skylights.jpg (from https://energyzedworld.com/advisory/how-to-go-green-with-lighting/)
+19:08:13	Warning: 	Moved Permanently for https://energyzedworld.com/?p=538
+19:08:13	Warning: 	File has moved from https://energyzedworld.com/?p=538 to https://energyzedworld.com/advisory/electrical-safety-for-our-children/
+19:08:13	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/08/safety-2.jpg (from https://energyzedworld.com/advisory/electrical-safety-for-our-children/)
+19:08:13	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/08/safety-1.jpg (from https://energyzedworld.com/advisory/electrical-safety-for-our-children/)
+19:08:13	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/08/safety-4.jpg (from https://energyzedworld.com/advisory/electrical-safety-for-our-children/)
+19:08:13	Warning: 	Moved Permanently for https://energyzedworld.com/?p=935
+19:08:13	Warning: 	File has moved from https://energyzedworld.com/?p=935 to https://energyzedworld.com/advisory/health-and-safety-for-energy-auditors/
+19:08:13	Warning: 	Moved Permanently for https://energyzedworld.com/?p=343
+19:08:13	Warning: 	File has moved from https://energyzedworld.com/?p=343 to https://energyzedworld.com/advisory/how-to-live-green-electrically/
+19:08:13	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2016/02/LED.jpg (from https://energyzedworld.com/advisory/how-to-live-green-electrically/)
+19:08:13	Warning: 	Moved Permanently for https://energyzedworld.com/?p=930
+19:08:13	Warning: 	File has moved from https://energyzedworld.com/?p=930 to https://energyzedworld.com/advisory/lights-and-leadership-lighting-up-tomorrows-leaders/
+19:08:14	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1108
+19:08:14	Warning: 	File has moved from https://energyzedworld.com/?p=1108 to https://energyzedworld.com/advisory/energy-management-for-malls-in-kenya/
+19:08:14	Warning: 	Moved Permanently for https://energyzedworld.com/?p=540
+19:08:14	Warning: 	File has moved from https://energyzedworld.com/?p=540 to https://energyzedworld.com/advisory/how-to-get-the-best-out-of-energy-audits/
+19:08:14	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2016/04/auditt2.jpg (from https://energyzedworld.com/advisory/how-to-get-the-best-out-of-energy-audits/)
+19:08:56	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1195
+19:08:56	Warning: 	File has moved from https://energyzedworld.com/?p=1195 to https://energyzedworld.com/advisory/reduction-of-co2-emissions-in-the-transport-sector/
+19:08:59	Warning: 	Moved Permanently for https://energyzedworld.com/?p=328
+19:08:59	Warning: 	File has moved from https://energyzedworld.com/?p=328 to https://energyzedworld.com/advisory/how-to-become-a-licensed-solar-pv-technician-in-kenya/
+19:09:19	Warning: 	Moved Permanently for https://energyzedworld.com/?p=912
+19:09:19	Warning: 	File has moved from https://energyzedworld.com/?p=912 to https://energyzedworld.com/advisory/energy-efficiency-in-the-office/
+19:09:19	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1038
+19:09:19	Warning: 	File has moved from https://energyzedworld.com/?p=1038 to https://energyzedworld.com/advisory/high-electricity-bills-system-error-or/
+19:09:20	Warning: 	Moved Permanently for https://energyzedworld.com/?p=899
+19:09:20	Warning: 	File has moved from https://energyzedworld.com/?p=899 to https://energyzedworld.com/advisory/home-energy-efficiency-tips/
+19:09:57	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1173
+19:09:57	Warning: 	File has moved from https://energyzedworld.com/?p=1173 to https://energyzedworld.com/advisory/machine-learning-and-big-data-career-opportunities-in-the-evolving-energy-space/
+19:09:59	Warning: 	Moved Permanently for https://energyzedworld.com/?p=884
+19:09:59	Warning: 	File has moved from https://energyzedworld.com/?p=884 to https://energyzedworld.com/advisory/home-energy-management/
+19:10:01	Error: 	"Not Found" (404) at link https://energyzedworld.com/advisory/home-energy-management/Here (from https://energyzedworld.com/advisory/home-energy-management/)
+19:10:01	Error: 	"Not Found" (404) at link https://energyzedworld.com/advisory/home-energy-management/here (from https://energyzedworld.com/advisory/home-energy-management/)
+19:10:01	Warning: 	Moved Permanently for https://energyzedworld.com/?p=863
+19:10:01	Warning: 	File has moved from https://energyzedworld.com/?p=863 to https://energyzedworld.com/advisory/the-role-of-energy-in-implementation-of-the-sustainable-development-goals/
+19:10:01	Warning: 	Moved Permanently for https://energyzedworld.com/?p=860
+19:10:01	Warning: 	File has moved from https://energyzedworld.com/?p=860 to https://energyzedworld.com/advisory/is-your-business-yearning-for-solar-pv/
+19:10:03	Warning: 	Moved Permanently for https://energyzedworld.com/?p=282
+19:10:03	Warning: 	File has moved from https://energyzedworld.com/?p=282 to https://energyzedworld.com/advisory/why-every-clean-mind-thinks-green-energy/
+19:10:03	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2013/08/waterfall1.jpg (from https://energyzedworld.com/advisory/why-every-clean-mind-thinks-green-energy/)
+19:10:03	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/12/Diff.jpg (from https://energyzedworld.com/advisory/why-every-clean-mind-thinks-green-energy/)
+19:10:03	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1161
+19:10:03	Warning: 	File has moved from https://energyzedworld.com/?p=1161 to https://energyzedworld.com/advisory/2018-gains-in-the-energy-management-space-in-africa-and-the-implications-for-2019/
+19:10:03	Warning: 	Moved Permanently for https://energyzedworld.com/?p=305
+19:10:03	Warning: 	File has moved from https://energyzedworld.com/?p=305 to https://energyzedworld.com/advisory/do-you-have-fears-of-not-knowing-whether-or-not-you-have-made-energy-savings/
+19:10:03	Warning: 	Moved Permanently for https://energyzedworld.com/?p=274
+19:10:03	Warning: 	File has moved from https://energyzedworld.com/?p=274 to https://energyzedworld.com/advisory/energy-efficiency-makes-a-difference/
+19:10:03	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/12/DIFFF.jpg (from https://energyzedworld.com/advisory/energy-efficiency-makes-a-difference/)
+19:10:37	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1147
+19:10:37	Warning: 	File has moved from https://energyzedworld.com/?p=1147 to https://energyzedworld.com/advisory/5-essentials-non-technical-skills-for-energy-professionals-to-learn-in-2019/
+19:10:38	Warning: 	Moved Permanently for https://energyzedworld.com/?p=811
+19:10:38	Warning: 	File has moved from https://energyzedworld.com/?p=811 to https://energyzedworld.com/advisory/worried-about-your-water-usage-have-a-real-time-monitor/
+19:10:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=805
+19:10:39	Warning: 	File has moved from https://energyzedworld.com/?p=805 to https://energyzedworld.com/advisory/led-making-the-light-choice/
+19:10:39	Warning: 	Moved Permanently for https://energyzedworld.com/?p=797
+19:10:39	Warning: 	File has moved from https://energyzedworld.com/?p=797 to https://energyzedworld.com/advisory/to-buy-or-not-to-buy-led-bulbs/
+19:10:40	Warning: 	Moved Permanently for https://energyzedworld.com/?p=785
+19:10:40	Warning: 	File has moved from https://energyzedworld.com/?p=785 to https://energyzedworld.com/advisory/briquettes-perhaps-the-hottest-cooking-fuel-invention-for-home-use/
+19:10:40	Warning: 	Moved Permanently for https://energyzedworld.com/?p=778
+19:10:40	Warning: 	File has moved from https://energyzedworld.com/?p=778 to https://energyzedworld.com/advisory/tips-on-saving-and-conserving-energy-in-shopping-centers/
+19:10:41	Warning: 	Moved Permanently for https://energyzedworld.com/?p=127
+19:10:41	Warning: 	File has moved from https://energyzedworld.com/?p=127 to https://energyzedworld.com/advisory/technical-sales-marketing-right/
+19:10:41	Warning: 	Moved Permanently for https://energyzedworld.com/?p=81
+19:10:41	Warning: 	File has moved from https://energyzedworld.com/?p=81 to https://energyzedworld.com/advisory/is-your-tv-set-green/
+19:10:41	Warning: 	Moved Permanently for https://energyzedworld.com/?p=43
+19:10:41	Warning: 	File has moved from https://energyzedworld.com/?p=43 to https://energyzedworld.com/advisory/top-5-kenyan-companies-to-work-with/
+19:11:06	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1199
+19:11:06	Warning: 	File has moved from https://energyzedworld.com/?p=1199 to https://energyzedworld.com/advisory/energy-saving-tips-in-the-kitchen/
+19:11:09	Warning: 	Moved Permanently for https://energyzedworld.com/?p=531
+19:11:09	Warning: 	File has moved from https://energyzedworld.com/?p=531 to https://energyzedworld.com/advisory/hydro-power-harnessing-the-power-of-water/
+19:11:09	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2013/08/hydro.jpg (from https://energyzedworld.com/advisory/hydro-power-harnessing-the-power-of-water/)
+19:11:09	Warning: 	Moved Permanently for https://energyzedworld.com/?p=1012
+19:11:09	Warning: 	File has moved from https://energyzedworld.com/?p=1012 to https://energyzedworld.com/advisory/is-high-energy-cost-incentive-or-disincentive-towards-energy-efficiency/
+19:11:09	Warning: 	Moved Permanently for https://energyzedworld.com/?p=261
+19:11:09	Warning: 	File has moved from https://energyzedworld.com/?p=261 to https://energyzedworld.com/advisory/understanding-electrical-loads/
+19:11:09	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/10/Motors-3.jpg (from https://energyzedworld.com/advisory/understanding-electrical-loads/)
+19:11:09	Error: 	"Not Found" (404) at link https://energyzedworld.com/wp-content/uploads/2015/10/transfom.jpg (from https://energyzedworld.com/advisory/understanding-electrical-loads/)
+19:11:24	Warning: 	Moved Permanently for https://energyzedworld.com/?p=949
+19:11:24	Warning: 	File has moved from https://energyzedworld.com/?p=949 to https://energyzedworld.com/advisory/the-energy-measurement-and-verification-conversation/
+19:11:25	Warning: 	Moved Permanently for https://energyzedworld.com/?p=38
+19:11:25	Warning: 	File has moved from https://energyzedworld.com/?p=38 to https://energyzedworld.com/advisory/company-review-viscar-industrial-capacity/
+19:11:25	Warning: 	Moved Permanently for https://energyzedworld.com/?p=286
+19:11:25	Warning: 	File has moved from https://energyzedworld.com/?p=286 to https://energyzedworld.com/advisory/kenya-shopping-malls-and-energy-efficiency/
+19:11:25	Warning: 	Moved Permanently for https://energyzedworld.com/?p=105
+19:11:25	Warning: 	File has moved from https://energyzedworld.com/?p=105 to https://energyzedworld.com/advisory/3-tips-for-aspiring-energy-engineers/
+19:11:29	Warning: 	Moved Permanently for https://energyzedworld.com/?p=294
+19:11:29	Warning: 	File has moved from https://energyzedworld.com/?p=294 to https://energyzedworld.com/advisory/5-things-to-look-out-for-about-kenyas-energy-efficiency-market/
+
+HTTrack Website Copier/3.49-2 mirror complete in 36 minutes 1 seconds : 2483 links scanned, 2106 files written (159478299 bytes overall) [75338530 bytes received at 34862 bytes/sec], 116627555 bytes transferred using HTTP compression in 1618 files, ratio 22%, 16.7 requests per connection
+(50 errors, 629 warnings, 0 messages)
