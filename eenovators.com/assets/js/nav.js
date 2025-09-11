@@ -82,17 +82,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
   /* --- Overflow handling: move items into a More dropdown when they don't fit --- */
   const setupMore = ()=>{
     const navMenu = nav.querySelector('.nav-menu');
-    if(!navMenu) return;
-    // create More container if missing
-    let moreLi = navMenu.querySelector('.nav-item.nav-more');
-    if(!moreLi){
-      moreLi = document.createElement('li');
-      moreLi.className = 'nav-item nav-more';
-      moreLi.setAttribute('role','none');
-  moreLi.innerHTML = '<button class="more-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Get Quotation">get quotation</button><ul class="more-menu" role="menu"></ul>';
-      navMenu.appendChild(moreLi);
-    }
-    return moreLi;
+    if(!navMenu) return null;
+    // Do NOT create a 'More' container automatically. If a 'nav-more' exists in the markup, return it; otherwise, return null.
+    return navMenu.querySelector('.nav-item.nav-more') || null;
   };
 
   const handleOverflow = ()=>{
@@ -102,6 +94,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
     if(!navMenu || !navInner) return;
 
     const moreLi = setupMore();
+    // If no 'More' element exists in the markup, disable overflow behaviour and exit early.
+    if(!moreLi){
+      nav.classList.remove('compact','aggressive');
+      return;
+    }
     const moreMenu = moreLi.querySelector('.more-menu');
     const moreToggle = moreLi.querySelector('.more-toggle');
 
