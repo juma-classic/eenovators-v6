@@ -315,6 +315,20 @@ h3 { font-size: 1.2rem; margin: 0 0 8px; line-height: 1.4; }
     box-shadow: 0 6px 20px rgba(46, 163, 242, 0.4);
   }
   
+  /* Special styling for quotation button */
+  .quotation-nav-item .nav-shop-button.orange-button {
+    background: linear-gradient(135deg, #ff9d00, #f57c00) !important;
+    color: white !important;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(255, 157, 0, 0.3);
+  }
+  
+  .quotation-nav-item .nav-shop-button.orange-button:hover {
+    background: linear-gradient(135deg, #f57c00, #ef6c00) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 157, 0, 0.4);
+  }
+  
   /* Hide the nav indicator on mobile */
   .nav-active-indicator {
     display: none;

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="../xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+	
+	<title>Get Quotation | Eenovators</title>
+	<meta name='robots' content='max-image-preview:large' />
+	<meta name="description" content="Get a custom solar energy quotation from Eenovators. Tell us about your project and we'll provide you with a detailed proposal for your solar PV system.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script type="text/javascript">
+			let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};
+	</script>
+	
+	<link rel='dns-prefetch' href='../../maps.google.com/index.html' />
+	<link rel='dns-prefetch' href='../../fonts.googleapis.com/index.html' />
+	<link rel="alternate" type="application/rss+xml" title="Eenovators &raquo; Feed" href="../feed/index.html" />
+	<link rel="alternate" type="application/rss+xml" title="Eenovators &raquo; Comments Feed" href="../comments/feed/index.html" />
+	<meta content="Divi v.4.27.4" name="generator"/>
+	
+	<!-- CSS Links -->
+	<link rel='stylesheet' id='wpgmp-frontend-css' href='../wp-content/plugins/wp-google-map-plugin/assets/css/wpgmp_all_frontend7bcd.css?ver=4.8.3' type='text/css' media='all' />
+	<link rel='stylesheet' id='divi-style-css' href='../wp-content/themes/Divi/style41c1.css?ver=4.27.4' type='text/css' media='all' />
+	<link rel='stylesheet' id='et-core-unified-cached-inline-styles'  href='../wp-content/et-cache/10/et-core-unified-divider-16832271202024.min41c1.css?ver=1725957708' type='text/css' media='all' />
+	<link rel="stylesheet" href="../assets/css/responsive.css" type="text/css" media="all" />
+	
+	<style id='quotation-inline-css' type='text/css'>
+		/* Quotation Page Specific Styles */
+		.quotation-hero {
+			background: linear-gradient(135deg, #2ea3f2 0%, #1e88e5 100%);
+			color: white;
+			padding: 80px 0 60px;
+			text-align: center;
+		}
+		
+		.quotation-hero h1 {
+			font-size: 48px;
+			margin-bottom: 20px;
+			font-weight: 600;
+		}
+		
+		.quotation-hero p {
+			font-size: 20px;
+			opacity: 0.9;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+		
+		.quotation-form-container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 60px 20px;
+		}
+		
+		.quotation-form {
+			background: white;
+			border-radius: 12px;
+			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+			padding: 40px;
+			margin-top: -40px;
+			position: relative;
+			z-index: 2;
+		}
+		
+		.form-section {
+			margin-bottom: 40px;
+		}
+		
+		.form-section h3 {
+			color: #333;
+			font-size: 24px;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			border-bottom: 2px solid #2ea3f2;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+		
+		.form-section h3:before {
+			content: '';
+			width: 4px;
+			height: 24px;
+			background: #2ea3f2;
+			border-radius: 2px;
+		}
+		
+		.form-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+		}
+		
+		.form-field {
+			margin-bottom: 20px;
+		}
+		
+		.form-field.full-width {
+			grid-column: 1 / -1;
+		}
+		
+		.form-field label {
+			display: block;
+			margin-bottom: 8px;
+			font-weight: 600;
+			color: #333;
+		}
+		
+		.required {
+			color: #e74c3c;
+		}
+		
+		.form-field input,
+		.form-field select,
+		.form-field textarea {
+			width: 100%;
+			padding: 12px 16px;
+			border: 2px solid #e1e8ed;
+			border-radius: 8px;
+			font-size: 16px;
+			transition: all 0.3s ease;
+			background: white;
+		}
+		
+		.form-field input:focus,
+		.form-field select:focus,
+		.form-field textarea:focus {
+			outline: none;
+			border-color: #2ea3f2;
+			box-shadow: 0 0 0 3px rgba(46, 163, 242, 0.1);
+		}
+		
+		.form-field textarea {
+			resize: vertical;
+			min-height: 120px;
+		}
+		
+		.checkbox-group {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: 12px;
+			margin-top: 12px;
+		}
+		
+		.checkbox-item {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+		}
+		
+		.checkbox-item input[type="checkbox"] {
+			width: auto;
+			margin: 0;
+		}
+		
+		.radio-group {
+			display: flex;
+			gap: 20px;
+			flex-wrap: wrap;
+			margin-top: 12px;
+		}
+		
+		.radio-item {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+		}
+		
+		.radio-item input[type="radio"] {
+			width: auto;
+			margin: 0;
+		}
+		
+		.submit-section {
+			text-align: center;
+			padding-top: 30px;
+			border-top: 1px solid #e1e8ed;
+		}
+		
+		.submit-btn {
+			background: linear-gradient(135deg, #2ea3f2, #1e88e5);
+			color: white;
+			padding: 16px 40px;
+			border: none;
+			border-radius: 8px;
+			font-size: 18px;
+			font-weight: 600;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 15px rgba(46, 163, 242, 0.3);
+		}
+		
+		.submit-btn:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 6px 20px rgba(46, 163, 242, 0.4);
+		}
+		
+		.info-box {
+			background: #f8f9fa;
+			border-left: 4px solid #2ea3f2;
+			padding: 20px;
+			margin: 30px 0;
+			border-radius: 0 8px 8px 0;
+		}
+		
+		.info-box h4 {
+			color: #2ea3f2;
+			margin-bottom: 10px;
+			font-size: 18px;
+		}
+		
+		.info-box p {
+			margin: 0;
+			color: #666;
+			line-height: 1.6;
+		}
+		
+		@media (max-width: 768px) {
+			.quotation-hero h1 {
+				font-size: 36px;
+			}
+			
+			.quotation-hero p {
+				font-size: 18px;
+			}
+			
+			.quotation-form {
+				padding: 30px 20px;
+				margin: -20px 10px 0;
+			}
+			
+			.form-grid {
+				grid-template-columns: 1fr;
+			}
+			
+			.checkbox-group {
+				grid-template-columns: 1fr;
+			}
+			
+			.radio-group {
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+
+<body class="page-template-default page page-id-quotation logged-in admin-bar et_pb_button_helper_class et_fullwidth_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_cover_background et_pb_gutter linux et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns1 et_header_style_left et_pb_pagebuilder_layout et_right_sidebar et_divi_theme">
+	<div id="page-container">
+		
+		<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+			<div class="logo_container">
+				<span class="logo_helper"></span>
+				<a href="../index.html">
+					<img src="../wp-content/uploads/2025/04/ee-logoAsset-1.png" alt="Eenovators" id="logo" data-height-percentage="54" data-actual-width="160" data-actual-height="26" />
+				</a>
+			</div>
+			<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+				<nav id="top-menu-nav">
+					<ul id="top-menu" class="nav">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-92"><a href="../index.html">Home</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91"><a href="../about-us/index.html">About us</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="../solutions/index.html">Solutions</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"><a href="../services/index.html">Services</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-248"><a href="#">Programs</a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-219"><a href="../training/index.html">Training</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-227"><a href="../yeep-2/index.html">Yeep</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285"><a href="../world-energy-day/index.html">World Energy Day</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="../case-studies/index.html">Case Studies</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-414"><a href="../../energyzedworld.com/index.html">Blog</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="../contact/index.html">Contact</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item menu-item-quotation"><a href="index.html" aria-current="page">Get Quotation</a></li>
+					</ul>
+				</nav>
+				
+				<div id="et_mobile_nav_menu">
+					<div class="mobile_nav closed">
+						<span class="select_page">Select Page</span>
+						<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+					</div>
+				</div>
+			</div> <!-- #et-top-navigation -->
+		</div> <!-- .container -->
+		</header> <!-- #main-header -->
+		
+		<div id="et-main-area">
+			<div id="main-content">
+				<article class="quotation-page">
+					
+					<!-- Hero Section -->
+					<section class="quotation-hero">
+						<div class="container">
+							<h1>Get Your Solar Energy Quotation</h1>
+							<p>Tell us about your project and we'll provide you with a detailed, personalized proposal for your solar PV system. Our experts will help you find the perfect solution for your energy needs.</p>
+						</div>
+					</section>
+					
+					<!-- Quotation Form -->
+					<section class="quotation-form-container">
+						<form class="quotation-form" id="quotationForm" method="post" action="#" novalidate>
+							
+							<!-- Personal Information -->
+							<div class="form-section">
+								<h3>📋 Personal Information</h3>
+								<div class="form-grid">
+									<div class="form-field">
+										<label for="firstName">First Name <span class="required">*</span></label>
+										<input type="text" id="firstName" name="firstName" required>
+									</div>
+									<div class="form-field">
+										<label for="lastName">Last Name <span class="required">*</span></label>
+										<input type="text" id="lastName" name="lastName" required>
+									</div>
+									<div class="form-field">
+										<label for="email">Email Address <span class="required">*</span></label>
+										<input type="email" id="email" name="email" required>
+									</div>
+									<div class="form-field">
+										<label for="phone">Phone Number <span class="required">*</span></label>
+										<input type="tel" id="phone" name="phone" required>
+									</div>
+									<div class="form-field full-width">
+										<label for="address">Property Address <span class="required">*</span></label>
+										<input type="text" id="address" name="address" placeholder="Street address, city, county" required>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Project Type -->
+							<div class="form-section">
+								<h3>🏗️ Project Type</h3>
+								<div class="form-field">
+									<label>What type of property is this for? <span class="required">*</span></label>
+									<div class="radio-group">
+										<div class="radio-item">
+											<input type="radio" id="residential" name="propertyType" value="residential" required>
+											<label for="residential">Residential</label>
+										</div>
+										<div class="radio-item">
+											<input type="radio" id="commercial" name="propertyType" value="commercial" required>
+											<label for="commercial">Commercial</label>
+										</div>
+										<div class="radio-item">
+											<input type="radio" id="industrial" name="propertyType" value="industrial" required>
+											<label for="industrial">Industrial</label>
+										</div>
+										<div class="radio-item">
+											<input type="radio" id="agricultural" name="propertyType" value="agricultural" required>
+											<label for="agricultural">Agricultural</label>
+										</div>
+									</div>
+								</div>
+								
+								<div class="form-grid">
+									<div class="form-field">
+										<label for="roofType">Roof Type</label>
+										<select id="roofType" name="roofType">
+											<option value="">Select roof type</option>
+											<option value="tile">Tile</option>
+											<option value="metal">Metal</option>
+											<option value="concrete">Concrete</option>
+											<option value="asphalt">Asphalt Shingles</option>
+											<option value="flat">Flat Roof</option>
+											<option value="other">Other</option>
+										</select>
+									</div>
+									<div class="form-field">
+										<label for="roofAge">Approximate Roof Age</label>
+										<select id="roofAge" name="roofAge">
+											<option value="">Select age range</option>
+											<option value="0-5">0-5 years</option>
+											<option value="6-10">6-10 years</option>
+											<option value="11-20">11-20 years</option>
+											<option value="20+">Over 20 years</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Energy Requirements -->
+							<div class="form-section">
+								<h3>⚡ Energy Requirements</h3>
+								<div class="form-grid">
+									<div class="form-field">
+										<label for="monthlyBill">Average Monthly Electricity Bill (KSh)</label>
+										<input type="number" id="monthlyBill" name="monthlyBill" placeholder="e.g., 5000">
+									</div>
+									<div class="form-field">
+										<label for="monthlyUsage">Monthly Energy Usage (kWh)</label>
+										<input type="number" id="monthlyUsage" name="monthlyUsage" placeholder="e.g., 500">
+									</div>
+								</div>
+								
+								<div class="form-field">
+									<label>Which services are you interested in? <span class="required">*</span></label>
+									<div class="checkbox-group">
+										<div class="checkbox-item">
+											<input type="checkbox" id="solarPanels" name="services[]" value="solar-panels">
+											<label for="solarPanels">Solar Panel Installation</label>
+										</div>
+										<div class="checkbox-item">
+											<input type="checkbox" id="batteryStorage" name="services[]" value="battery-storage">
+											<label for="batteryStorage">Battery Storage System</label>
+										</div>
+										<div class="checkbox-item">
+											<input type="checkbox" id="energyAudit" name="services[]" value="energy-audit">
+											<label for="energyAudit">Energy & Water Audit</label>
+										</div>
+										<div class="checkbox-item">
+											<input type="checkbox" id="maintenance" name="services[]" value="maintenance">
+											<label for="maintenance">Maintenance Services</label>
+										</div>
+										<div class="checkbox-item">
+											<input type="checkbox" id="financing" name="services[]" value="financing">
+											<label for="financing">ESCO Financing</label>
+										</div>
+										<div class="checkbox-item">
+											<input type="checkbox" id="monitoring" name="services[]" value="monitoring">
+											<label for="monitoring">System Monitoring</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Budget and Timeline -->
+							<div class="form-section">
+								<h3>💰 Budget and Timeline</h3>
+								<div class="form-grid">
+									<div class="form-field">
+										<label for="budget">Budget Range (KSh)</label>
+										<select id="budget" name="budget">
+											<option value="">Select budget range</option>
+											<option value="100000-500000">100,000 - 500,000</option>
+											<option value="500000-1000000">500,000 - 1,000,000</option>
+											<option value="1000000-2000000">1,000,000 - 2,000,000</option>
+											<option value="2000000-5000000">2,000,000 - 5,000,000</option>
+											<option value="5000000+">5,000,000+</option>
+										</select>
+									</div>
+									<div class="form-field">
+										<label for="timeline">Preferred Timeline</label>
+										<select id="timeline" name="timeline">
+											<option value="">Select timeline</option>
+											<option value="asap">As soon as possible</option>
+											<option value="1-3months">1-3 months</option>
+											<option value="3-6months">3-6 months</option>
+											<option value="6-12months">6-12 months</option>
+											<option value="planning">Just planning/researching</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Additional Information -->
+							<div class="form-section">
+								<h3>📝 Additional Information</h3>
+								<div class="form-field full-width">
+									<label for="additionalInfo">Tell us more about your project (Optional)</label>
+									<textarea id="additionalInfo" name="additionalInfo" placeholder="Please share any specific requirements, concerns, or questions you have about your solar energy project..."></textarea>
+								</div>
+								
+								<div class="form-field">
+									<label for="howHeard">How did you hear about us?</label>
+									<select id="howHeard" name="howHeard">
+										<option value="">Select option</option>
+										<option value="google">Google Search</option>
+										<option value="social">Social Media</option>
+										<option value="referral">Friend/Family Referral</option>
+										<option value="website">Our Website</option>
+										<option value="event">Event/Trade Show</option>
+										<option value="other">Other</option>
+									</select>
+								</div>
+							</div>
+							
+							<!-- Information Box -->
+							<div class="info-box">
+								<h4>What happens next?</h4>
+								<p>Once you submit this form, our solar energy experts will review your requirements and contact you within 24 hours to schedule a free consultation. We'll discuss your project in detail and provide you with a comprehensive, customized quotation.</p>
+							</div>
+							
+							<!-- Submit Button -->
+							<div class="submit-section">
+								<button type="submit" class="submit-btn">Get My Solar Quotation</button>
+								<p style="margin-top: 15px; color: #666; font-size: 14px;">
+									By submitting this form, you agree to our <a href="../contact/index.html" style="color: #2ea3f2;">privacy policy</a> and consent to be contacted about your solar energy project.
+								</p>
+							</div>
+							
+						</form>
+					</section>
+					
+				</article>
+			</div> <!-- #main-content -->
+		</div> <!-- #et-main-area -->
+		
+		<!-- Footer -->
+		<footer id="main-footer">
+			<div class="container">
+				<div id="footer-bottom">
+					<div class="container clearfix">
+						<p id="footer-info">&copy; 2025 Eenovators. All rights reserved. | Solar Energy Solutions for a Sustainable Future</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div> <!-- #page-container -->
+	
+	<!-- JavaScript -->
+	<script type="text/javascript" src="../wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
+	<script type="text/javascript" src="../assets/js/nav.js" defer></script>
+	
+	<script>
+		// Form validation and submission
+		document.getElementById('quotationForm').addEventListener('submit', function(e) {
+			e.preventDefault();
+			
+			// Basic validation
+			const requiredFields = this.querySelectorAll('[required]');
+			let isValid = true;
+			
+			requiredFields.forEach(field => {
+				if (!field.value.trim()) {
+					field.style.borderColor = '#e74c3c';
+					isValid = false;
+				} else {
+					field.style.borderColor = '#e1e8ed';
+				}
+			});
+			
+			// Check if at least one service is selected
+			const serviceCheckboxes = this.querySelectorAll('input[name="services[]"]');
+			const isServiceSelected = Array.from(serviceCheckboxes).some(checkbox => checkbox.checked);
+			
+			if (!isServiceSelected) {
+				alert('Please select at least one service you are interested in.');
+				isValid = false;
+			}
+			
+			if (isValid) {
+				// Show success message
+				alert('Thank you for your interest! We have received your quotation request and will contact you within 24 hours.');
+				
+				// Here you would typically send the form data to your server
+				// For now, we'll just log the form data
+				const formData = new FormData(this);
+				console.log('Form Data:', Object.fromEntries(formData));
+				
+				// Reset form
+				this.reset();
+			} else {
+				alert('Please fill in all required fields.');
+			}
+		});
+		
+		// Real-time validation
+		document.querySelectorAll('input[required], select[required]').forEach(field => {
+			field.addEventListener('blur', function() {
+				if (this.value.trim()) {
+					this.style.borderColor = '#2ea3f2';
+				} else {
+					this.style.borderColor = '#e74c3c';
+				}
+			});
+		});
+	</script>
+	
+</body>
+</html>
