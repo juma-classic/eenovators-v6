@@ -186,3 +186,81 @@
 .slide-tab.has-dropdown.active::after {
     transform: rotate(180deg);
 }
+
+/* Testimonial Section Styling */
+.et_pb_testimonial_0.et_pb_testimonial,
+.et_pb_testimonial_1.et_pb_testimonial,
+.et_pb_testimonial_2.et_pb_testimonial {
+    background-color: #ffffff !important;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.et_pb_testimonial_0.et_pb_testimonial:hover,
+.et_pb_testimonial_1.et_pb_testimonial:hover,
+.et_pb_testimonial_2.et_pb_testimonial:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 157, 0, 0.3);
+}
+
+.et_pb_testimonial_0.et_pb_testimonial:hover::before,
+.et_pb_testimonial_1.et_pb_testimonial:hover::before,
+.et_pb_testimonial_2.et_pb_testimonial:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.et_pb_testimonial_0.et_pb_testimonial::before,
+.et_pb_testimonial_1.et_pb_testimonial::before,
+.et_pb_testimonial_2.et_pb_testimonial::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff9d00, #001b56);
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.et_pb_testimonial_0 .et_pb_testimonial_description_inner,
+.et_pb_testimonial_1 .et_pb_testimonial_description_inner,
+.et_pb_testimonial_2 .et_pb_testimonial_description_inner {
+    transition: transform 0.3s ease;
+}
+
+.et_pb_testimonial_0:hover .et_pb_testimonial_description_inner,
+.et_pb_testimonial_1:hover .et_pb_testimonial_description_inner,
+.et_pb_testimonial_2:hover .et_pb_testimonial_description_inner {
+    transform: translateY(-2px);
+}
+
+.et_pb_testimonial_0 .et_pb_testimonial_content,
+.et_pb_testimonial_1 .et_pb_testimonial_content,
+.et_pb_testimonial_2 .et_pb_testimonial_content {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.et_pb_testimonial_0 .et_pb_testimonial_author,
+.et_pb_testimonial_1 .et_pb_testimonial_author,
+.et_pb_testimonial_2 .et_pb_testimonial_author {
+    font-weight: 600;
+    color: #ff9d00 !important;
+}
+
+.et_pb_testimonial_0 .et_pb_testimonial_meta,
+.et_pb_testimonial_1 .et_pb_testimonial_meta,
+.et_pb_testimonial_2 .et_pb_testimonial_meta {
+    color: #001b56 !important;
+}
