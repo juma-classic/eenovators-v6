@@ -1,0 +1,188 @@
+/* Sliding Tabs Navigation CSS */
+.slide-tabs-container {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    width: fit-content;
+    border-radius: 9999px;
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    .slide-tabs-container {
+        border-color: #fff;
+        background-color: #262626;
+    }
+}
+
+.slide-tabs-nav {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.slide-tab {
+    position: relative;
+    z-index: 10;
+    display: block;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+/* Medium screen adjustments */
+@media (min-width: 768px) {
+    .slide-tab {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+.slide-tab:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.slide-tab.active {
+    color: #fff;
+}
+
+/* Sliding cursor */
+.slide-cursor {
+    position: absolute;
+    z-index: 0;
+    height: 28px;
+    border-radius: 9999px;
+    background-color: #000;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+}
+
+/* Dark mode cursor */
+@media (prefers-color-scheme: dark) {
+    .slide-cursor {
+        background-color: #fff;
+    }
+}
+
+/* Medium screen cursor height */
+@media (min-width: 768px) {
+    .slide-cursor {
+        height: 48px;
+    }
+}
+
+.slide-cursor.visible {
+    opacity: 1;
+}
+
+/* Custom styles to integrate with existing navigation */
+#et-top-navigation .slide-tabs-container {
+    margin: 0;
+    border-color: #2ea3f2;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+#et-top-navigation .slide-cursor {
+    background-color: #2ea3f2;
+}
+
+#et-top-navigation .slide-tab {
+    color: #2ea3f2;
+    mix-blend-mode: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: none;
+}
+
+#et-top-navigation .slide-tab:hover,
+#et-top-navigation .slide-tab.active {
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+/* Responsive adjustments */
+@media (max-width: 980px) {
+    .slide-tabs-container {
+        display: none;
+    }
+    
+    /* Show mobile menu instead */
+    #et_mobile_nav_menu {
+        display: block !important;
+    }
+}
+
+@media (min-width: 981px) {
+    #et_mobile_nav_menu {
+        display: none !important;
+    }
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-tab {
+    animation: slideIn 0.3s ease forwards;
+}
+
+/* Smooth transitions for cursor movement */
+.slide-cursor {
+    will-change: left, width, opacity;
+}
+
+/* Hover effects */
+.slide-tabs-container:hover .slide-cursor {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus states for accessibility */
+.slide-tab:focus {
+    outline: 2px solid #2ea3f2;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.slide-tab:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Ensure proper text color in different states */
+.slide-tab {
+    transition: color 0.2s ease;
+}
+
+/* Special styling for dropdown indicator if needed */
+.slide-tab.has-dropdown::after {
+    content: '▼';
+    font-size: 10px;
+    margin-left: 4px;
+    transition: transform 0.2s ease;
+}
+
+.slide-tab.has-dropdown.active::after {
+    transform: rotate(180deg);
+}

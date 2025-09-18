@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Tabs Test</title>
+    <link rel="stylesheet" href="assets/css/sliding-tabs.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .demo-section {
+            margin: 40px 0;
+        }
+        
+        .demo-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2ea3f2;
+        }
+        
+        /* Simulate the header environment */
+        .header-simulation {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 1px 0 rgba(0,0,0,.1);
+            margin-bottom: 20px;
+        }
+        
+        .event-log {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+            height: 200px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Sliding Tabs Navigation Test</h1>
+        
+        <div class="demo-section">
+            <div class="demo-title">Standard Sliding Tabs</div>
+            <div class="slide-tabs-container">
+                <div class="slide-tabs-nav">
+                    <a href="#home" class="slide-tab active">Home</a>
+                    <a href="#about" class="slide-tab">About us</a>
+                    <a href="#solutions" class="slide-tab">Solutions</a>
+                    <a href="#services" class="slide-tab">Services</a>
+                    <a href="#contact" class="slide-tab">Contact</a>
+                    <div class="slide-cursor"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <div class="demo-title">Header-style Sliding Tabs (like on Eenovators)</div>
+            <div class="header-simulation">
+                <div id="et-top-navigation" data-height="66" data-fixed-height="40">
+                    <div class="slide-tabs-container">
+                        <div class="slide-tabs-nav">
+                            <a href="#" class="slide-tab active">Home</a>
+                            <a href="#" class="slide-tab">About us</a>
+                            <a href="#" class="slide-tab">Solutions</a>
+                            <a href="#" class="slide-tab">Services</a>
+                            <a href="#" class="slide-tab">Shop</a>
+                            <a href="#" class="slide-tab">Case Studies</a>
+                            <a href="#" class="slide-tab">Blog</a>
+                            <a href="#" class="slide-tab">Contact</a>
+                            <a href="#" class="slide-tab">Get Quotation</a>
+                            <div class="slide-cursor"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <div class="demo-title">Compact Version</div>
+            <div class="slide-tabs-container" style="font-size: 12px;">
+                <div class="slide-tabs-nav">
+                    <a href="#" class="slide-tab active">Home</a>
+                    <a href="#" class="slide-tab">Pricing</a>
+                    <a href="#" class="slide-tab">Features</a>
+                    <a href="#" class="slide-tab">Docs</a>
+                    <a href="#" class="slide-tab">Blog</a>
+                    <div class="slide-cursor"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="event-log" id="eventLog">
+            <strong>Event Log:</strong><br>
+            <span style="color: #666;">Hover and click tabs to see events...</span>
+        </div>
+    </div>
+    
+    <script src="assets/js/sliding-tabs.js"></script>
+    <script>
+        // Initialize all sliding tabs on the page
+        document.addEventListener('DOMContentLoaded', function() {
+            const containers = document.querySelectorAll('.slide-tabs-container');
+            const eventLog = document.getElementById('eventLog');
+            
+            function logEvent(message) {
+                const timestamp = new Date().toLocaleTimeString();
+                eventLog.innerHTML += `<br>[${timestamp}] ${message}`;
+                eventLog.scrollTop = eventLog.scrollHeight;
+            }
+            
+            containers.forEach((container, index) => {
+                const slidingTabs = new SlidingTabs(`.slide-tabs-container:nth-child(${index + 1})`);
+                
+                if (slidingTabs) {
+                    // Listen for tab change events
+                    container.addEventListener('tabChange', function(e) {
+                        logEvent(`Tab changed to: ${e.detail.tab.textContent} (Index: ${e.detail.index})`);
+                    });
+                    
+                    logEvent(`Initialized sliding tabs container ${index + 1}`);
+                }
+            });
+            
+            logEvent('All sliding tabs initialized successfully!');
+        });
+    </script>
+</body>
+</html>

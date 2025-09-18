@@ -32,6 +32,7 @@
 <link rel='stylesheet' id='divi-torque-lite-modules-style-css' href='wp-content/plugins/addons-for-divi/assets/css/modules-style50fa.css?ver=4.2.1' type='text/css' media='all' />
 <link rel='stylesheet' id='divi-torque-lite-magnific-popup-css' href='wp-content/plugins/addons-for-divi/assets/libs/magnific-popup/magnific-popup50fa.css?ver=4.2.1' type='text/css' media='all' />
 <link rel='stylesheet' id='divi-torque-lite-frontend-css' href='wp-content/plugins/addons-for-divi/assets/css/frontend50fa.css?ver=4.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sliding-tabs-css' href='assets/css/sliding-tabs.css?ver=1.0.0' type='text/css' media='all' />
 <style id='divi-style-inline-inline-css' type='text/css'>
 /*!
 Theme Name: Divi
@@ -103,34 +104,20 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 				</a>
 			</div>
 					<div id="et-top-navigation" data-height="66" data-fixed-height="40">
-									<nav class="modern-nav" id="mainNav" aria-label="Main navigation">
-									  <div class="nav-inner container">
-									    <a class="brand" href="index.html" aria-label="Home">
-									      <img src="wp-content/uploads/2025/04/ee-logoAsset-1.png" alt="Eenovators" width="160" height="26" loading="lazy">
-									    </a>
-
-									    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainMenu" aria-label="Toggle menu">☰</button>
-
-									    <div class="nav-wrap">
-									      <div class="nav-active-indicator" id="navIndicator" aria-hidden="true"></div>
-
-									      <ul class="nav-menu" id="mainMenu" role="menubar">
-									        <li class="nav-item" role="none"><a role="menuitem" href="index.html">Home</a></li>
-									        <li class="nav-item" role="none"><a role="menuitem" href="about-us/index.html">About us</a></li>
-										<li class="nav-item" role="none"><a role="menuitem" href="services/index.html">Services</a></li>
-										<li class="nav-item" role="none"><a role="menuitem" href="solutions/index.html">Solutions</a></li>
-									        <li class="nav-item" role="none"><a role="menuitem" href="training/index.html">Training</a></li>
-									        <li class="nav-item" role="none"><a role="menuitem" href="case-studies/index.html">Case Studies</a></li>
-									        <li class="nav-item" role="none"><a role="menuitem" href="contact/index.html">Contact</a></li>
-									        <li class="nav-item shop-nav-item" role="none"><a role="menuitem" href="https://eenovators-shop.netlify.app/" class="nav-shop-button">Shop</a></li>
-									        <li class="nav-item quotation-nav-item" role="none"><a role="menuitem" href="quotation/index.html" class="nav-shop-button orange-button">Get Quotation</a></li>
-									      </ul>
-									    </div>
-									  </div>
-									</nav>
-				
-				
-				
+				<div class="slide-tabs-container" data-sliding-tabs="auto" data-nav-selector="#top-menu-nav">
+					<div class="slide-tabs-nav">
+						<a href="index.html" class="slide-tab active">Home</a>
+						<a href="about-us/index.html" class="slide-tab">About us</a>
+						<a href="solutions/index.html" class="slide-tab">Solutions</a>
+						<a href="services/index.html" class="slide-tab">Services</a>
+						<a href="shop/index.html" class="slide-tab">Shop</a>
+						<a href="case-studies/index.html" class="slide-tab">Case Studies</a>
+						<a href="../energyzedworld.com/index.html" class="slide-tab">Blog</a>
+						<a href="contact/index.html" class="slide-tab">Contact</a>
+						<a href="quotation/index.html" class="slide-tab">Get Quotation</a>
+						<div class="slide-cursor"></div>
+					</div>
+				</div>
 				
 				<div id="et_mobile_nav_menu">
 				<div class="mobile_nav closed">
@@ -1607,6 +1594,8 @@ var et_pb_box_shadow_elements = [];
 	  </a>
 	</div>
 	
+	<script src="assets/js/sliding-tabs.js" defer></script>
+	<script src="assets/js/sliding-tabs-init.js" defer></script>
 	<script src="assets/js/nav.js" defer></script>
 	</body>
 

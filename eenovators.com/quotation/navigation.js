@@ -1,4 +1,4 @@
-/* Global Navigation Menu JavaScript - Enhanced Version */
+/* Navigation Menu JavaScript for Quotation Page */
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize navigation functionality
