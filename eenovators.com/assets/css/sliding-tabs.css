@@ -92,17 +92,17 @@
 /* Custom styles to integrate with existing navigation */
 #et-top-navigation .slide-tabs-container {
     margin: 0;
-    border-color: #2ea3f2;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    border-color: #ff9d00;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
 }
 
 #et-top-navigation .slide-cursor {
-    background-color: #2ea3f2;
+    background-color: #001b56;
 }
 
 #et-top-navigation .slide-tab {
-    color: #2ea3f2;
+    color: #ff9d00;
     mix-blend-mode: normal;
     font-weight: 500;
     font-size: 14px;
@@ -161,7 +161,7 @@
 
 /* Focus states for accessibility */
 .slide-tab:focus {
-    outline: 2px solid #2ea3f2;
+    outline: 2px solid #ff9d00;
     outline-offset: 2px;
     border-radius: 4px;
 }
