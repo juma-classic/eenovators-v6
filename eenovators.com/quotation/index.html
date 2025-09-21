@@ -10,9 +10,9 @@
 		document.documentElement.className = 'js';
 	</script>
 	
-	<title>Get Quotation | Eenovators</title>
+	<title>Get Energy Monitoring Quote | Eenovators</title>
 	<meta name='robots' content='max-image-preview:large' />
-	<meta name="description" content="Get a custom solar energy quotation from Eenovators. Tell us about your project and we'll provide you with a detailed proposal for your solar PV system.">
+	<meta name="description" content="Get a custom energy monitoring and management solution quotation from Eenovators. Tell us about your energy needs and we'll provide you with a detailed proposal for monitoring devices and systems.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<script type="text/javascript">
@@ -128,6 +128,16 @@
 			font-size: 16px;
 			transition: all 0.3s ease;
 			background: white;
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+		}
+		
+		.form-field select {
+			background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%23666' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
+			background-repeat: no-repeat;
+			background-position: right 12px center;
+			background-size: 12px;
 		}
 		
 		.form-field input:focus,
@@ -301,8 +311,8 @@
 					<!-- Hero Section -->
 					<section class="quotation-hero">
 						<div class="container">
-							<h1>Get Your Solar Energy Quotation</h1>
-							<p>Tell us about your project and we'll provide you with a detailed, personalized proposal for your solar PV system. Our experts will help you find the perfect solution for your energy needs.</p>
+							<h1>Get Your Energy Monitoring Solution Quote</h1>
+							<p>Tell us about your energy management needs and we'll provide you with a detailed, personalized proposal for our energy monitoring devices and systems. Our experts will help you optimize your energy consumption and reduce costs.</p>
 						</div>
 					</section>
 					
@@ -337,99 +347,117 @@
 								</div>
 							</div>
 							
-							<!-- Project Type -->
+							<!-- Facility Information -->
 							<div class="form-section">
-								<h3>Project Type</h3>
+								<h3>Facility Information</h3>
 								<div class="form-field">
-									<label>What type of property is this for? <span class="required">*</span></label>
+									<label>What type of facility is this for? <span class="required">*</span></label>
 									<div class="radio-group">
 										<div class="radio-item">
-											<input type="radio" id="residential" name="propertyType" value="residential" required>
+											<input type="radio" id="residential" name="facilityType" value="residential" required>
 											<label for="residential">Residential</label>
 										</div>
 										<div class="radio-item">
-											<input type="radio" id="commercial" name="propertyType" value="commercial" required>
-											<label for="commercial">Commercial</label>
+											<input type="radio" id="commercial" name="facilityType" value="commercial" required>
+											<label for="commercial">Commercial Building</label>
 										</div>
 										<div class="radio-item">
-											<input type="radio" id="industrial" name="propertyType" value="industrial" required>
-											<label for="industrial">Industrial</label>
+											<input type="radio" id="industrial" name="facilityType" value="industrial" required>
+											<label for="industrial">Industrial Facility</label>
 										</div>
 										<div class="radio-item">
-											<input type="radio" id="agricultural" name="propertyType" value="agricultural" required>
-											<label for="agricultural">Agricultural</label>
+											<input type="radio" id="institutional" name="facilityType" value="institutional" required>
+											<label for="institutional">Institutional (School/Hospital)</label>
 										</div>
 									</div>
 								</div>
 								
 								<div class="form-grid">
 									<div class="form-field">
-										<label for="roofType">Roof Type</label>
-										<select id="roofType" name="roofType">
-											<option value="">Select roof type</option>
-											<option value="tile">Tile</option>
-											<option value="metal">Metal</option>
-											<option value="concrete">Concrete</option>
-											<option value="asphalt">Asphalt Shingles</option>
-											<option value="flat">Flat Roof</option>
-											<option value="other">Other</option>
+										<label for="facilitySize">Facility Size (sq ft)</label>
+										<select id="facilitySize" name="facilitySize">
+											<option value="">Select facility size</option>
+											<option value="under-1000">Under 1,000 sq ft</option>
+											<option value="1000-5000">1,000 - 5,000 sq ft</option>
+											<option value="5000-15000">5,000 - 15,000 sq ft</option>
+											<option value="15000-50000">15,000 - 50,000 sq ft</option>
+											<option value="over-50000">Over 50,000 sq ft</option>
 										</select>
 									</div>
 									<div class="form-field">
-										<label for="roofAge">Approximate Roof Age</label>
-										<select id="roofAge" name="roofAge">
-											<option value="">Select age range</option>
-											<option value="0-5">0-5 years</option>
-											<option value="6-10">6-10 years</option>
-											<option value="11-20">11-20 years</option>
-											<option value="20+">Over 20 years</option>
+										<label for="electricalPanels">Number of Electrical Panels</label>
+										<select id="electricalPanels" name="electricalPanels">
+											<option value="">Select number of panels</option>
+											<option value="1">1 Panel</option>
+											<option value="2-3">2-3 Panels</option>
+											<option value="4-6">4-6 Panels</option>
+											<option value="7-10">7-10 Panels</option>
+											<option value="10+">More than 10 Panels</option>
+										</select>
+									</div>
+											<option value="10+">More than 10 Panels</option>
 										</select>
 									</div>
 								</div>
 							</div>
 							
-							<!-- Energy Requirements -->
+							<!-- Energy Usage & Monitoring Requirements -->
 							<div class="form-section">
-								<h3>Energy Requirements</h3>
+								<h3>Energy Usage & Monitoring Requirements</h3>
 								<div class="form-grid">
 									<div class="form-field">
 										<label for="monthlyBill">Average Monthly Electricity Bill (KSh)</label>
-										<input type="number" id="monthlyBill" name="monthlyBill" placeholder="e.g., 5000">
+										<input type="number" id="monthlyBill" name="monthlyBill" placeholder="e.g., 25000">
 									</div>
 									<div class="form-field">
 										<label for="monthlyUsage">Monthly Energy Usage (kWh)</label>
-										<input type="number" id="monthlyUsage" name="monthlyUsage" placeholder="e.g., 500">
+										<input type="number" id="monthlyUsage" name="monthlyUsage" placeholder="e.g., 2500">
+									</div>
+								</div>
+								
+								<div class="form-grid">
+									<div class="form-field">
+										<label for="monitoringGoals">Primary Monitoring Goals</label>
+										<select id="monitoringGoals" name="monitoringGoals">
+											<option value="">Select primary goal</option>
+											<option value="cost-reduction">Cost Reduction</option>
+											<option value="energy-efficiency">Energy Efficiency Improvement</option>
+											<option value="demand-management">Demand Management</option>
+											<option value="compliance">Regulatory Compliance</option>
+											<option value="sustainability">Sustainability Reporting</option>
+											<option value="fault-detection">Equipment Fault Detection</option>
+										</select>
+									</div>
+									<div class="form-field">
+										<label for="dataAccess">Data Access Requirements</label>
+										<select id="dataAccess" name="dataAccess">
+											<option value="">Select access level</option>
+											<option value="real-time">Real-time Monitoring</option>
+											<option value="daily-reports">Daily Reports</option>
+											<option value="weekly-summary">Weekly Summaries</option>
+											<option value="monthly-analysis">Monthly Analysis</option>
+											<option value="custom-alerts">Custom Alerts</option>
+										</select>
 									</div>
 								</div>
 								
 								<div class="form-field">
-									<label>Which services are you interested in? <span class="required">*</span></label>
-									<div class="checkbox-group">
-										<div class="checkbox-item">
-											<input type="checkbox" id="solarPanels" name="services[]" value="solar-panels">
-											<label for="solarPanels">Solar Panel Installation</label>
-										</div>
-										<div class="checkbox-item">
-											<input type="checkbox" id="batteryStorage" name="services[]" value="battery-storage">
-											<label for="batteryStorage">Battery Storage System</label>
-										</div>
-										<div class="checkbox-item">
-											<input type="checkbox" id="energyAudit" name="services[]" value="energy-audit">
-											<label for="energyAudit">Energy & Water Audit</label>
-										</div>
-										<div class="checkbox-item">
-											<input type="checkbox" id="maintenance" name="services[]" value="maintenance">
-											<label for="maintenance">Maintenance Services</label>
-										</div>
-										<div class="checkbox-item">
-											<input type="checkbox" id="financing" name="services[]" value="financing">
-											<label for="financing">ESCO Financing</label>
-										</div>
-										<div class="checkbox-item">
-											<input type="checkbox" id="monitoring" name="services[]" value="monitoring">
-											<label for="monitoring">System Monitoring</label>
-										</div>
-									</div>
+									<label for="services">Which services are you interested in? <span class="required">*</span></label>
+									<select id="services" name="services" required>
+										<option value="">Select a service</option>
+										<option value="energy-monitoring-systems">Energy Monitoring Systems</option>
+										<option value="smart-meters">Smart Meter Installation</option>
+										<option value="iot-sensors">IoT Energy Sensors</option>
+										<option value="energy-analytics">Energy Analytics Platform</option>
+										<option value="demand-response">Demand Response Solutions</option>
+										<option value="energy-audit">Energy Efficiency Audit</option>
+										<option value="building-automation">Building Automation Systems</option>
+										<option value="power-quality-monitoring">Power Quality Monitoring</option>
+										<option value="energy-management-software">Energy Management Software</option>
+										<option value="load-forecasting">Load Forecasting Solutions</option>
+										<option value="grid-integration">Grid Integration Services</option>
+										<option value="consultation">Energy Consultation Services</option>
+									</select>
 								</div>
 							</div>
 							
@@ -441,11 +469,11 @@
 										<label for="budget">Budget Range (KSh)</label>
 										<select id="budget" name="budget">
 											<option value="">Select budget range</option>
-											<option value="100000-500000">100,000 - 500,000</option>
-											<option value="500000-1000000">500,000 - 1,000,000</option>
-											<option value="1000000-2000000">1,000,000 - 2,000,000</option>
-											<option value="2000000-5000000">2,000,000 - 5,000,000</option>
-											<option value="5000000+">5,000,000+</option>
+											<option value="50000-150000">50,000 - 150,000 (Basic Monitoring)</option>
+											<option value="150000-400000">150,000 - 400,000 (Standard System)</option>
+											<option value="400000-800000">400,000 - 800,000 (Advanced Monitoring)</option>
+											<option value="800000-1500000">800,000 - 1,500,000 (Enterprise Solution)</option>
+											<option value="1500000+">1,500,000+ (Custom Integration)</option>
 										</select>
 									</div>
 									<div class="form-field">
@@ -487,14 +515,14 @@
 							<!-- Information Box -->
 							<div class="info-box">
 								<h4>What happens next?</h4>
-								<p>Once you submit this form, our solar energy experts will review your requirements and contact you within 24 hours to schedule a free consultation. We'll discuss your project in detail and provide you with a comprehensive, customized quotation.</p>
+								<p>Once you submit this form, our energy monitoring experts will review your requirements and contact you within 24 hours to schedule a free consultation. We'll discuss your energy monitoring needs in detail and provide you with a comprehensive, customized quotation for our monitoring devices and systems.</p>
 							</div>
 							
 							<!-- Submit Button -->
 							<div class="submit-section">
-								<button type="submit" class="submit-btn">Get My Solar Quotation</button>
+								<button type="submit" class="submit-btn">📱 Send Quote Request to WhatsApp</button>
 								<p style="margin-top: 15px; color: #666; font-size: 14px;">
-									By submitting this form, you agree to our <a href="../contact/index.html" style="color: #2ea3f2;">privacy policy</a> and consent to be contacted about your solar energy project.
+									By submitting this form, your quotation request will be sent to our WhatsApp (+254 745 536 264) for immediate assistance. You agree to our <a href="../contact/index.html" style="color: #2ea3f2;">privacy policy</a> and consent to be contacted about your energy monitoring project.
 								</p>
 							</div>
 							
@@ -516,7 +544,7 @@
 							<div class="footer-logo">
 								<img src="../wp-content/uploads/2025/04/ee-logoAsset-1.png" alt="Eenovators" class="footer-logo-img">
 							</div>
-							<p class="company-description">Leading provider of innovative solar energy solutions for a sustainable future. Empowering communities with clean, renewable energy.</p>
+							<p class="company-description">Leading provider of innovative energy monitoring and management solutions for a sustainable future. Empowering organizations to optimize their energy consumption and reduce costs.</p>
 							<div class="contact-info">
 								<div class="contact-item">
 									<span class="contact-icon"></span>
@@ -674,6 +702,104 @@
 					this.style.borderColor = '#e74c3c';
 				}
 			});
+		});
+
+		// WhatsApp Form Submission
+		document.getElementById('quotationForm').addEventListener('submit', function(e) {
+			e.preventDefault(); // Prevent default form submission
+			
+			// Collect form data
+			const formData = new FormData(this);
+			const data = {};
+			
+			// Convert FormData to object
+			for (let [key, value] of formData.entries()) {
+				if (data[key]) {
+					// Handle multiple values (like checkboxes)
+					if (Array.isArray(data[key])) {
+						data[key].push(value);
+					} else {
+						data[key] = [data[key], value];
+					}
+				} else {
+					data[key] = value;
+				}
+			}
+			
+			// Validate required fields
+			const requiredFields = ['firstName', 'lastName', 'email', 'phone', 'address', 'facilityType', 'services'];
+			const missingFields = [];
+			
+			requiredFields.forEach(field => {
+				const element = document.getElementById(field) || document.querySelector(`[name="${field}"]`);
+				if (!data[field] || data[field] === '') {
+					missingFields.push(field);
+					if (element) element.style.borderColor = '#e74c3c';
+				} else {
+					if (element) element.style.borderColor = '#2ea3f2';
+				}
+			});
+			
+			if (missingFields.length > 0) {
+				alert('Please fill in all required fields marked with *');
+				return;
+			}
+			
+			// Format the message for WhatsApp
+			let message = "🔋 *ENERGY MONITORING QUOTATION REQUEST*\n\n";
+			
+			// Personal Information
+			message += "👤 *PERSONAL INFORMATION*\n";
+			message += `Name: ${data.firstName} ${data.lastName}\n`;
+			message += `Email: ${data.email}\n`;
+			message += `Phone: ${data.phone}\n`;
+			message += `Address: ${data.address}\n\n`;
+			
+			// Facility Information
+			message += "🏢 *FACILITY INFORMATION*\n";
+			message += `Facility Type: ${data.facilityType}\n`;
+			if (data.facilitySize) message += `Facility Size: ${data.facilitySize}\n`;
+			if (data.electricalPanels) message += `Electrical Panels: ${data.electricalPanels}\n\n`;
+			
+			// Energy Requirements
+			message += "⚡ *ENERGY REQUIREMENTS*\n";
+			if (data.monthlyBill) message += `Monthly Bill: KSh ${data.monthlyBill}\n`;
+			if (data.monthlyUsage) message += `Monthly Usage: ${data.monthlyUsage} kWh\n`;
+			if (data.monitoringGoals) message += `Monitoring Goals: ${data.monitoringGoals}\n`;
+			if (data.dataAccess) message += `Data Access: ${data.dataAccess}\n\n`;
+			
+			// Services
+			message += "🛠️ *SERVICES REQUESTED*\n";
+			message += `Service: ${data.services}\n\n`;
+			
+			// Budget and Timeline
+			message += "💰 *BUDGET & TIMELINE*\n";
+			if (data.budget) message += `Budget: ${data.budget}\n`;
+			if (data.timeline) message += `Timeline: ${data.timeline}\n\n`;
+			
+			// Additional Information
+			if (data.additionalInfo) {
+				message += "📝 *ADDITIONAL INFORMATION*\n";
+				message += `${data.additionalInfo}\n\n`;
+			}
+			
+			if (data.howHeard) {
+				message += `How they heard about us: ${data.howHeard}\n\n`;
+			}
+			
+			message += "Please provide a detailed quotation for the above requirements. Thank you!";
+			
+			// Encode the message for URL
+			const encodedMessage = encodeURIComponent(message);
+			
+			// Your WhatsApp number
+			const whatsappNumber = "254745536264";
+			
+			// Create WhatsApp URL
+			const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+			
+			// Open WhatsApp
+			window.open(whatsappURL, '_blank');
 		});
 	</script>
 	
