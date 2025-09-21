@@ -6,19 +6,49 @@
     display: block !important;
   }
   
+  /* Position the mobile nav container */
+  #et_mobile_nav_menu {
+    position: relative;
+    float: right;
+    display: block !important;
+  }
+  
+  /* Style the mobile nav wrapper */
+  #et_mobile_nav_menu .mobile_nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
   /* Hide the menu list by default */
   #et_mobile_nav_menu .et_mobile_menu {
     display: none !important;
     position: absolute;
-    top: 100%;
+    top: 45px; /* Position below the hamburger button */
     right: 0;
-    left: 0;
+    width: 250px; /* Fixed width for better appearance */
     background: rgba(255,255,255,0.97);
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     z-index: 99999;
     margin: 0;
-    padding: 0;
+    padding: 8px 0;
     list-style: none;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  /* Add small arrow pointing to the button */
+  #et_mobile_nav_menu .et_mobile_menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(255,255,255,0.97);
   }
 
   /* Show the menu when nav is open */
