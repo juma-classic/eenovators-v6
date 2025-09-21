@@ -51,6 +51,13 @@
     border-bottom: 8px solid rgba(255,255,255,0.97);
   }
 
+  /* Hide hero image on mobile devices */
+  @media (max-width: 769px) {
+    .wp-image-239 {
+      display: none !important;
+    }
+  }
+
   /* Show the menu when nav is open */
   body.mobile-nav-open #et_mobile_nav_menu .et_mobile_menu {
     display: block !important;
