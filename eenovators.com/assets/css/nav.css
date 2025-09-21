@@ -399,6 +399,46 @@ html,
     }
 }
 
+/* CSS fallback hamburger for mobile when ETmodules/font glyph is missing
+   Matches rules in sliding-tabs.css to ensure consistent mobile toggle display */
+.mobile_menu_bar {
+  display: inline-block;
+  width: 36px;
+  height: 28px;
+  position: relative;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile_menu_bar::before,
+.mobile_menu_bar::after,
+.mobile_menu_bar .bar {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #001b56; /* navy */
+  border-radius: 2px;
+  position: absolute;
+  left: 7px;
+  transition: transform .25s ease, opacity .25s ease;
+}
+
+.mobile_menu_bar::before { top: 6px; }
+.mobile_menu_bar::after  { bottom: 6px; }
+
+.mobile_menu_bar .bar { top: 13px; left: 7px; }
+
+.mobile_nav.open .mobile_menu_bar::before {
+  transform: translateY(7px) rotate(45deg);
+}
+.mobile_nav.open .mobile_menu_bar::after {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.mobile_nav.open .mobile_menu_bar .bar { opacity: 0; }
+
+.mobile_menu_bar:focus { outline: 2px solid rgba(0,27,86,0.12); outline-offset: 2px; }
+
 /* Accessibility improvements */
 .menu-item a:focus,
 .mobile_menu_bar_toggle:focus {

@@ -264,3 +264,45 @@
 .et_pb_testimonial_2 .et_pb_testimonial_meta {
     color: #001b56 !important;
 }
+
+/* CSS fallback hamburger for mobile when ETmodules font is missing */
+.mobile_menu_bar {
+    display: inline-block;
+    width: 36px;
+    height: 28px;
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mobile_menu_bar::before,
+.mobile_menu_bar::after,
+.mobile_menu_bar .bar {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #001b56; /* navy */
+    border-radius: 2px;
+    position: absolute;
+    left: 7px;
+    transition: transform .25s ease, opacity .25s ease;
+}
+
+.mobile_menu_bar::before { top: 6px; }
+.mobile_menu_bar::after  { bottom: 6px; }
+
+/* Optional middle bar if needed (some themes toggle a .bar element) */
+.mobile_menu_bar .bar { top: 13px; left: 7px; }
+
+/* Open state animation (Divi may toggle .mobile_nav.open) */
+.mobile_nav.open .mobile_menu_bar::before {
+    transform: translateY(7px) rotate(45deg);
+}
+.mobile_nav.open .mobile_menu_bar::after {
+    transform: translateY(-7px) rotate(-45deg);
+}
+.mobile_nav.open .mobile_menu_bar .bar { opacity: 0; }
+
+/* Accessibility: ensure visible focus */
+.mobile_menu_bar:focus { outline: 2px solid rgba(0,27,86,0.12); outline-offset: 2px; }
