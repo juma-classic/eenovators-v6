@@ -1,0 +1,78 @@
+/* Custom Social Media Icons Styles */
+
+/* Hide default Divi social media icons */
+.et_pb_social_media_follow .et_pb_social_icon,
+.et_pb_social_media_follow .et_pb_social_network_link,
+.et_pb_social_media_follow .icon,
+.et_pb_social_media_follow .et_pb_with_border {
+  display: none !important;
+}
+
+/* Hide default social media follow network items */
+.et_pb_social_media_follow_network_0_tb_footer,
+.et_pb_social_media_follow_network_1_tb_footer,
+.et_pb_social_media_follow_network_2_tb_footer,
+.et_pb_social_media_follow_network_3_tb_footer {
+  display: none !important;
+}
+
+/* Social media icons container */
+.social-icon-container {
+  display: inline-block !important;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Social media icon images */
+.social-icon {
+  width: 24px !important;
+  height: 24px !important;
+  display: block !important;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 50%;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Hover effects */
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Grid layout for 2x3 social media icons */
+.et_pb_social_media_follow {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  grid-template-rows: repeat(2, 1fr) !important;
+  gap: 8px !important;
+  max-width: 200px !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Remove default styling */
+.social-icon-container a {
+  text-decoration: none;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .et_pb_social_media_follow {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 100px;
+    gap: 6px;
+  }
+  
+  .social-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
