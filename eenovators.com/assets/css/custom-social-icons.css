@@ -1,0 +1,50 @@
+/* Custom Social Media Icons */
+
+/* Hide the default font icons and show custom images */
+.et_pb_social_media_follow li.et-social-facebook .icon:before,
+.et_pb_social_media_follow li.et-social-twitter .icon:before,
+.et_pb_social_media_follow li.et-social-youtube .icon:before,
+.et_pb_social_media_follow li.et-social-linkedin .icon:before,
+.et_pb_social_media_follow li.et-social-instagram .icon:before,
+.et_pb_social_media_follow li.et-social-tiktok .icon:before {
+    display: none !important;
+}
+
+/* Style the custom social media icons */
+.et_pb_social_media_follow .custom-social-icon {
+    width: 48px;
+    height: auto;
+    max-height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effects for custom icons */
+.et_pb_social_media_follow .icon:hover .custom-social-icon {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Ensure proper positioning within the social icon containers */
+.et_pb_social_media_follow .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Hide the text labels but keep them accessible */
+.et_pb_social_media_follow .et_pb_social_media_follow_network_name {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Maintain the border styling from Divi theme */
+.et_pb_social_media_follow .et_pb_with_border .custom-social-icon {
+    padding: 12px;
+}
