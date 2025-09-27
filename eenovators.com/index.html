@@ -274,12 +274,12 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 				
 				
 				<div class="et_pb_module et_pb_circle_counter et_pb_circle_counter_0 container-width-change-notify  et_pb_text_align_center et_pb_bg_layout_light et_pb_with_title">
-				<div class="et_pb_circle_counter_inner" data-number-value="2" data-bar-bg-color="#ff9d00">
+				<div class="et_pb_circle_counter_inner" data-number-value="95" data-bar-bg-color="#ff9d00" data-custom-display="180">
 				
 				
 				
 				
-					<div class="percent"><p style="visibility: visible;"><span class="percent-value">13</span><span class="percent-sign"></span></p></div>
+					<div class="percent"><p style="visibility: visible;"><span class="percent-value" style="pointer-events: none;">180</span><span class="percent-sign"></span></p></div>
 					<h3 class="et_pb_module_header">Energy & Water Audits</h3>
 				</div>
 			</div>
@@ -289,12 +289,12 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 				
 				
 				<div class="et_pb_module et_pb_circle_counter et_pb_circle_counter_1 container-width-change-notify  et_pb_text_align_center et_pb_bg_layout_light et_pb_with_title">
-				<div class="et_pb_circle_counter_inner" data-number-value="78" data-bar-bg-color="#2ea3f2">
+				<div class="et_pb_circle_counter_inner" data-number-value="71" data-bar-bg-color="#2ea3f2" data-custom-display="600+">
 				
 				
 				
 				
-					<div class="percent"><p style="visibility: visible;"><span class="percent-value">467</span><span class="percent-sign"></span></p></div>
+					<div class="percent"><p style="visibility: visible;"><span class="percent-value" style="pointer-events: none;">600+</span><span class="percent-sign"></span></p></div>
 					<h3 class="et_pb_module_header">Energy Training</h3>
 				</div>
 			</div>
@@ -304,12 +304,12 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 				
 				
 				<div class="et_pb_module et_pb_circle_counter et_pb_circle_counter_2 container-width-change-notify  et_pb_text_align_center et_pb_bg_layout_light et_pb_with_title">
-				<div class="et_pb_circle_counter_inner" data-number-value="26" data-bar-bg-color="#0e4de3">
+				<div class="et_pb_circle_counter_inner" data-number-value="21" data-bar-bg-color="#0e4de3" data-custom-display="32">
 				
 				
 				
 				
-					<div class="percent"><p style="visibility: visible;"><span class="percent-value">156</span><span class="percent-sign"></span></p></div>
+					<div class="percent"><p style="visibility: visible;"><span class="percent-value" style="pointer-events: none;">32</span><span class="percent-sign"></span></p></div>
 					<h3 class="et_pb_module_header">EAGLES Portal</h3>
 				</div>
 			</div>
@@ -319,12 +319,12 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 				
 				
 				<div class="et_pb_module et_pb_circle_counter et_pb_circle_counter_3 container-width-change-notify  et_pb_text_align_center et_pb_bg_layout_light et_pb_with_title">
-				<div class="et_pb_circle_counter_inner" data-number-value="87" data-bar-bg-color="#2b3990">
+				<div class="et_pb_circle_counter_inner" data-number-value="14" data-bar-bg-color="#2b3990" data-custom-display="22">
 				
 				
 				
 				
-					<div class="percent"><p style="visibility: visible;"><span class="percent-value">523</span><span class="percent-sign"></span></p></div>
+					<div class="percent"><p style="visibility: visible;"><span class="percent-value" style="pointer-events: none;">22</span><span class="percent-sign"></span></p></div>
 					<h3 class="et_pb_module_header">ESCO Financing</h3>
 				</div>
 			</div>
@@ -334,12 +334,12 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 				
 				
 				<div class="et_pb_module et_pb_circle_counter et_pb_circle_counter_4 container-width-change-notify  et_pb_text_align_center et_pb_bg_layout_light et_pb_with_title">
-				<div class="et_pb_circle_counter_inner" data-number-value="65" data-bar-bg-color="#001b56">
+				<div class="et_pb_circle_counter_inner" data-number-value="57" data-bar-bg-color="#001b56" data-custom-display="95">
 				
 				
 				
 				
-					<div class="percent"><p style="visibility: visible;"><span class="percent-value">391</span><span class="percent-sign"></span></p></div>
+					<div class="percent"><p style="visibility: visible;"><span class="percent-value" style="pointer-events: none;">95</span><span class="percent-sign"></span></p></div>
 					<h3 class="et_pb_module_header">Consultancy Services</h3>
 				</div>
 			</div>
@@ -1669,6 +1669,44 @@ var et_pb_box_shadow_elements = [];
 <script type="text/javascript" src="wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart41c1.js?ver=4.27.4" id="easypiechart-js"></script>
 <script type="text/javascript" src="wp-content/plugins/timeline-module-for-divi/scripts/frontend-bundle.mincfa9.js?ver=1.1.2" id="timeline-module-for-divi-frontend-bundle-js"></script>
 <script type="text/javascript" src="wp-content/themes/Divi/core/admin/js/common41c1.js?ver=4.27.4" id="et-core-common-js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    // Override all circle counter displays with custom values
+    setTimeout(function() {
+        $('.et_pb_circle_counter_inner[data-custom-display]').each(function() {
+            var customDisplay = $(this).data('custom-display');
+            $(this).find('.percent-value').text(customDisplay);
+        });
+    }, 100);
+    
+    // Monitor for any changes and maintain the custom displays
+    $('.et_pb_circle_counter_inner[data-custom-display]').each(function() {
+        var counterElement = $(this);
+        var customDisplay = counterElement.data('custom-display');
+        var percentValue = counterElement.find('.percent-value');
+        
+        if (percentValue.length && customDisplay) {
+            var observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.type === 'childList' || mutation.type === 'characterData') {
+                        var currentText = percentValue.text();
+                        if (currentText !== customDisplay && currentText !== '') {
+                            percentValue.text(customDisplay);
+                        }
+                    }
+                });
+            });
+            
+            observer.observe(percentValue[0], {
+                childList: true,
+                characterData: true,
+                subtree: true
+            });
+        }
+    });
+});
+</script>
 	
 	<!-- Mobile Quick Contact Buttons -->
 		<div class="mobile-quick-contact" id="mobileQuickContact">
