@@ -90,6 +90,22 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 .et_pb_blurb_1 .et-pb-icon:empty:before { content: "⚙️"; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif; }
 .et_pb_blurb_2 .et-pb-icon:empty:before { content: "🌱"; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif; }
 .et_pb_blurb_3 .et-pb-icon:empty:before { content: "🏆"; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif; }
+
+/* Pyramid Image Glow Effect */
+.et_pb_image_1 img.wp-image-344 {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.et_pb_image_1 img.wp-image-344:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 20px rgba(255, 157, 0, 0.4),
+        0 0 40px rgba(255, 157, 0, 0.3),
+        0 0 60px rgba(255, 157, 0, 0.2),
+        0 0 80px rgba(255, 157, 0, 0.1);
+    filter: brightness(1.1);
+}
 </style>
 <link rel="preload" as="style" id="et-core-unified-tb-168-deferred-10-cached-inline-styles" href="wp-content/et-cache/10/et-core-unified-tb-168-deferred-10.minccd6.css?ver=1751386017" onload="this.onload=null;this.rel='stylesheet';" />
 <link rel="stylesheet" href="assets/css/nav.css" />
