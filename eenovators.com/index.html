@@ -1564,7 +1564,7 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 							<textarea id="message" name="message" placeholder="Tell us about your energy goals and challenges..."></textarea>
 						</div>
 						
-						<button type="submit" class="submit-btn">Request Free Consultation</button>
+						<button type="button" class="submit-btn" onclick="sendToWhatsApp()">Request Free Consultation</button>
 					</form>
 				</div>
 			</div>
@@ -1729,6 +1729,51 @@ jQuery(window).on('load', function() {
         });
     }, 100);
 });
+
+// WhatsApp redirect function
+function sendToWhatsApp() {
+    // Get form data
+    const name = document.getElementById('name').value || 'Not provided';
+    const email = document.getElementById('email').value || 'Not provided';
+    const company = document.getElementById('company').value || 'Not provided';
+    const phone = document.getElementById('phone').value || 'Not provided';
+    const service = document.getElementById('service').value || 'Not selected';
+    const message = document.getElementById('message').value || 'No additional message';
+    
+    // Create WhatsApp message
+    const whatsappMessage = `Hello! I'm interested in a free consultation.
+
+*Contact Details:*
+Name: ${name}
+Email: ${email}
+Company: ${company}
+Phone: ${phone}
+
+*Service Interest:* ${service}
+
+*Message:*
+${message}
+
+Please contact me to schedule our consultation. Thank you!`;
+    
+    // Encode message for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // WhatsApp number
+    const whatsappNumber = '254745536264';
+    
+    // Create WhatsApp URL
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // Check if required fields are filled
+    if (!document.getElementById('name').value || !document.getElementById('email').value) {
+        alert('Please fill in at least your name and email before sending the message.');
+        return;
+    }
+    
+    // Open WhatsApp
+    window.open(whatsappURL, '_blank');
+}
 </script>
 	
 	<!-- Mobile Quick Contact Buttons -->
