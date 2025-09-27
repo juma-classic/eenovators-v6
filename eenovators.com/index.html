@@ -274,12 +274,12 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 				
 				
 				<div class="et_pb_module et_pb_circle_counter et_pb_circle_counter_0 container-width-change-notify  et_pb_text_align_center et_pb_bg_layout_light et_pb_with_title">
-				<div class="et_pb_circle_counter_inner" data-number-value="95" data-bar-bg-color="#ff9d00" data-custom-display="180">
+				<div class="et_pb_circle_counter_inner" data-number-value="95" data-bar-bg-color="#ff9d00" data-custom-display="570+">
 				
 				
 				
 				
-					<div class="percent"><p style="visibility: visible;"><span class="percent-value" style="pointer-events: none;">180</span><span class="percent-sign"></span></p></div>
+					<div class="percent"><p style="visibility: visible;"><span class="percent-value" style="pointer-events: none;">570+</span><span class="percent-sign"></span></p></div>
 					<h3 class="et_pb_module_header">Energy & Water Audits</h3>
 				</div>
 			</div>
@@ -325,7 +325,7 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 				
 				
 					<div class="percent"><p style="visibility: visible;"><span class="percent-value" style="pointer-events: none;">22</span><span class="percent-sign"></span></p></div>
-					<h3 class="et_pb_module_header">ESCO Financing</h3>
+					<h3 class="et_pb_module_header">ESCO Financing Pipeline</h3>
 				</div>
 			</div>
 			</div><div class="et_pb_column et_pb_column_1_5 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
@@ -1672,13 +1672,23 @@ var et_pb_box_shadow_elements = [];
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {
-    // Override all circle counter displays with custom values
-    setTimeout(function() {
+    
+    // Function to apply custom displays
+    function applyCustomDisplays() {
         $('.et_pb_circle_counter_inner[data-custom-display]').each(function() {
             var customDisplay = $(this).data('custom-display');
-            $(this).find('.percent-value').text(customDisplay);
+            var percentValue = $(this).find('.percent-value');
+            if (percentValue.length && customDisplay) {
+                percentValue.text(customDisplay);
+            }
         });
-    }, 100);
+    }
+    
+    // Apply custom displays immediately and with delays to handle various loading scenarios
+    applyCustomDisplays();
+    setTimeout(applyCustomDisplays, 100);
+    setTimeout(applyCustomDisplays, 500);
+    setTimeout(applyCustomDisplays, 1000);
     
     // Monitor for any changes and maintain the custom displays
     $('.et_pb_circle_counter_inner[data-custom-display]').each(function() {
@@ -1705,6 +1715,19 @@ jQuery(document).ready(function($) {
             });
         }
     });
+});
+
+// Also run on window load as a backup
+jQuery(window).on('load', function() {
+    setTimeout(function() {
+        jQuery('.et_pb_circle_counter_inner[data-custom-display]').each(function() {
+            var customDisplay = jQuery(this).data('custom-display');
+            var percentValue = jQuery(this).find('.percent-value');
+            if (percentValue.length && customDisplay) {
+                percentValue.text(customDisplay);
+            }
+        });
+    }, 100);
 });
 </script>
 	
