@@ -106,6 +106,92 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
         0 0 80px rgba(255, 157, 0, 0.1);
     filter: brightness(1.1);
 }
+
+/* Continuous Sliding Animation for Solar Projects */
+.et_pb_row_9 {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.et_pb_row_9 .et_pb_column {
+    animation: slideRightToLeft 30s linear infinite;
+    min-width: 16.666% !important; /* 1/6 width for 6 columns */
+    max-width: 16.666% !important;
+    flex: 0 0 16.666% !important;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Staggered animation delays for 6 columns */
+.et_pb_row_9 .et_pb_column_15 {
+    animation-delay: 0s;
+}
+
+.et_pb_row_9 .et_pb_column_16 {
+    animation-delay: 5s;
+}
+
+.et_pb_row_9 .et_pb_column_17 {
+    animation-delay: 10s;
+}
+
+.et_pb_row_9 .et_pb_column_18 {
+    animation-delay: 15s;
+}
+
+.et_pb_row_9 .et_pb_column_19 {
+    animation-delay: 20s;
+}
+
+.et_pb_row_9 .et_pb_column_20 {
+    animation-delay: 25s;
+}
+
+@keyframes slideRightToLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* Pause animation on hover for better user experience */
+.et_pb_row_9:hover .et_pb_column {
+    animation-play-state: paused;
+}
+
+/* Ensure proper column spacing and alignment */
+.et_pb_row_9 .et_pb_column .et_pb_image {
+    margin-bottom: 15px;
+}
+
+.et_pb_row_9 .et_pb_column .et_pb_heading {
+    margin-bottom: 10px;
+}
+
+.et_pb_row_9 .et_pb_column .et_pb_text {
+    margin-bottom: 0;
+}
+
+/* Force single row layout */
+.et_pb_row_9.et_pb_gutters2 {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    width: 600% !important; /* 6 columns × 100% each */
+}
 </style>
 <link rel="preload" as="style" id="et-core-unified-tb-168-deferred-10-cached-inline-styles" href="wp-content/et-cache/10/et-core-unified-tb-168-deferred-10.minccd6.css?ver=1751386017" onload="this.onload=null;this.rel='stylesheet';" />
 <link rel="stylesheet" href="assets/css/nav.css" />
@@ -1063,60 +1149,86 @@ document.addEventListener('click', function(event) {
 				</div>
 			</div>
 				
-								<div class="et_pb_text_inner" style="background: url('../s-projects.png') center center/cover no-repeat; padding: 100px 30px; border-radius: 5px;">
-					<h2 style="color: #fff; text-shadow: 1px 1px 8px #000;"></h2>
-				</div>
-				
 				
 			</div><div class="et_pb_row et_pb_row_9 et_pb_gutters2">
-				<div class="et_pb_column et_pb_column_1_2 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough">
+				<div class="et_pb_column et_pb_column_1_6 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough">
 				
 				
 				
 				
-				<div class="et_pb_module et_pb_heading et_pb_heading_0 et_pb_bg_layout_">
-				
-				
-				
-				
-				<div class="et_pb_heading_container"><h1 class="et_pb_module_heading">Residential Solar PV system in Westlands</h1></div>
-			</div><div class="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p>In 2023, we powered a Westlands home with a 3kW hybrid solar system. Featuring six 475W panels and 9.6kWh battery storage, this installation saves around 1,200 kg of CO₂ annually, delivering reliable, eco-friendly energy and showcasing Eenovators’ commitment to sustainable residential solutions.</p></div>
-			</div><div class="et_pb_button_module_wrapper et_pb_button_1_wrapper  et_pb_module ">
-				<a class="et_pb_button et_pb_button_1 et_pb_bg_layout_light" href="#">Find out more</a>
+				<div class="et_pb_module et_pb_image et_pb_image_15">
+				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="300" height="225" src="wp-content/uploads/2025/06/wastlands-400x250.jpg" alt="Residential Solar PV system in Westlands" class="wp-image-348"></span>
 			</div>
-			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough et-last-child">
+			<div class="et_pb_module et_pb_heading et_pb_heading_0 et_pb_bg_layout_">
 				
 				
 				
 				
-				<div class="et_pb_module et_pb_heading et_pb_heading_1 et_pb_bg_layout_">
+				<div class="et_pb_heading_container"><h3 class="et_pb_module_heading">3kW Residential Solar</h3></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_center et_pb_bg_layout_light">
 				
 				
 				
 				
-				<div class="et_pb_heading_container"><h1 class="et_pb_module_heading">Hatchery Solar PV system</h1></div>
-			</div><div class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><p>In 2020, we installed a 5kW hybrid solar PV system at a Katani hatchery, ensuring consistent, clean power for operations. With six 475W panels and 9.6kWh battery storage, this system saves about 1,200 kg of CO₂ annually, boosting sustainability while keeping the hatchery running efficiently.</p></div>
-			</div><div class="et_pb_button_module_wrapper et_pb_button_2_wrapper  et_pb_module ">
-				<a class="et_pb_button et_pb_button_2 et_pb_bg_layout_light" href="#">Find out more</a>
+				<div class="et_pb_text_inner"><p><strong>Westlands</strong></p></div>
 			</div>
+		</div><div class="et_pb_column et_pb_column_1_6 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+			<div class="et_pb_module et_pb_image et_pb_image_16">
+				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="300" height="225" src="wp-content/uploads/2025/06/solar-case-study-400x250.jpg" alt="Hatchery Solar PV system" class="wp-image-349"></span>
 			</div>
+			<div class="et_pb_module et_pb_heading et_pb_heading_1 et_pb_bg_layout_">				
+				
+				
+				<div class="et_pb_heading_container"><h3 class="et_pb_module_heading">5kW Hatchery Solar</h3></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_center et_pb_bg_layout_light">
 				
 				
 				
 				
+				<div class="et_pb_text_inner"><p><strong>Katani</strong></p></div>
 			</div>
+		</div><div class="et_pb_column et_pb_column_1_6 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough">
+		<div class="et_pb_module et_pb_image et_pb_image_17">
+			<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="300" height="225" src="wp-content/uploads/2025/06/unnamed-72-e1750191204249-400x250.jpg" alt="Office Solar PV system" class="wp-image-350"></span>
+		</div>
+		<div class="et_pb_module et_pb_heading et_pb_heading_17 et_pb_bg_layout_">
+		<div class="et_pb_heading_container"><h3 class="et_pb_module_heading">10kW Office Solar</h3></div>
+	</div><div class="et_pb_module et_pb_text et_pb_text_17  et_pb_text_align_center et_pb_bg_layout_light">
+		<div class="et_pb_text_inner"><p><strong>Nairobi CBD</strong></p></div>
+	</div>
+	</div><div class="et_pb_column et_pb_column_1_6 et_pb_column_18  et_pb_css_mix_blend_mode_passthrough">
+	<div class="et_pb_module et_pb_image et_pb_image_18">
+		<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="300" height="225" src="wp-content/uploads/2025/06/kakamega-400x250.jpg" alt="Residential Solar PV system in Kakamega" class="wp-image-351"></span>
+	</div>
+	<div class="et_pb_module et_pb_heading et_pb_heading_18 et_pb_bg_layout_">
+	<div class="et_pb_heading_container"><h3 class="et_pb_module_heading">2.5kW Residential Solar</h3></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_18  et_pb_text_align_center et_pb_bg_layout_light">
+	<div class="et_pb_text_inner"><p><strong>Kakamega</strong></p></div>
+</div>
+</div><div class="et_pb_column et_pb_column_1_6 et_pb_column_19  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_image et_pb_image_19">
+	<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="300" height="225" src="wp-content/uploads/2025/06/unnamed-70-400x250.jpg" alt="Residential Solar PV system in Khwisero" class="wp-image-352"></span>
+</div>
+<div class="et_pb_module et_pb_heading et_pb_heading_19 et_pb_bg_layout_">
+<div class="et_pb_heading_container"><h3 class="et_pb_module_heading">1.5kW Residential Solar</h3></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_19  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p><strong>Khwisero</strong></p></div>
+</div>
+	</div><div class="et_pb_column et_pb_column_1_6 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough et-last-child">
+	<div class="et_pb_module et_pb_image et_pb_image_20">
+		<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="300" height="225" src="wp-content/uploads/2025/06/solar2-400x250.jpg" alt="Residential Solar PV system in Nairobi" class="wp-image-353"></span>
+	</div>
+	<div class="et_pb_module et_pb_heading et_pb_heading_20 et_pb_bg_layout_">
+	<div class="et_pb_heading_container"><h3 class="et_pb_module_heading">4kW Residential Solar</h3></div>
+</div><div class="et_pb_module et_pb_text et_pb_text_20  et_pb_text_align_center et_pb_bg_layout_light">
+	<div class="et_pb_text_inner"><p><strong>Nairobi</strong></p></div>
+</div>
+	</div>
 				
 				
+				
+				
+			</div>				
 			</div><div class="et_pb_section et_pb_section_5 et_section_regular" >
 				
 				
@@ -1180,7 +1292,7 @@ document.addEventListener('click', function(event) {
 				<div class="et_pb_testimonial_description">
 					<div class="et_pb_testimonial_description_inner"><div class="et_pb_testimonial_content"><p>Eenovators Limited installed our hybrid solar system seamlessly. Reliable power, lower bills, and reduced carbon footprint. Their team was professional, knowledgeable, and supportive—highly recommended for sustainable, clean energy solutions.</p></div></div>
 					<span class="et_pb_testimonial_author">Residential Customer</span>
-					<p class="et_pb_testimonial_meta"><span class="et_pb_testimonial_position"> Westlands</span><span class="et_pb_testimonial_separator">,</span> <span class="et_pb_testimonial_company">Nairobi</span></p>
+					<p class="et_pb_testimonial_meta"><span class="et_pb_testimonial_position"> Westlands</strong></p>
 				</div>
 			</div>
 			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough et-last-child">
@@ -2310,4 +2422,5 @@ Please contact me to schedule our consultation. Thank you!`;
 
 <!-- Mirrored from ee.yellowcat.solutions/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Sep 2025 15:36:57 GMT -->
 </html>
+
 
