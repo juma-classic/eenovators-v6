@@ -161,42 +161,101 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
     animation-play-state: paused;
 }
 
-/* Ensure proper column spacing and alignment */
+/* Futuristic Glass Capsule Design */
 .et_pb_row_9 .et_pb_column {
     text-align: center !important;
-    padding: 0 10px;
+    padding: 20px 15px;
     box-sizing: border-box;
+    
+    /* Fixed Height for Uniform Capsules */
+    height: 320px !important;
+    min-height: 320px !important;
+    max-height: 320px !important;
+    
+    /* Glass Morphism Capsule Effect */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    
+    /* Hover Effects */
+    transition: all 0.3s ease;
+    margin: 10px 5px;
 }
 
+.et_pb_row_9 .et_pb_column:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(30, 58, 138, 0.3);
+    box-shadow: 
+        0 12px 40px rgba(30, 58, 138, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(30, 58, 138, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Content Spacing within Fixed Height Capsules */
 .et_pb_row_9 .et_pb_column .et_pb_image {
     margin-bottom: 15px;
     text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.et_pb_row_9 .et_pb_column .et_pb_image img {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+}
+
+.et_pb_row_9 .et_pb_column:hover .et_pb_image img {
+    transform: scale(1.05);
 }
 
 .et_pb_row_9 .et_pb_column .et_pb_heading {
     margin-bottom: 10px;
     text-align: center !important;
+    flex-shrink: 0; /* Prevent heading from shrinking */
 }
 
 .et_pb_row_9 .et_pb_column .et_pb_text {
     margin-bottom: 0;
     text-align: center !important;
+    margin-top: auto; /* Push text to bottom if needed */
+    flex-shrink: 0; /* Prevent text from shrinking */
 }
 
-/* Helvetica fonts and navy blue styling */
+/* Futuristic Text Styling for Glass Capsules */
 .et_pb_row_9 .et_pb_column .et_pb_heading h3,
 .et_pb_row_9 .et_pb_column .et_pb_text p,
 .et_pb_row_9 .et_pb_column .et_pb_text strong {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     color: #1e3a8a !important; /* Navy blue */
     font-weight: 600;
-    font-size: 16px !important; /* Consistent size for all text */
+    font-size: 16px !important;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.5px;
 }
 
-/* Consistent title sizing */
+/* Consistent title sizing with futuristic styling */
 .et_pb_row_9 .et_pb_column .et_pb_heading h3 {
     font-size: 18px !important;
     line-height: 1.3;
+    font-weight: 700;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
 }
 
 /* Simple sliding animation without scaling */
