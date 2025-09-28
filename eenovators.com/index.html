@@ -401,40 +401,49 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
     padding: 0 1.5rem;
 }
 
-/* Logo */
+/* Logo - Fluid responsive scaling based on viewport width */
 .logo {
-    height: 40px;
+    height: clamp(24px, 4vw, 40px);
     width: auto;
     transition: all 0.3s ease;
     transform-origin: center;
+    max-width: 90vw;
 }
 
-/* Responsive Logo Sizes - Scaling from center */
-@media (max-width: 1024px) {
+/* Fine-tuned responsive scaling for different screen ranges */
+@media (max-width: 1200px) {
     .logo {
-        height: 40px;
-        transform: scale(0.9);
+        height: clamp(22px, 3.8vw, 38px);
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        height: clamp(20px, 3.5vw, 36px);
     }
 }
 
 @media (max-width: 768px) {
     .logo {
-        height: 40px;
-        transform: scale(0.8);
+        height: clamp(18px, 3.2vw, 34px);
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .logo {
-        height: 40px;
-        transform: scale(0.7);
+        height: clamp(16px, 2.8vw, 32px);
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        height: clamp(14px, 2.5vw, 28px);
     }
 }
 
 @media (max-width: 320px) {
     .logo {
-        height: 40px;
-        transform: scale(0.6);
+        height: clamp(12px, 2.2vw, 24px);
     }
 }
 
