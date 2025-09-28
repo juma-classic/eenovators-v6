@@ -1430,73 +1430,73 @@ document.addEventListener('click', function(event) {
 							<div class="glassy-tiles" role="list" aria-label="Our services">
 								<!-- Core Services -->
 								<button class="tile" type="button" role="listitem" aria-label="Energy Audits">
-									<div class="tile-icon">&#128269;</div>
+									<div class="tile-icon">�</div>
 									<div class="tile-label">Energy Audits</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Energy Monitoring">
-									<div class="tile-icon">&#128202;</div>
+									<div class="tile-icon">📊</div>
 									<div class="tile-label">Energy Monitoring</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Data Analytics">
-									<div class="tile-icon">&#128200;</div>
+									<div class="tile-icon">�</div>
 									<div class="tile-label">Data Analytics</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Custom Reports">
-									<div class="tile-icon">&#128203;</div>
+									<div class="tile-icon">📋</div>
 									<div class="tile-label">Custom Reports</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Project Financing">
-									<div class="tile-icon">&#128176;</div>
+									<div class="tile-icon">�</div>
 									<div class="tile-label">Project Financing</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Renewable Solutions">
-									<div class="tile-icon">&#127793;</div>
+									<div class="tile-icon">🌱</div>
 									<div class="tile-label">Renewable Solutions</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Power Solutions">
-									<div class="tile-icon">&#9889;</div>
+									<div class="tile-icon">⚡</div>
 									<div class="tile-label">Power Solutions</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Energy Training">
-									<div class="tile-icon">&#127891;</div>
+									<div class="tile-icon">🎓</div>
 									<div class="tile-label">Energy Training</div>
 								</button>
 
 								<!-- Products -->
 								<button class="tile" type="button" role="listitem" aria-label="Solar Panels">
-									<div class="tile-icon">&#9728;</div>
+									<div class="tile-icon">☀️</div>
 									<div class="tile-label">Solar Panels</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Heat Pumps">
-									<div class="tile-icon">&#128293;</div>
+									<div class="tile-icon">�</div>
 									<div class="tile-label">Heat Pumps</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Egauge Systems">
-									<div class="tile-icon">&#128223;</div>
+									<div class="tile-icon">�</div>
 									<div class="tile-label">Egauge Systems</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Emporia Devices">
-									<div class="tile-icon">&#128241;</div>
+									<div class="tile-icon">📱</div>
 									<div class="tile-label">Emporia Devices</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Solar Battery">
-									<div class="tile-icon">&#128267;</div>
+									<div class="tile-icon">🔋</div>
 									<div class="tile-label">Solar Battery</div>
 								</button>
 
 								<button class="tile" type="button" role="listitem" aria-label="Solar Inverter">
-									<div class="tile-icon">&#128260;</div>
+									<div class="tile-icon">🔄</div>
 									<div class="tile-label">Solar Inverter</div>
 								</button>
 							</div>
