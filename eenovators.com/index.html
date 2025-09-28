@@ -35,6 +35,9 @@
 <link rel='stylesheet' id='sliding-tabs-css' href='assets/css/sliding-tabs.css?ver=1.0.0' type='text/css' media='all' />
 <link rel="stylesheet" href="assets/css/projects.css" type="text/css" media="all" />
 <link rel="stylesheet" href="assets/css/energy-services.css" type="text/css" media="all" />
+<link rel="stylesheet" href="assets/css/glass-buttons.css" type="text/css" media="all" />
+<link rel="stylesheet" href="assets/css/services-grid.css" type="text/css" media="all" />
+<link rel="stylesheet" href="assets/css/why-choose-animations.css" type="text/css" media="all" />
 <style id='divi-style-inline-inline-css' type='text/css'>
 /*!
 Theme Name: Divi
@@ -1408,14 +1411,14 @@ document.addEventListener('click', function(event) {
 						
 						<div class="et_pb_module et_pb_text et_pb_text_integrations_title et_pb_text_align_center et_pb_bg_layout_light">
 							<div class="et_pb_text_inner">
-								<h2 style="font-size: 3rem; font-weight: 700; color: #2c3e50; margin-bottom: 10px;">Our services</h2>
+								<h2 style="font-size: 3rem; font-weight: 700; color: #2c3e50; margin-bottom: 10px;">Integrations</h2>
 							</div>
 						</div>
 						
 						<div class="et_pb_module et_pb_text et_pb_text_integrations_subtitle et_pb_text_align_center et_pb_bg_layout_light">
 							<div class="et_pb_text_inner">
 								<p style="font-size: 1.2rem; color: #64748b; margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto;">
-									click on your Interest
+									Connect your favourite apps to your workflow.
 								</p>
 							</div>
 						</div>
@@ -1425,119 +1428,306 @@ document.addEventListener('click', function(event) {
 							<div class="integrations-glow-background" aria-hidden="true"></div>
 
 							<div class="glassy-tiles" role="list" aria-label="Our services">
-								<!-- Core Orbit: Programs & Services -->
-								<div class="orbit-group orbit-core" role="group" aria-label="Core Programs">
-									<button class="tile" type="button" role="listitem" aria-label="YEEP - Youth Energy Entrepreneurship Program">
-										<div class="tile-icon">👥</div>
-										<div class="tile-label">YEEP - Youth Energy Entrepreneurship Program</div>
-									</button>
+								<!-- Core Services (Power Monitoring is an external link) -->
+								<a class="tile" href="https://portal.eenovators.com" target="_blank" rel="noopener" role="listitem" aria-label="Open Power Monitoring portal">
+									<div class="tile-icon">📊</div>
+									<div class="tile-label">Power Monitoring</div>
+								</a>
 
-									<button class="tile" type="button" role="listitem" aria-label="WED - World Energy Day Initiatives">
-										<div class="tile-icon">🌍</div>
-										<div class="tile-label">WED - World Energy Day Initiatives</div>
-									</button>
+								<button class="tile" type="button" role="listitem" aria-label="Energy Audits">
+									<div class="tile-icon">🔌</div>
+									<div class="tile-label">Energy Audits</div>
+								</button>
 
-									<a class="tile" href="https://portal.eenovators.com" target="_blank" rel="noopener" role="listitem" aria-label="Open Power Monitoring portal">
-										<div class="tile-icon" aria-hidden="true">
-											<!-- bar-chart SVG (keeps it clickable) -->
-											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-												<rect x="3" y="10" width="3" height="11" rx="0.5" fill="#4B2C83" opacity="0.95"/>
-												<rect x="9" y="6" width="3" height="15" rx="0.5" fill="#7B44E1" opacity="0.95"/>
-												<rect x="15" y="3" width="3" height="18" rx="0.5" fill="#A56BFF" opacity="0.95"/>
-											</svg>
+								<button class="tile" type="button" role="listitem" aria-label="Project Management">
+									<div class="tile-icon">🧭</div>
+									<div class="tile-label">Project Management</div>
+								</button>
+
+								<!-- Technical Services -->
+								<button class="tile" type="button" role="listitem" aria-label="Solar Design">
+									<div class="tile-icon">🔆</div>
+									<div class="tile-label">Solar Design</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Installation">
+									<div class="tile-icon">🔧</div>
+									<div class="tile-label">Installation</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Battery Storage">
+									<div class="tile-icon">⚡</div>
+									<div class="tile-label">Battery Storage</div>
+								</button>
+
+								<!-- Projects / Services -->
+								<button class="tile" type="button" role="listitem" aria-label="Operations and Maintenance">
+									<div class="tile-icon">🛠️</div>
+									<div class="tile-label">O &amp; M</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Remote Monitoring">
+									<div class="tile-icon">📡</div>
+									<div class="tile-label">Remote Monitoring</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Feasibility Studies">
+									<div class="tile-icon">🔎</div>
+									<div class="tile-label">Feasibility Studies</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Financing">
+									<div class="tile-icon">💳</div>
+									<div class="tile-label">Financing</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="EPC Services">
+									<div class="tile-icon">🏗️</div>
+									<div class="tile-label">EPC Services</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Grid Integration">
+									<div class="tile-icon">🔌</div>
+									<div class="tile-label">Grid Integration</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="BESS">
+									<div class="tile-icon">🔋</div>
+									<div class="tile-label">BESS</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Demand Response">
+									<div class="tile-icon">📈</div>
+									<div class="tile-label">Demand Response</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="EV Charging">
+									<div class="tile-icon">🚗</div>
+									<div class="tile-label">EV Charging</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Energy Management Systems">
+									<div class="tile-icon">🖥️</div>
+									<div class="tile-label">Energy Management Systems</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Solar PV">
+									<div class="tile-icon">🌞</div>
+									<div class="tile-label">Solar PV</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Rooftop Solutions">
+									<div class="tile-icon">🏠</div>
+									<div class="tile-label">Rooftop Solutions</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Training">
+									<div class="tile-icon">🎓</div>
+									<div class="tile-label">Training</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Consulting">
+									<div class="tile-icon">🧾</div>
+									<div class="tile-label">Consulting</div>
+								</button>
+							</div>
+							<!-- Core Services & Programs Section -->
+							<div class="service-category">
+								<div class="category-header">
+									<h3>Core Services & Programs</h3>
+									<p>Comprehensive energy solutions from monitoring to implementation</p>
+								</div>
+								<div class="services-grid">
+									<div class="service-item">
+										<div class="service-icon">🔋</div>
+										<div class="service-content">
+											<span class="service-type">FINANCIAL</span>
+											<h4>VPP - Virtual Power Plant/microgrids Program</h4>
 										</div>
-										<div class="tile-label">Power Monitoring</div>
-									</a>
-
-									<button class="tile" type="button" role="listitem" aria-label="Energy Tracker Solutions">
-										<div class="tile-icon">📈</div>
-										<div class="tile-label">Energy Tracker Solutions</div>
-									</button>
-
-									<button class="tile" type="button" role="listitem" aria-label="Solar Products & Equipment">
-										<div class="tile-icon">☀️</div>
-										<div class="tile-label">Solar Products &amp; Equipment</div>
-									</button>
-
-									<button class="tile" type="button" role="listitem" aria-label="Energy Consultancy Services">
-										<div class="tile-icon">💡</div>
-										<div class="tile-label">Energy Consultancy Services</div>
-									</button>
-
-									<button class="tile" type="button" role="listitem" aria-label="Comprehensive Energy Audits">
-										<div class="tile-icon">🔍</div>
-										<div class="tile-label">Comprehensive Energy Audits</div>
-									</button>
-
-									<button class="tile" type="button" role="listitem" aria-label="Water Audits & Conservation">
-										<div class="tile-icon">💧</div>
-										<div class="tile-label">Water Audits &amp; Conservation</div>
-									</button>
-								</div>
-
-								<!-- Middle Orbit: Technical Solutions (7 items) -->
-								<div class="orbit-group orbit-middle" role="group" aria-label="Technical Solutions">
-									<button class="tile" type="button" role="listitem" aria-label="Solar Panel Installation">
-										<div class="tile-icon">⚡</div>
-										<div class="tile-label">Solar Panel Installation</div>
-									</button>
-
-									<button class="tile" type="button" role="listitem" aria-label="Energy Storage Systems">
-										<div class="tile-icon">🔋</div>
-										<div class="tile-label">Energy Storage Systems</div>
-									</button>
-
-									<button class="tile" type="button" role="listitem" aria-label="Smart Grid Integration">
-										<div class="tile-icon">🔌</div>
-										<div class="tile-label">Smart Grid Integration</div>
-									</button>
-
-									<button class="tile" type="button" role="listitem" aria-label="Inverter Technology">
-										<div class="tile-icon">⚙️</div>
-										<div class="tile-label">Inverter Technology</div>
-									</button>
-
-									<button class="tile" type="button" role="listitem" aria-label="Load Management Systems">
-										<div class="tile-icon">🎛️</div>
-										<div class="tile-label">Load Management Systems</div>
-									</button>
-
-									<button class="tile" type="button" role="listitem" aria-label="Remote Monitoring Solutions">
-										<div class="tile-icon">📡</div>
-										<div class="tile-label">Remote Monitoring Solutions</div>
-									</button>
-
-									<button class="tile" type="button" role="listitem" aria-label="Performance Analytics">
-										<div class="tile-icon">📋</div>
-										<div class="tile-label">Performance Analytics</div>
-									</button>
-								</div>
-
-								<!-- Outer Orbit: Applications & Projects (7 items) -->
-								<div class="orbit-group orbit-outer" role="group" aria-label="Applications and Projects">
-							<div class="text-item" role="listitem">
-								<span class="item-icon">🏠</span>
-								<span class="item-label">Residential Solar Systems</span>
-							</div>							<div class="text-item" role="listitem">
-								<span class="item-icon">🏢</span>
-								<span class="item-label">Commercial Energy Solutions</span>
-							</div>							<div class="text-item" role="listitem">
-								<span class="item-icon">🏭</span>
-								<span class="item-label">Industrial Power Systems</span>
-							</div>							<div class="text-item" role="listitem">
-								<span class="item-icon">🚜</span>
-								<span class="item-label">Agricultural Energy Solutions</span>
-							</div>							<div class="text-item" role="listitem">
-								<span class="item-icon">🎓</span>
-								<span class="item-label">Educational Institution Projects</span>
-							</div>							<div class="text-item" role="listitem">
-								<span class="item-icon">🏥</span>
-								<span class="item-label">Healthcare Facility Solutions</span>
-							</div>									<div class="text-item" role="listitem">
-										<span class="item-icon">🤝</span>
-										<span class="item-label">Community Development Projects</span>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">🌐</div>
+										<div class="service-content">
+											<span class="service-type">ECOSYSTEM</span>
+											<h4>WPD - World Energy Day Initiatives Program</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">📊</div>
+										<div class="service-content">
+											<span class="service-type">MONITORING</span>
+											<h4>Energy Tracker Solutions</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">⚡</div>
+										<div class="service-content">
+											<span class="service-type">PRODUCTS</span>
+											<h4>Solar Products & Equipment</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">�</div>
+										<div class="service-content">
+											<span class="service-type">CONSULTING</span>
+											<h4>Energy Consulting Services</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">�</div>
+										<div class="service-content">
+											<span class="service-type">ASSESSMENT</span>
+											<h4>Comprehensive Energy Audits</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">🏗️</div>
+										<div class="service-content">
+											<span class="service-type">CONSTRUCTION</span>
+											<h4>Wind Audits & Construction</h4>
+										</div>
 									</div>
 								</div>
+							</div>
+
+							<!-- Technical Solutions Section -->
+							<div class="service-category">
+								<div class="category-header">
+									<h3>Technical Solutions</h3>
+									<p>Advanced technology and monitoring systems for optimal energy performance</p>
+								</div>
+								<div class="services-grid">
+									<div class="service-item">
+										<div class="service-icon">🔧</div>
+										<div class="service-content">
+											<span class="service-type">INSTALLATION</span>
+											<h4>Solar Plant Installation</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">💾</div>
+										<div class="service-content">
+											<span class="service-type">STORAGE</span>
+											<h4>Energy Storage Systems</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">�</div>
+										<div class="service-content">
+											<span class="service-type">INTEGRATION</span>
+											<h4>Smart Grid Integration</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">�️</div>
+										<div class="service-content">
+											<span class="service-type">TECHNOLOGY</span>
+											<h4>Monitor Technology</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">�</div>
+										<div class="service-content">
+											<span class="service-type">MANAGEMENT</span>
+											<h4>Load Management Systems</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">�</div>
+										<div class="service-content">
+											<span class="service-type">MONITORING</span>
+											<h4>Remote Monitoring Solutions</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">📈</div>
+										<div class="service-content">
+											<span class="service-type">ANALYTICS</span>
+											<h4>Performance Analytics</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Sector-Specific Solutions Section -->
+							<div class="service-category">
+								<div class="category-header">
+									<h3>Sector-Specific Solutions</h3>
+									<p>Tailored energy solutions for every industry and community need</p>
+								</div>
+								<div class="services-grid">
+									<div class="service-item">
+										<div class="service-icon">🏠</div>
+										<div class="service-content">
+											<span class="service-type">RESIDENTIAL</span>
+											<h4>Residential Solar Systems</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">🏢</div>
+										<div class="service-content">
+											<span class="service-type">COMMERCIAL</span>
+											<h4>Commercial Energy Solutions</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">🏭</div>
+										<div class="service-content">
+											<span class="service-type">INDUSTRIAL</span>
+											<h4>Industrial Power Systems</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">🌾</div>
+										<div class="service-content">
+											<span class="service-type">COLLECTIVE</span>
+											<h4>Agricultural Energy Solutions</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">🎓</div>
+										<div class="service-content">
+											<span class="service-type">EDUCATION</span>
+											<h4>Educational Institution Projects</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">�</div>
+										<div class="service-content">
+											<span class="service-type">HEALTHCARE</span>
+											<h4>Healthcare Facility Solutions</h4>
+										</div>
+									</div>
+									<div class="service-item">
+										<div class="service-icon">�️</div>
+										<div class="service-content">
+											<span class="service-type">COMMUNITY</span>
+											<h4>Community Development Projects</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+								<button class="tile" type="button" role="listitem" aria-label="Commercial PV">
+									<div class="tile-icon">🏢</div>
+									<div class="tile-label">Commercial PV</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Residential PV">
+									<div class="tile-icon">🏡</div>
+									<div class="tile-label">Residential PV</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Training">
+									<div class="tile-icon">🎓</div>
+									<div class="tile-label">Training</div>
+								</button>
+
+								<button class="tile" type="button" role="listitem" aria-label="Consulting">
+									<div class="tile-icon">🧾</div>
+									<div class="tile-label">Consulting</div>
+								</button>
 							</div>
 
 						</div>
