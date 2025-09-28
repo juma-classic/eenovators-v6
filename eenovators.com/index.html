@@ -113,7 +113,7 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
     position: relative;
     display: flex;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: stretch; /* Equal height columns */
 }
 
 .et_pb_row_9 .et_pb_column {
@@ -122,8 +122,11 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
     max-width: 16.666% !important;
     flex: 0 0 16.666% !important;
     flex-shrink: 0;
-    display: inline-block;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
 }
 
 /* Staggered animation delays for 6 columns */
@@ -159,16 +162,25 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 }
 
 /* Ensure proper column spacing and alignment */
+.et_pb_row_9 .et_pb_column {
+    text-align: center !important;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
 .et_pb_row_9 .et_pb_column .et_pb_image {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .et_pb_row_9 .et_pb_column .et_pb_heading {
     margin-bottom: 10px;
+    text-align: center !important;
 }
 
 .et_pb_row_9 .et_pb_column .et_pb_text {
     margin-bottom: 0;
+    text-align: center !important;
 }
 
 /* Helvetica fonts and navy blue styling */
