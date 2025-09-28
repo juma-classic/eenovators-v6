@@ -222,16 +222,23 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 }
 
 .et_pb_row_9 .et_pb_column .et_pb_heading {
-    margin-bottom: 10px;
+    margin-bottom: auto;
     text-align: center !important;
     flex-shrink: 0; /* Prevent heading from shrinking */
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .et_pb_row_9 .et_pb_column .et_pb_text {
     margin-bottom: 0;
     text-align: center !important;
-    margin-top: auto; /* Push text to bottom if needed */
+    margin-top: auto; /* Push location text to bottom */
     flex-shrink: 0; /* Prevent text from shrinking */
+    padding-top: 15px;
+    align-self: center; /* Center horizontally within flex container */
+    width: 100%; /* Full width to ensure centering works */
 }
 
 /* Futuristic Text Styling for Glass Capsules */
@@ -292,12 +299,16 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 .et_pb_row_9 .et_pb_column a {
     text-decoration: none;
     color: inherit;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     cursor: pointer;
     border-radius: 25px;
     transition: all 0.3s ease;
     position: relative;
+    padding: 20px 15px;
+    box-sizing: border-box;
 }
 
 .et_pb_row_9 .et_pb_column a:hover {
@@ -312,6 +323,41 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 .et_pb_row_9 .et_pb_column a:hover .et_pb_image img {
     transform: scale(1.08);
     filter: brightness(1.1);
+}
+
+/* Ensure proper flex container behavior for content distribution */
+.et_pb_row_9 .et_pb_column a > * {
+    flex-shrink: 0;
+}
+
+.et_pb_row_9 .et_pb_column a .et_pb_heading {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Perfect centering for location names */
+.et_pb_row_9 .et_pb_column .et_pb_text .et_pb_text_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.et_pb_row_9 .et_pb_column .et_pb_text p {
+    text-align: center !important;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.et_pb_row_9 .et_pb_column .et_pb_text strong {
+    display: block;
+    width: 100%;
+    text-align: center !important;
 }
 
 .et_pb_row_9 .et_pb_column a:hover h3 {
