@@ -1,0 +1,36 @@
+/* Layout adjustment - Move content 15% to the right */
+.container.relative.mx-auto {
+    margin-left: 15% !important;
+    margin-right: auto !important;
+}
+
+/* Responsive adjustments to maintain layout on smaller screens */
+@media (max-width: 1200px) {
+    .container.relative.mx-auto {
+        margin-left: 12% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .container.relative.mx-auto {
+        margin-left: 10% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container.relative.mx-auto {
+        margin-left: 8% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .container.relative.mx-auto {
+        margin-left: 5% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .container.relative.mx-auto {
+        margin-left: 2% !important;
+    }
+}
