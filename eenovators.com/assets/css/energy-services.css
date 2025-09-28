@@ -1,0 +1,449 @@
+/* Glassy tile grid for Integrations / Services */
+.glassy-tiles{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  justify-content:center;
+  align-items:center;
+  max-width:1100px;
+  margin:0 auto 40px auto;
+  padding:8px;
+}
+
+/* Make tiles look and behave like pill-shaped buttons */
+.glassy-tiles .tile{
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 6px 30px rgba(60,72,88,0.12), 0 1px 0 rgba(255,255,255,0.02) inset;
+  border-radius:999px; /* pill */
+  padding:10px 18px;
+  min-width:170px;
+  max-width:360px;
+  display:inline-flex;
+  gap:12px;
+  align-items:center;
+  color:#0b1b3a;
+  text-decoration:none;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  vertical-align:middle;
+  outline: none;
+}
+
+/* glossy glass sheen using pseudo-element */
+.glassy-tiles .tile::before{
+  content: "";
+  position:absolute;
+  left:6%;
+  top:6%;
+  width:60%;
+  height:50%;
+  border-radius:999px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.08));
+  filter: blur(8px);
+  opacity:0.25;
+  transform: translateY(-6px) rotate(-6deg);
+  pointer-events:none;
+  z-index:1;
+}
+
+/* subtle diagonal shimmer */
+.glassy-tiles .tile::after{
+  content:"";
+  position:absolute;inset:0;border-radius:999px;z-index:3;pointer-events:none;
+  background: linear-gradient(120deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.06) 45%, rgba(255,255,255,0.02) 55%, rgba(255,255,255,0.00) 100%);
+  mix-blend-mode: overlay;opacity:0.6;transform:translateX(-120%);
+}
+
+@keyframes shine {
+  0%{transform:translateX(-120%)}
+  100%{transform:translateX(220%)}
+}
+
+/* control shimmer on hover/focus for a delicate effect */
+.glassy-tiles .tile:hover::after,
+.glassy-tiles .tile:focus::after{
+  animation: shine 1.6s ease-in-out 1;
+}
+
+.glassy-tiles .tile:focus,
+.glassy-tiles .tile:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(46,75,255,0.12), 0 6px 18px rgba(8,16,63,0.12);
+}
+
+/* Buttons and anchors share styles */
+.glassy-tiles button.tile,
+.glassy-tiles a.tile{
+  border: none; /* existing border kept via .tile so remove extra here */
+  display:inline-flex;
+  align-items:center;
+  background-clip: padding-box;
+}
+
+/* Focus accessibility */
+.glassy-tiles button.tile:focus,
+.glassy-tiles a.tile:focus{
+  box-shadow: 0 6px 30px rgba(46,75,255,0.18), inset 0 0 0 3px rgba(6,147,227,0.12);
+}
+
+.glassy-tiles .tile .tile-icon{
+  width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;background:linear-gradient(180deg, rgba(255,255,255,0.65), rgba(255,255,255,0.06));backdrop-filter: blur(8px);
+  box-shadow: 0 8px 18px rgba(10,20,40,0.08);
+}
+
+.glassy-tiles .tile .tile-label{
+  font-size:15px;font-weight:600;color:inherit;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+
+/* Make the Power Monitoring tile visually distinct when it's a link */
+.glassy-tiles a.tile{
+  cursor:pointer;
+  background: linear-gradient(180deg, rgba(10,84,211,0.12), rgba(10,84,211,0.06));
+  border: 1px solid rgba(10,84,211,0.18);
+  color:#052169;
+}
+
+/* Ensure buttons use pointer cursor */
+.glassy-tiles button.tile{cursor:pointer;background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));}
+
+/* active press feedback */
+.glassy-tiles button.tile:active,
+.glassy-tiles a.tile:active{
+  transform: translateY(-2px) scale(.995);
+  box-shadow: 0 10px 26px rgba(46,75,255,0.08);
+}
+
+/* Responsive scaling - section and typography */
+@media (max-width: 1200px) {
+  .et_pb_text_integrations_title h2 {
+    font-size: 2.5rem !important;
+  }
+  .et_pb_text_integrations_subtitle p {
+    font-size: 1.1rem !important;
+    margin-bottom: 40px !important;
+  }
+  #integrations-orbit-container {
+    padding: 20px 0 10px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .et_pb_text_integrations_title h2 {
+    font-size: 2.2rem !important;
+  }
+  .et_pb_text_integrations_subtitle p {
+    font-size: 1rem !important;
+    margin-bottom: 36px !important;
+  }
+  .glassy-tiles {
+    gap: 16px;
+    max-width: 950px;
+  }
+  .glassy-tiles .tile {
+    padding: 9px 16px;
+    min-width: 150px;
+    max-width: 320px;
+    gap: 11px;
+  }
+  .glassy-tiles .tile .tile-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+  .glassy-tiles .tile .tile-label {
+    font-size: 13px;
+  }
+  .text-item {
+    padding: 9px 16px;
+    min-width: 150px;
+    max-width: 320px;
+    gap: 11px;
+  }
+  .text-item .item-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+  .text-item .item-label {
+    font-size: 13px;
+  }
+}
+
+/* Responsive sizing - tablets */
+@media (max-width: 900px) {
+  .et_pb_text_integrations_title h2 {
+    font-size: 2rem !important;
+  }
+  .et_pb_text_integrations_subtitle p {
+    font-size: 0.95rem !important;
+    margin-bottom: 32px !important;
+  }
+  .glassy-tiles {
+    gap: 14px;
+    max-width: 800px;
+  }
+  .glassy-tiles .tile {
+    min-width: 40%;
+    flex: 1 1 40%;
+    padding: 8px 14px;
+    gap: 10px;
+  }
+  .glassy-tiles .tile .tile-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .glassy-tiles .tile .tile-label {
+    font-size: 12px;
+  }
+  .text-item {
+    min-width: 40%;
+    flex: 1 1 40%;
+    padding: 8px 14px;
+    gap: 10px;
+  }
+  .text-item .item-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .text-item .item-label {
+    font-size: 12px;
+  }
+}
+
+/* Responsive sizing - mobile landscape */
+@media (max-width: 700px) {
+  .et_pb_text_integrations_title h2 {
+    font-size: 1.8rem !important;
+  }
+  .et_pb_text_integrations_subtitle p {
+    font-size: 0.9rem !important;
+    margin-bottom: 28px !important;
+  }
+  .glassy-tiles {
+    gap: 12px;
+    max-width: 650px;
+  }
+  .glassy-tiles .tile {
+    min-width: 48%;
+    flex: 1 1 48%;
+    padding: 7px 12px;
+    gap: 9px;
+  }
+  .glassy-tiles .tile .tile-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+  .glassy-tiles .tile .tile-label {
+    font-size: 11px;
+  }
+  .text-item {
+    min-width: 48%;
+    flex: 1 1 48%;
+    padding: 7px 12px;
+    gap: 9px;
+  }
+  .text-item .item-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+  .text-item .item-label {
+    font-size: 11px;
+  }
+}
+
+/* Responsive sizing - mobile portrait */
+@media (max-width: 520px) {
+  .et_pb_text_integrations_title h2 {
+    font-size: 1.6rem !important;
+  }
+  .et_pb_text_integrations_subtitle p {
+    font-size: 0.85rem !important;
+    margin-bottom: 24px !important;
+  }
+  #integrations-orbit-container {
+    padding: 16px 0 8px 0;
+  }
+  .glassy-tiles {
+    gap: 10px;
+    max-width: 100%;
+    padding: 4px;
+  }
+  .glassy-tiles .tile {
+    min-width: 100%;
+    flex: 1 1 100%;
+    padding: 6px 10px;
+    gap: 8px;
+  }
+  .glassy-tiles .tile .tile-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+  .glassy-tiles .tile .tile-label {
+    font-size: 10px;
+  }
+  .text-item {
+    min-width: 100%;
+    flex: 1 1 100%;
+    padding: 6px 10px;
+    gap: 8px;
+  }
+  .text-item .item-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+  .text-item .item-label {
+    font-size: 10px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 380px) {
+  .et_pb_text_integrations_title h2 {
+    font-size: 1.4rem !important;
+  }
+  .et_pb_text_integrations_subtitle p {
+    font-size: 0.8rem !important;
+    margin-bottom: 20px !important;
+  }
+  .glassy-tiles {
+    gap: 8px;
+  }
+  .glassy-tiles .tile {
+    padding: 5px 8px;
+    gap: 7px;
+  }
+  .glassy-tiles .tile .tile-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+  }
+  .glassy-tiles .tile .tile-label {
+    font-size: 9px;
+  }
+  .text-item {
+    padding: 5px 8px;
+    gap: 7px;
+  }
+  .text-item .item-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+  }
+  .text-item .item-label {
+    font-size: 9px;
+  }
+}
+
+/* Ambient glow background for subtle effect */
+.integrations-glow-background{
+  position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(600px 200px at 10% 20%, rgba(155,81,224,0.07), transparent 12%), radial-gradient(400px 150px at 90% 70%, rgba(6,147,227,0.06), transparent 12%);
+  mix-blend-mode: screen;filter: blur(10px);
+}
+
+/* Text items styled as glassy pill buttons */
+.text-item {
+  position: relative;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 6px 30px rgba(60,72,88,0.12), 0 1px 0 rgba(255,255,255,0.02) inset;
+  border-radius: 999px; /* pill */
+  padding: 10px 18px;
+  min-width: 170px;
+  max-width: 360px;
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  color: #0b1b3a;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  vertical-align: middle;
+  outline: none;
+  cursor: pointer;
+  margin: 4px;
+}
+
+/* glossy glass sheen for text items */
+.text-item::before {
+  content: "";
+  position: absolute;
+  left: 6%;
+  top: 6%;
+  width: 60%;
+  height: 50%;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.08));
+  filter: blur(8px);
+  opacity: 0.25;
+  transform: translateY(-6px) rotate(-6deg);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* shimmer effect for text items */
+.text-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  z-index: 3;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.06) 45%, rgba(255,255,255,0.02) 55%, rgba(255,255,255,0.00) 100%);
+  mix-blend-mode: overlay;
+  opacity: 0.6;
+  transform: translateX(-120%);
+}
+
+/* hover effects for text items */
+.text-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(60,72,88,0.18);
+}
+
+.text-item:hover::after {
+  animation: shimmer 1.6s ease-in-out 1;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(220%); }
+}
+
+/* Icon and label styling for text items */
+.text-item .item-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.65), rgba(255,255,255,0.06));
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 18px rgba(10,20,40,0.08);
+  z-index: 2;
+  flex: 0 0 auto;
+}
+
+.text-item .item-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 2;
+}
+
+/* scope within container to ensure tiles sit above glow */
+#integrations-orbit-container{position:relative;padding:24px 0 12px 0}
+#integrations-orbit-container .glassy-tiles{position:relative;z-index:2}
