@@ -619,6 +619,49 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
     background-color: #1d4ed8;
 }
 
+/* Responsive Action Button Sizing */
+@media (max-width: 1200px) {
+    .action-btn {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.8125rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .action-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .action-btn {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.7125rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .action-btn {
+        padding: 0.35rem 0.7rem;
+        font-size: 0.675rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .action-btn {
+        padding: 0.325rem 0.65rem;
+        font-size: 0.6375rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .action-btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+    }
+}
+
 .cta-btn {
     background-color: #2563eb;
     color: white;
@@ -920,6 +963,7 @@ document.addEventListener('click', function(event) {
 			<div class="flex justify-end w-full gap-4">
 				<a href="https://eenovators-shop.netlify.app" class="action-btn ghost hidden md:inline-flex" target="_blank">Shop</a>
 				<div class="border-r hidden md:inline"></div>
+				<a href="https://tracker.energyzedworld.com/" class="action-btn outline" target="_blank">Energy Tracker</a>
 				<a href="https://portal.eenovators.com/" class="action-btn outline" target="_blank">Power Monitoring</a>
 				<a href="contact/index.html" class="action-btn primary">Get Started</a>
 			</div>
