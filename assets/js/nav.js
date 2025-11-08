@@ -286,3 +286,19 @@ if ('serviceWorker' in navigator) {
       });
   });
 }
+
+function toggleMobileMenu() {
+  const menu = document.getElementById("mobileMenu");
+  const hamburger = document.querySelector(".hamburger-icon");
+  const closeIcon = document.querySelector(".close-icon");
+  if (!menu || !hamburger || !closeIcon) return; // safety
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+    hamburger.style.display = "";
+    closeIcon.style.display = "none";
+  } else {
+    menu.style.display = "block";
+    hamburger.style.display = "none";
+    closeIcon.style.display = "";
+  }
+}
